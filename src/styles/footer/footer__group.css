@@ -1,0 +1,5 @@
+.footer__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
