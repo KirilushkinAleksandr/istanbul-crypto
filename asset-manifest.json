@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/istanbul-crypto/static/css/main.80463221.css",
+    "main.js": "/istanbul-crypto/static/js/main.388ed92e.js",
+    "static/js/787.0378f20e.chunk.js": "/istanbul-crypto/static/js/787.0378f20e.chunk.js",
+    "static/media/goldd.jpeg": "/istanbul-crypto/static/media/goldd.770268e278eacb87b4d5.jpeg",
+    "static/media/crypto.jpg": "/istanbul-crypto/static/media/crypto.38c869d06e6772007bdf.jpg",
+    "static/media/Inter-Black.woff": "/istanbul-crypto/static/media/Inter-Black.fd37f7e052bea1018058.woff",
+    "static/media/coins.jpg": "/istanbul-crypto/static/media/coins.76dfdd24b95b45668968.jpg",
+    "static/media/gold.webp": "/istanbul-crypto/static/media/gold.a99b8f34cf9d1ac25d64.webp",
+    "static/media/Inter-Regular.woff": "/istanbul-crypto/static/media/Inter-Regular.34ed58565339f4f3be40.woff",
+    "static/media/Inter-Black.woff2": "/istanbul-crypto/static/media/Inter-Black.141c7af6ed109b318513.woff2",
+    "static/media/Inter-Regular.woff2": "/istanbul-crypto/static/media/Inter-Regular.4c96ed73beaf6d1e6cc7.woff2",
+    "static/media/Inter-Medium.woff": "/istanbul-crypto/static/media/Inter-Medium.f5549f68ca7db479bc7d.woff",
+    "static/media/Inter-Medium.woff2": "/istanbul-crypto/static/media/Inter-Medium.ba68c34a21c5751a2838.woff2",
+    "static/media/logo.png": "/istanbul-crypto/static/media/logo.005df93e9594ddfa1c01.png",
+    "index.html": "/istanbul-crypto/index.html",
+    "main.80463221.css.map": "/istanbul-crypto/static/css/main.80463221.css.map",
+    "main.388ed92e.js.map": "/istanbul-crypto/static/js/main.388ed92e.js.map",
+    "787.0378f20e.chunk.js.map": "/istanbul-crypto/static/js/787.0378f20e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80463221.css",
+    "static/js/main.388ed92e.js"
+  ]
+}
