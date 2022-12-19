@@ -3,5 +3,8 @@
   "title": "WELCOME",
   "faq": "FAQ",
   "about us": "ABOUT US",
-  "gold": "GOLD"
+  "gold": {
+    "title": "GOLD",
+    "text": "Buy and sell any gold types we offer from the most advantageous prices at BJB Exchange!"
+  }
 }

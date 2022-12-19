@@ -6,14 +6,45 @@ function Main() {
   return (
     <main className="content">
       <section className="content__section">
-        <div className="profile__avatar-container">
-          {t('gold')}
+        <div className="content__title">
+          MAIN
         </div>
-        <div className="profile__info">
-          краткое описание услуги буквально в двух словах =)
+        <div className="content__text">
         </div>
-        <div className="profile__info">
-          (купля-продажа, обмен и прочее)
+      </section>
+      <section className="content__section">
+        <div className="content__title content__title_gold">
+          {t('gold.title')}
+        </div>
+        <div className="content__text">
+          {t('gold.text')}
+        </div>
+      </section>
+      <section className="content__section">
+        <div className="content__title content__title_crypto">
+          CRYPTO
+        </div>
+        <div className="content__text">
+        </div>
+        <div className="content__text">
+        </div>
+      </section>
+      <section className="content__section">
+        <div className="content__title content__title_coins">
+          COINS
+        </div>
+        <div className="content__text">
+        </div>
+        <div className="content__text">
+        </div>
+      </section>
+      <section className="content__section">
+        <div className="content__title content__title_coins">
+          CONTACT US
+        </div>
+        <div className="content__text">
+        </div>
+        <div className="content__text">
         </div>
       </section>
     </main>

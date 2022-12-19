@@ -14,7 +14,7 @@ function Footer() {
         <p className="footer__item">контакты</p>
       </div>
       <div className="footer__group">
-        <p className="footer__item">карта</p>
+        <p className="footer__item">*карта*</p>
       </div>
     </footer>
   );

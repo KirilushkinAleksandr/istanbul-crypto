@@ -4,5 +4,8 @@
   "faq": "SSS",
   "about us": "HAKKIMIZDA",
   "contact": "İLETİŞİM",
-  "gold": "ALTIN"
+  "gold": {
+    "title":"ALTIN",
+    "text":"Güncel altın fiyatlarımız üzerinden dilediğiniz altın alım-satım işlemlerini BJB Exchange üzerinden gerçekleştirebilirsiniz imkanı!"
+  }
 }
