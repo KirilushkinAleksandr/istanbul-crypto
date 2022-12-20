@@ -3,4 +3,18 @@
   width: 100%;
   text-align: center;
   padding-top: 30px;
+  background: url('../../images/gold.webp') round;
+}
+
+.content__section_gold {
+  background: url('../../images/goldd.jpeg') round;
+}
+
+.content__section_crypto {
+  background: url('../../images/crypto.jpg') round;
+}
+
+
+.content__section_coins {
+  background: url('../../images/coins.jpg') round;
 }
