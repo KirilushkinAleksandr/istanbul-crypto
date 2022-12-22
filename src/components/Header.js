@@ -4,8 +4,9 @@ import { useTranslation } from "react-i18next";
 function Header() {
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+  const onChangeLanguage = (e) => {
+    const lang = e.target.value.toLowerCase();
+    i18n.changeLanguage(lang);
   };
 
   return (
@@ -16,15 +17,11 @@ function Header() {
         <li className="header__menu-item">{t('faq')}</li>
         <li className="header__menu-item">{t('about us')}</li>
       </ul>
-      <button type="button" className="header__button" onClick={() => changeLanguage('en')}>
-        EN
-      </button>
-      <button type="button" className="header__button" onClick={() => changeLanguage('tr')}>
-        TR
-      </button>
-      <button type="button" className="header__button" onClick={() => changeLanguage('ru')}>
-        RU
-      </button>
+      <select onChange={e => onChangeLanguage(e)}>
+        <option defaultChecked>EN</option>
+        <option>TR</option>
+        <option>RU</option>
+      </select>
     </header>
   );
 }
