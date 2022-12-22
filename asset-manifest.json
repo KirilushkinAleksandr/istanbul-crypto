@@ -1,7 +1,7 @@
 {
   "main.css": "/istanbul-crypto/static/css/main.103c7d95.chunk.css",
-  "main.js": "/istanbul-crypto/static/js/main.3dcf76d7.chunk.js",
-  "main.js.map": "/istanbul-crypto/static/js/main.3dcf76d7.chunk.js.map",
+  "main.js": "/istanbul-crypto/static/js/main.7f42dffc.chunk.js",
+  "main.js.map": "/istanbul-crypto/static/js/main.7f42dffc.chunk.js.map",
   "static/js/1.093ecf0b.chunk.js": "/istanbul-crypto/static/js/1.093ecf0b.chunk.js",
   "static/js/1.093ecf0b.chunk.js.map": "/istanbul-crypto/static/js/1.093ecf0b.chunk.js.map",
   "static/js/2.a74a7dd3.chunk.js": "/istanbul-crypto/static/js/2.a74a7dd3.chunk.js",
@@ -11,6 +11,6 @@
   "static/media/index.css": "/istanbul-crypto/static/media/goldd.949d2810.jpeg",
   "static/css/main.103c7d95.chunk.css.map": "/istanbul-crypto/static/css/main.103c7d95.chunk.css.map",
   "index.html": "/istanbul-crypto/index.html",
-  "precache-manifest.544978fd27c86ed067b44a23575db99e.js": "/istanbul-crypto/precache-manifest.544978fd27c86ed067b44a23575db99e.js",
+  "precache-manifest.0d0f0278a6ace5c87a92ed037df42320.js": "/istanbul-crypto/precache-manifest.0d0f0278a6ace5c87a92ed037df42320.js",
   "service-worker.js": "/istanbul-crypto/service-worker.js"
 }

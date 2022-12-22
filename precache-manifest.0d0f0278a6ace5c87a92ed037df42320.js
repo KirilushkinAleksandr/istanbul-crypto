@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3dcf76d7f55002351fbe",
+    "revision": "7f42dffc281167419858",
     "url": "/istanbul-crypto/static/css/main.103c7d95.chunk.css"
   },
   {
-    "revision": "3dcf76d7f55002351fbe",
-    "url": "/istanbul-crypto/static/js/main.3dcf76d7.chunk.js"
+    "revision": "7f42dffc281167419858",
+    "url": "/istanbul-crypto/static/js/main.7f42dffc.chunk.js"
   },
   {
     "revision": "093ecf0bec58628b4322",
@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/istanbul-crypto/static/media/Inter-Regular.d22a0d66.woff2"
   },
   {
-    "revision": "027d14e7d35bfa1b9c2eb0a92a69c103",
-    "url": "/istanbul-crypto/static/media/Inter-Medium.027d14e7.woff2"
+    "revision": "d1f6b6e94d708080f08d1325bbc3835e",
+    "url": "/istanbul-crypto/static/media/Inter-Medium.d1f6b6e9.woff"
   },
   {
     "revision": "4d127124f941ebf54a749cf9ab10e545",
     "url": "/istanbul-crypto/static/media/Inter-Regular.4d127124.woff"
   },
   {
-    "revision": "d1f6b6e94d708080f08d1325bbc3835e",
-    "url": "/istanbul-crypto/static/media/Inter-Medium.d1f6b6e9.woff"
+    "revision": "027d14e7d35bfa1b9c2eb0a92a69c103",
+    "url": "/istanbul-crypto/static/media/Inter-Medium.027d14e7.woff2"
   },
   {
     "revision": "49c59986c2a8f1a08a4002b17e2dc62d",
@@ -48,12 +48,12 @@ self.__precacheManifest = [
     "url": "/istanbul-crypto/static/media/gold.cab5bb45.webp"
   },
   {
-    "revision": "511e050aa0fc8e16264add6286394425",
-    "url": "/istanbul-crypto/static/media/logo.511e050a.png"
-  },
-  {
     "revision": "23cfb4ee3d4b32ca48006e37d9c3e2ce",
     "url": "/istanbul-crypto/static/media/coins.23cfb4ee.jpg"
+  },
+  {
+    "revision": "511e050aa0fc8e16264add6286394425",
+    "url": "/istanbul-crypto/static/media/logo.511e050a.png"
   },
   {
     "revision": "0822e32c6ae320dcf6a23a7c4fc626b5",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/istanbul-crypto/static/media/goldd.949d2810.jpeg"
   },
   {
-    "revision": "32a755b84cd2f41e61dbfa48048a2f96",
+    "revision": "8482d34d582d966cf47b4ef2fc2c6a55",
     "url": "/istanbul-crypto/index.html"
   }
 ];
