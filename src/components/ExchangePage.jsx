@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import rates from "../exchange-rates.json";
 
 function ExchangePage() {
   const [fromAmount, setFromAmount] = useState(0);
@@ -12,19 +13,17 @@ function ExchangePage() {
   const inputRef = useRef(null);
   const { t } = useTranslation();
 
-  const sell = 0.1;
-  const buy = 10;
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const amount = inputRef.current.value;
+    console.log(rates)
     if (fromCurrency === "TRY") {
       setFromAmount(amount);
-      setToAmount(amount * sell);
+      setToAmount((amount / rates.buy[toCurrency]).toFixed(2));
       setIsResShown(true);
     } else if (toCurrency === "TRY") {
       setFromAmount(amount);
-      setToAmount(amount * buy);
+      setToAmount((amount * rates.sell[fromCurrency]).toFixed(2));
       setIsResShown(true);
     }
   };
@@ -39,6 +38,7 @@ function ExchangePage() {
 
   const handleToChange = (e) => {
     setIsResShown(false);
+    console.log(e.target)
     if (e.target.value !== "TRY") {
       setFromCurrency("TRY");
       setToCurrency(e.target.value);
@@ -63,10 +63,10 @@ function ExchangePage() {
                 onChange={(e) => handleFromChange(e)}
                 value={fromCurrency}
               >
-                <option defaultValue>USD</option>
-                <option>RUB</option>
-                <option>EUR</option>
-                <option>TRY</option>
+                <option value="USD" defaultValue>USD</option>
+                <option value="RUB">RUB</option>
+                <option value="EUR">EUR</option>
+                <option value="TRY">TRY</option>
               </select>
             </div>
             <div className="form__select-group flex flex-column">
@@ -76,10 +76,10 @@ function ExchangePage() {
                 onChange={(e) => handleToChange(e)}
                 value={toCurrency}
               >
-                <option>USD</option>
-                <option>RUB</option>
-                <option>EUR</option>
-                <option defaultValue>TRY</option>
+                <option value="USD">USD</option>
+                <option value="RUB">RUB</option>
+                <option value="EUR">EUR</option>
+                <option value="TRY" defaultValue>TRY</option>
               </select>
             </div>
           </div>
