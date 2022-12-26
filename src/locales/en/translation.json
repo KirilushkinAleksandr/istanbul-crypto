@@ -5,6 +5,23 @@
   "about us": "ABOUT US",
   "gold": {
     "title": "GOLD",
-    "text": "Buy and sell any gold types we offer from the most advantageous prices at BJB Exchange!"
+    "main text": "Buy and sell any gold types we offer from the most advantageous prices at BJB Exchange!"
+  },
+  "home page": {
+    "currencies": "A wide range of currencies available. Total transparency in your transaction: Our price monitors at our branches will show you our exchange rates. These prices are updated daily. Excellence in Customer Service.Our branches at Istanbul are open all year round in a wide time frame.Your banknotes are recorded by our video cameras to offer you the best security.If you are not happy with your transaction you have rights to return your purchase.Best exchange rate guaranteed.",
+    "crypto": "Buy and sell cryptocurrencies with cash. Instantly, easy and safely. Low commissions. High limits. Exchange offices. In just a few steps, you can safely invest in crypto money and easily sell it whenever you want.",
+    "contacts": "You can find the contact and transportation information of our exchange offices located in Istanbul on this page."
+  },
+  "faq": {
+    "q-1": "Is it legal to exchange cryptocurrencies in Turkey?",
+    "a-1": "Yes, it is legal to buy, sell or trade your crypto money as long as crypto money is not used to pay goods or services.",
+    "q-2": "Do you accept debit cards or bank transfers or any form of online payment?",
+    "a-2": "No, we only work in cash and in person at our offices.",
+    "q-3": "What types of ID documents should I have to be able to make an exchange?",
+    "a-3": "You need to provide a valid passport or a European national ID or a Turkish ID or a new generation Turkish Driver’s license.",
+    "q-4": "Why do I need an ID?",
+    "a-4": "Since March 2021, we are under the obligation to process customer identity verification as determined by Turkish legislation. This is aimed at fighting financial crime and illegal activities.",
+    "q-5": "Which cryptocurrencies can I buy or sell at BJB Exchange?",
+    "a-5": "You can buy or sell any crypto that is available on Binance. Please contact the office branch you wish to make the transaction at."
   }
 }

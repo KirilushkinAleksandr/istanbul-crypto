@@ -18,7 +18,7 @@ function Header() {
         <li className="header__menu-item">{t('about us')}</li>
       </ul>
       <select onChange={e => onChangeLanguage(e)}>
-        <option defaultChecked>EN</option>
+        <option defaultValue>EN</option>
         <option>TR</option>
         <option>RU</option>
       </select>

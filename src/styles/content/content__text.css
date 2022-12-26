@@ -1,5 +1,6 @@
 .content__text {
-  display: flex;
-  flex-direction: column;
-  height: 100px;
+}
+
+.content__text_hidden {
+  display: none;
 }
