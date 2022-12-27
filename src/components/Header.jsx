@@ -7,7 +7,7 @@ function Header() {
   const [selected, setSelected] = useState("US");
 
   useEffect(() => {
-    i18n.changeLanguage(selected.toLowerCase());
+    i18n.changeLanguage(selected === "US" ? "en" : selected.toLowerCase());
   }, [selected])
 
   return (
@@ -15,8 +15,8 @@ function Header() {
       <a className="header__logo" href="/" />
       <ul className="header__menu">
         <li className="header__menu-item">{t('title')}</li>
-        <li className="header__menu-item">{t('faq')}</li>
-        <li className="header__menu-item">{t('about us')}</li>
+        <li className="header__menu-item">{t('faq.title-short')}</li>
+        <li className="header__menu-item">{t('about-us.title')}</li>
       </ul>
       <ReactFlagsSelect
         className="header_lang"

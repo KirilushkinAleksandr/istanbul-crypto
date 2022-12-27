@@ -10,6 +10,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* BrowserRouter doesn't work for gh-pages */}
     <HashRouter>
       <App />
     </HashRouter>

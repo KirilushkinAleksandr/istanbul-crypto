@@ -1,11 +1,36 @@
 {
-  "i18n-btn": "TR",
   "title": "HOŞGELDİNİZ",
-  "faq": "SSS",
-  "about us": "HAKKIMIZDA",
-  "contact": "İLETİŞİM",
-  "gold": {
-    "title":"ALTIN",
-    "text":"Güncel altın fiyatlarımız üzerinden dilediğiniz altın alım-satım işlemlerini BJB Exchange üzerinden gerçekleştirebilirsiniz imkanı!"
-  }
+  "home-page": {
+    "currencies-title": "Döviz değişimi",
+    "currencies": "Çok çeşitli para birimleri mevcuttur. Tamamen şeffaf işlem: Şubelerimizdeki fiyat ekranlarımızdan döviz kurlarımızı görüntüleyebileceksiniz. Bu fiyatlar günlük olarak güncellenmektedir. Müşteri Hizmetlerinde Mükemmellik. İstanbul şubelerimiz geniş bir zaman dilimi içerisinde tüm yıl boyunca açıktır. En iyi güvenliği sunmak için banknotlarınız video kameralarımız tarafından kaydedilir. İşleminizden memnun değilseniz, satın alma işleminizi iade etmek için vardır. İyi döviz kuru garantisi.",
+    "crypto-title": "KRİPTO PARA BİRİMLERİ",
+    "crypto": "Fisiksel kripto. Para salim-atim burosu. Aninda, hizli ve guvenli. Dusuk kommisyonlar. Yuksek Limitler. Yalnızca birkaç adımda, güvenle kripto para yatırımı yapabilir, dilediğiniz zaman kolayca satabilirsiniz.",
+    "contacts": "İstanbul’da yer alan döviz büromuza ait iletişim ve ulaşım bilgilerine bu sayfadan ulaşabilirsiniz."
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "title-short": "SSS",
+    "q-1": "Kripto para bozdurmak Türkiye’de yasal mı?",
+    "a-1": "Evet, Türkiye’de kripto para alabilir, satabilir ya da işleyebilirsiniz. Ancak kripto para ile mal ve hizmet satın alamazsınız.",
+    "q-2": "Banka kartı, kredi kartı ya da herhangi bir çevrimiçi ödeme şekli kabul ediyor musunuz?",
+    "a-2": "Hayır, sadece nakitle ve bizzat şubelerimizden çalışıyoruz.",
+    "q-3": "Bozdurma işlemi için ne gibi kimlik belgelerine ihtiyacım var?",
+    "a-3": "Geçerli bir pasaport, Avrupa Birliği vatandaşlık kimliği, TC nüfus cüzdanı veya yeni nesil Türk sürücü belgesi ile işlemlerinizi gerçekleştirebilirsiniz.",
+    "q-4": "Neden geçerli bir kimlik ibraz etmek zorundayım?",
+    "a-4": "Mart 2021 tarihinden itibaren Türk kanunları gereğince yapılan her türlü işlem için müşteri kimlik doğrulaması yapma yasal sorumluluğu altındayız. Bu doğrulamanın amacı, malî suçları ve yasadışı etkinlikleri önlemek.",
+    "q-5": "BJB Exchange’de hangi kripto para birimlerini alabilir ya da satabilirim?",
+    "a-5": "Binance’de geçerli olan her türlü kripto parayı alabilir ya da satabilirsiniz. Lütfen işlem yapmak istediğiniz şube ile iletişime geçiniz."
+  },
+  "about-us": {
+    "title": "HAKKIMIZDA",
+    "text": "BJB Exchange kurulduğu yıldan beri güven ve kaliteli hizmet anlayışına sahip çıkmış, işinin merkezine koymuştur. BJB Exchange olarak sektörümüzde en önemli itibarın dürüstlük olduğunu düşünüyoruz. Döviz ve altın sektöründe derin piyasa bilgisine sahip uzman kadromuz ve teknolojik altyapımızla uzun zamandir emsalsiz bir hizmet sunmaktayız. Kuruluşumuzdan bu yana dürüstlük, güvenilirlik ve hizmet kalitesi konusunda bir itibar oluşturduk. Müşteri memnuniyeti bizim için önemlidir ve her bir müşteriyle özenli bir ilişki kurmaya çalışırız. Ödülümüz, müşterilerimizin bizimle tekrar iş yapması ve hizmetlerimizi başkalarına tavsiye etmesidir."
+  },
+  "contact-us": {
+    "title": "BİZE ULAŞIN",
+    "name": "Adınız",
+    "mail": "E-posta adresiniz",
+    "text": "Sizin sorunuz",
+    "btn": "Mesaj gönder"
+  },
+  "address": "Adres"
 }
