@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import Address from "./Address";
 
 function MainPage() {
   const { t } = useTranslation();
@@ -97,6 +98,7 @@ In just a few steps, you can safely invest in crypto money and easily sell it wh
           again and recommend our services to others.
         </div>
       </section>
+      <Address />
       <section className="content__section flex flex-center">
         <form
           className="content__text form flex flex-column flex-align-center"
