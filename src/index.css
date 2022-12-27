@@ -5,10 +5,6 @@
 @import url(./styles/flex/flex.css);
 
 @import url(./styles/header/header.css);
-@import url(./styles/header/header__logo.css);
-@import url(./styles/header/header__menu.css);
-@import url(./styles/header/header__menu-item.css);
-@import url(./styles/header/header__button.css);
 
 @import url(./styles/content/content.css);
 
