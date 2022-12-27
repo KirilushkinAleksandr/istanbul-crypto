@@ -50,14 +50,6 @@
   cursor: pointer;
 }
 
-.header__lang_en::before {
-  content: url("../../images/flag-USA.png");
-}
-.hader__lang_tr::before {
-  content: url("../../images/flag-TR.png");
-  
-}
-.header__lang_ru::before {
-  content: url("../../images/flag-RUS.png");
-
+ul[role="listbox"] {
+  color: #000;
 }
