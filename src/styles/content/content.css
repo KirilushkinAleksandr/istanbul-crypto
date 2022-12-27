@@ -51,3 +51,24 @@
   color: white;
 }
 
+.table {
+  line-height: 25px;
+  width: 100%;
+}
+
+.table__row {
+  width: 100%;
+}
+
+.table__item {
+  border: solid 1px;
+  width: 100%;
+}
+
+.table .form {
+  width: auto;
+}
+
+.rates {
+  width: 100%;
+}

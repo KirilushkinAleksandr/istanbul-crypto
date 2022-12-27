@@ -58,18 +58,18 @@ function ExchangePage() {
   return (
     <section className="content__section content__section_coins flex flex-column flex-align-center">
       <div className="content__title">rates</div>
-      <div className="flex flex-between">
-        <div className="content__text flex flex-column flex-align-center">
-          <div className="content__text flex flex-between">
-            <div className="content__text">currency</div>
-            <div className="content__text">sell</div>
-            <div className="content__text">buy</div>
+      <div className="rates flex flex-around">
+        <div className="table content__text flex flex-column flex-align-center">
+          <div className="table__row flex flex-between">
+            <div className="table__item">currency</div>
+            <div className="table__item">sell</div>
+            <div className="table__item">buy</div>
           </div>
           {offRates.map((item, index) => (
-            <div className="content__text flex flex-between" key={index}>
-              <div className="content__text">{item.name}</div>
-              <div className="content__text">{item.sell}</div>
-              <div className="content__text">{item.buy}</div>
+            <div className="table__row flex flex-between" key={index}>
+              <div className="table__item">{item.name}</div>
+              <div className="table__item">{item.sell}</div>
+              <div className="table__item">{item.buy}</div>
             </div>
           ))}
         </div>
