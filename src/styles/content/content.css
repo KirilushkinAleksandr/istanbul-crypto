@@ -2,6 +2,7 @@
   margin: 0 auto;
   min-height: 50vh;
   font-family: 'Inter';
+  max-width: 880px;
 }
 
 @media screen and (max-width: 880px) {
@@ -9,3 +10,43 @@
     margin: 0 19px;
   }
 }
+
+.content__section {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  border: 1px solid red;
+}
+
+.content__section_crypto {
+  background: url('../../images/crypto.jpg') round;
+}
+
+.content__section_coins {
+  background: url('../../images/coins.jpg') round;
+}
+
+.content__title {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.content__title_clickable {
+  cursor: pointer;
+}
+
+.content__text {
+  margin: 0 10px;
+}
+
+.content__text_hidden {
+  display: none;
+}
+
+.content__link {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+}
+

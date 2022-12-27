@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import rates from "../exchange-rates.json";
+import rates from "../common/exchange-rates.json";
+import cbRates from "../common/cb-rates.json";
 
 function ExchangePage() {
   const [fromAmount, setFromAmount] = useState(0);
@@ -16,14 +17,15 @@ function ExchangePage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const amount = inputRef.current.value;
-    console.log(rates)
+    const sellRate = rates.sell[fromCurrency] || 0;
+    const buyRate = rates.buy[toCurrency] || 0;
     if (fromCurrency === "TRY") {
       setFromAmount(amount);
-      setToAmount((amount / rates.buy[toCurrency]).toFixed(2));
+      setToAmount((amount / buyRate).toFixed(2));
       setIsResShown(true);
     } else if (toCurrency === "TRY") {
       setFromAmount(amount);
-      setToAmount((amount * rates.sell[fromCurrency]).toFixed(2));
+      setToAmount((amount * sellRate).toFixed(2));
       setIsResShown(true);
     }
   };
@@ -38,70 +40,96 @@ function ExchangePage() {
 
   const handleToChange = (e) => {
     setIsResShown(false);
-    console.log(e.target)
     if (e.target.value !== "TRY") {
       setFromCurrency("TRY");
       setToCurrency(e.target.value);
     }
   };
 
+  const offRates = [];
+  for (const key in cbRates) {
+    offRates.push({
+      name: key,
+      ...cbRates[key],
+    });
+  }
+
   const res = `${fromAmount} ${fromCurrency} = ${toAmount} ${toCurrency}`;
   return (
-    <section className="content__section content__section_coins flex flex-column flex-center">
-      <div className="content__title">currencies</div>
-      <div>rates</div>
-      <div className="content__text form flex flex-column flex-center">
-        <form
-          className="form__content flex flex-column flex-center"
-          onSubmit={(e) => handleSubmit(e)}
-        >
-          <div className="form__select-container flex">
-            <div className="form__select-group flex flex-column">
-              <label>from</label>
-              <select
-                className="form__select"
-                onChange={(e) => handleFromChange(e)}
-                value={fromCurrency}
-              >
-                <option value="USD" defaultValue>USD</option>
-                <option value="RUB">RUB</option>
-                <option value="EUR">EUR</option>
-                <option value="TRY">TRY</option>
-              </select>
-            </div>
-            <div className="form__select-group flex flex-column">
-              <label>to</label>
-              <select
-                className="form__select flex flex-center"
-                onChange={(e) => handleToChange(e)}
-                value={toCurrency}
-              >
-                <option value="USD">USD</option>
-                <option value="RUB">RUB</option>
-                <option value="EUR">EUR</option>
-                <option value="TRY" defaultValue>TRY</option>
-              </select>
-            </div>
+    <section className="content__section content__section_coins flex flex-column flex-align-center">
+      <div className="content__title">rates</div>
+      <div className="flex flex-between">
+        <div className="content__text flex flex-column flex-align-center">
+          <div className="content__text flex flex-between">
+            <div className="content__text">currency</div>
+            <div className="content__text">sell</div>
+            <div className="content__text">buy</div>
           </div>
-          <input
-            className="form__input"
-            type="number"
-            ref={inputRef}
-            min={1}
-            placeholder="amount"
-            required
-            onChange={() => setIsResShown(false)}
-          />
-          <button className="form__btn">get rate</button>
-        </form>
-        <div
-          className={`content__text ${!isResShown &&
-            "content__text_hidden"} flex flex-column flex-center`}
-        >
-          {res}
+          {offRates.map((item, index) => (
+            <div className="content__text flex flex-between" key={index}>
+              <div className="content__text">{item.name}</div>
+              <div className="content__text">{item.sell}</div>
+              <div className="content__text">{item.buy}</div>
+            </div>
+          ))}
+        </div>
+        <div className="content__text form flex flex-column flex-align-center">
+          <form
+            className="form__content flex flex-column flex-align-center"
+            onSubmit={(e) => handleSubmit(e)}
+          >
+            <div className="form__select-container flex">
+              <div className="form__select-group flex flex-column">
+                <label>from</label>
+                <select
+                  className="form__select"
+                  onChange={(e) => handleFromChange(e)}
+                  value={fromCurrency}
+                >
+                  <option value="USD" defaultValue>
+                    USD
+                  </option>
+                  <option value="RUB">RUB</option>
+                  <option value="EUR">EUR</option>
+                  <option value="TRY">TRY</option>
+                </select>
+              </div>
+              <div className="form__select-group flex flex-column">
+                <label>to</label>
+                <select
+                  className="form__select flex flex-align-center"
+                  onChange={(e) => handleToChange(e)}
+                  value={toCurrency}
+                >
+                  <option value="USD">USD</option>
+                  <option value="RUB">RUB</option>
+                  <option value="EUR">EUR</option>
+                  <option value="TRY" defaultValue>
+                    TRY
+                  </option>
+                </select>
+              </div>
+            </div>
+            <input
+              className="form__input"
+              type="number"
+              ref={inputRef}
+              min={1}
+              placeholder="amount"
+              required
+              onChange={() => setIsResShown(false)}
+            />
+            <button className="form__btn">get rate</button>
+          </form>
+          <div
+            className={`content__text ${!isResShown &&
+              "content__text_hidden"} flex flex-column flex-align-center`}
+          >
+            {res}
+          </div>
         </div>
       </div>
-      <Link to="/" className="content__text flex flex-column flex-center">
+      <Link to="/" className="content__text flex flex-column flex-align-center">
         back
       </Link>
     </section>

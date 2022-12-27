@@ -18,7 +18,7 @@ function App() {
           <Route path="/exchange-currency" element={
             <ExchangePage />
           } />
-          <Route path="*" element={<div>404 not found</div>} />
+          <Route path="*" element={<div className="flex flex-center">404 not found</div>} />
         </Routes>
       </main>
       <Footer />
