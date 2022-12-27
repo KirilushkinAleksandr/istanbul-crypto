@@ -1,18 +1,15 @@
 {
-  "i18n-btn": "ENG",
   "title": "WELCOME",
-  "faq": "FAQ",
-  "about us": "ABOUT US",
-  "gold": {
-    "title": "GOLD",
-    "main text": "Buy and sell any gold types we offer from the most advantageous prices at BJB Exchange!"
-  },
-  "home page": {
+  "home-page": {
+    "currencies-title": "Currency exchange",
     "currencies": "A wide range of currencies available. Total transparency in your transaction: Our price monitors at our branches will show you our exchange rates. These prices are updated daily. Excellence in Customer Service.Our branches at Istanbul are open all year round in a wide time frame.Your banknotes are recorded by our video cameras to offer you the best security.If you are not happy with your transaction you have rights to return your purchase.Best exchange rate guaranteed.",
+    "crypto-title": "CRYPTO CURRENCIES",
     "crypto": "Buy and sell cryptocurrencies with cash. Instantly, easy and safely. Low commissions. High limits. Exchange offices. In just a few steps, you can safely invest in crypto money and easily sell it whenever you want.",
     "contacts": "You can find the contact and transportation information of our exchange offices located in Istanbul on this page."
   },
   "faq": {
+    "title": "Frequently Asked Questions",
+    "title-short": "FAQ",
     "q-1": "Is it legal to exchange cryptocurrencies in Turkey?",
     "a-1": "Yes, it is legal to buy, sell or trade your crypto money as long as crypto money is not used to pay goods or services.",
     "q-2": "Do you accept debit cards or bank transfers or any form of online payment?",
@@ -23,5 +20,17 @@
     "a-4": "Since March 2021, we are under the obligation to process customer identity verification as determined by Turkish legislation. This is aimed at fighting financial crime and illegal activities.",
     "q-5": "Which cryptocurrencies can I buy or sell at BJB Exchange?",
     "a-5": "You can buy or sell any crypto that is available on Binance. Please contact the office branch you wish to make the transaction at."
-  }
+  },
+  "about-us": {
+    "title": "ABOUT US",
+    "text": "BJB Exchange has embraced the concept of trust and quality service since its establishment and put it at the center of its business. As BJB Exchange, we think that the most important component for our reputation in our sector is honesty. For a long time, we have had the professional expertise, in-depth market knowledge, technological infrastructure and commitment to provide you with an unmatched level of service that sets the standard in the foreign currency exchange industry. Over the years we have built a reputation for honesty, reliability and quality of service. Each customer is important to us and we try to establish a mutually beneficial relationship with each one of them. Our reward is when our customers do business with us again and recommend our services to others."
+  },
+  "contact-us": {
+    "title": "CONTACT US",
+    "name": "Your name",
+    "mail": "Your e-mail",
+    "text": "Your question",
+    "btn": "Send message"
+  },
+  "address": "Аddress"
 }

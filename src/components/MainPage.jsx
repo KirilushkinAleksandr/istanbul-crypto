@@ -29,8 +29,9 @@ function MainPage() {
   return (
     <>
       <section className="content__section content__section_coins flex flex-column flex-align-center">
-        <div className="content__title">main</div>
-        
+        <div className="content__title">{t("home-page.currencies-title")}</div>
+        <div className="content__text">{t("home-page.currencies")}</div>
+
         <div className="content__text flex flex-between">
           <div className="content__text">USD</div>
           <div className="content__text">EUR</div>
@@ -38,65 +39,33 @@ function MainPage() {
         </div>
       </section>
       <section className="content__section content__section_crypto">
-        <div className="content__title">cryptos</div>
-        <div className="content__text">
-        Buy and sell cryptocurrencies with cash. Instantly, easily and safely.
-Low commissions. High limits. Exchange offices.
-In just a few steps, you can safely invest in crypto money and easily sell it whenever you want. 
-        </div>
-        <div className="content__text">
-        You can find the contact and transportation information of our exchange offices located in Istanbul on this page.
-        </div>
+        <div className="content__title">{t("home-page.crypto-title")}</div>
+        <div className="content__text">{t("home-page.crypto")}</div>
+        <div className="content__text">{t("home-page.contacts")}</div>
       </section>
       <section className="content__section flex flex-column flex-center">
         <div
           className="content__title content__title_clickable"
           onClick={() => switchShowFAQ()}
         >
-          Frequently Asked Questions
+          {t("faq.title")}
         </div>
         <div className={`${showFAQclass}`} ref={faqRef}>
-          <div className="content__text">q</div>
-          <div className="content__text">a</div>
-          <div className="content__text">q</div>
-          <div className="content__text">a</div>
-          <div className="content__text">q</div>
-          <div className="content__text">a</div>
-          <div className="content__text">q</div>
-          <div className="content__text">a</div>
-          <div className="content__text">q</div>
-          <div className="content__text">a</div>
+          <div className="content__text">{t("faq.q-1")}</div>
+          <div className="content__text">{t("faq.a-1")}</div>
+          <div className="content__text">{t("faq.q-2")}</div>
+          <div className="content__text">{t("faq.a-2")}</div>
+          <div className="content__text">{t("faq.q-3")}</div>
+          <div className="content__text">{t("faq.a-3")}</div>
+          <div className="content__text">{t("faq.q-4")}</div>
+          <div className="content__text">{t("faq.a-4")}</div>
+          <div className="content__text">{t("faq.q-5")}</div>
+          <div className="content__text">{t("faq.a-5")}</div>
         </div>
       </section>
       <section className="content__section">
-        <div className="content__title">about us</div>
-        <div className="content__text">
-          BJB Exchange has embraced the concept of trust and quality service
-          since its establishment and put it at the center of its business. As
-          BJB Exchange, we think that the most important component for our
-          reputation in our sector is honesty. For a long time, we have had the
-          professional expertise, in-depth market knowledge, technological
-          infrastructure and commitment to provide you with an unmatched level
-          of service that sets the standard in the foreign currency exchange
-          industry. Over the years we have built a reputation for honesty,
-          reliability and quality of service. Each customer is important to us
-          and we try to establish a mutually beneficial relationship with each
-          one of them. Our reward is when our customers do business with us
-          again and recommend our services to others.
-        </div>
-        <div className="content__text">
-          BJB Exchange has embraced the concept of trust and quality service
-          since its establishment and put it at the center of its business. As
-          BJB Exchange, we think that the most important component for our
-          reputation in our sector is honesty. For a long time, we have had the
-          professional expertise, in-depth market knowledge, technological
-          infrastructure and commitment to provide you with an unmatched level
-          of service that sets the standard in the foreign currency exchange
-          industry. Over the years we have built a reputation for honesty,
-          reliability and quality of service. Each customer is important to us
-          and we try to establish a mutually beneficial relationship with each
-          one of them. Our reward is when our customers do business with us
-          again and recommend our services to others.
+        <div className="content__title">{t("about-us.title")}</div>
+        <div className="content__text">{t("about-us.text")}
         </div>
       </section>
       <Address />
@@ -105,30 +74,30 @@ In just a few steps, you can safely invest in crypto money and easily sell it wh
           className="content__text form flex flex-column flex-align-center"
           onSubmit={(e) => handleSubmit(e)}
         >
-          <div className="content__title">CONTACT US</div>
+          <div className="content__title">{t("contact-us.title")}</div>
           <input
             className="content__text form__input"
             type="text"
-            placeholder="Your name"
+            placeholder={t("contact-us.name")}
             required
             ref={nameRef}
           />
           <input
             className="content__text form__input"
             type="email"
-            placeholder="Your email"
+            placeholder={t("contact-us.mail")}
             required
             ref={emailRef}
           />
           <input
             className="content__text form__input"
             type="text"
-            placeholder="Your question"
+            placeholder={t("contact-us.text")}
             required
             ref={msgRef}
           />
           <button className="form__btn form__btn_half-width">
-            send message
+            {t("contact-us.btn")}
           </button>
         </form>
       </section>
