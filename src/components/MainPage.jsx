@@ -30,7 +30,7 @@ function MainPage() {
         <div className="content__text flex flex-between">
           <div className="content__text">USD</div>
           <div className="content__text">EUR</div>
-          <Link to="exchange-currency">exchange currency</Link>
+          <Link to="currency-rates">{t("home-page.currencies-link")}</Link>
         </div>
       </section>
       <section className="content__section content__section_crypto">
@@ -38,7 +38,7 @@ function MainPage() {
         <div className="content__text">{t("home-page.crypto")}</div>
         <div className="content__text">{t("home-page.contacts")}</div>
       </section>
-      <section className="content__section flex flex-column flex-center">
+      <section className="content__section flex flex-column flex-center" id="faq">
         <div
           className="content__title content__title_clickable"
           onClick={() => switchShowFAQ()}
@@ -58,7 +58,7 @@ function MainPage() {
           <div className="content__text">{t("faq.a-5")}</div>
         </div>
       </section>
-      <section className="content__section">
+      <section className="content__section" id="about-us">
         <div className="content__title">{t("about-us.title")}</div>
         <div className="content__text text__center" dangerouslySetInnerHTML={{__html: t("about-us.text")}}></div>
       </section>

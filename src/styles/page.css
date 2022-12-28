@@ -1,5 +1,5 @@
 .page {
-  font-family: Arial;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   background: rgb(11, 14, 17);
   color: rgb(234, 236, 239);
   margin: 0 auto;
@@ -20,6 +20,18 @@
 
 a:hover {
   color: rgb(255, 255, 255);
+}
+
+.page__link {
+  position: fixed;
+  top: 90vh;
+  right: 2vw;
+  width: 30px;
+  height: 30px;
+  fill:#1c93e3;
+  background-color: #FFF;
+  border: 1px solid;
+  border-radius: 15px;
 }
 
 * {

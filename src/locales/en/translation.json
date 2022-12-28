@@ -1,6 +1,7 @@
 {
-  "title": "WELCOME",
   "home-page": {
+    "title": "WELCOME",
+    "converter": "Currency Converter",
     "currencies-title": "Currency exchange",
     "currencies": {
       "1": "A wide range of currencies available",
@@ -11,6 +12,7 @@
       "6": "If you are not happy with your transaction you have rights to return your purchase",
       "7": "Best exchange rate guaranteed"
     },
+    "currencies-link": "Other currencies",
     "crypto-title": "CRYPTO CURRENCIES",
     "crypto": "Buy and sell cryptocurrencies with cash. Instantly, easy and safely. Low commissions. High limits. Exchange offices. In just a few steps, you can safely invest in crypto money and easily sell it whenever you want.",
     "contacts": "You can find the contact and transportation information of our exchange offices located in Istanbul on this page."
