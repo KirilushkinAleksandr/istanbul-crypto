@@ -14,7 +14,6 @@
 .content__section {
   margin: 0 auto;
   width: 100%;
-  text-align: center;
   padding-top: 30px;
   border: 1px solid red;
 }
@@ -31,10 +30,21 @@
   font-size: 20px;
   padding: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .content__title_clickable {
   cursor: pointer;
+}
+
+.content__title_clickable:hover {
+  cursor: pointer;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.content__title_dark {
+  color: #111;
 }
 
 .content__text {
@@ -48,7 +58,7 @@
 .content__link {
   text-decoration: none;
   background-color: transparent;
-  color: white;
+  color: #FFF;
 }
 
 .table {
@@ -71,4 +81,12 @@
 
 .rates {
   width: 100%;
+}
+
+.content__item {
+  font-size: large;
+}
+
+.text__center {
+  text-align: center;
 }

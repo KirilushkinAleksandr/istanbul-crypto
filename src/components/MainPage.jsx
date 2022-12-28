@@ -29,7 +29,16 @@ function MainPage() {
     <>
       <section className="content__section content__section_coins flex flex-column flex-align-center">
         <div className="content__title">{t("home-page.currencies-title")}</div>
-        <div className="content__text">{t("home-page.currencies")}</div>
+        <ul>
+          <li className="content__item">{t("home-page.currencies.1")}</li>
+          <li className="content__item">{t("home-page.currencies.2")}</li>
+          <li className="content__item">{t("home-page.currencies.3")}</li>
+          <li className="content__item">{t("home-page.currencies.4")}</li>
+          <li className="content__item">{t("home-page.currencies.5")}</li>
+          <li className="content__item">{t("home-page.currencies.6")}</li>
+          <li className="content__item">{t("home-page.currencies.7")}</li>
+        </ul>
+
 
         <div className="content__text flex flex-between">
           <div className="content__text">USD</div>
@@ -64,8 +73,7 @@ function MainPage() {
       </section>
       <section className="content__section">
         <div className="content__title">{t("about-us.title")}</div>
-        <div className="content__text">{t("about-us.text")}
-        </div>
+        <div className="content__text text__center" dangerouslySetInnerHTML={{__html: t("about-us.text")}}></div>
       </section>
       <Address />
       <section className="content__section flex flex-center">
@@ -73,7 +81,7 @@ function MainPage() {
           className="content__text form flex flex-column flex-align-center"
           onSubmit={(e) => handleSubmit(e)}
         >
-          <div className="content__title">{t("contact-us.title")}</div>
+          <div className="content__title content__title_dark">{t("contact-us.title")}</div>
           <input
             className="content__text form__input"
             type="text"
