@@ -1,6 +1,7 @@
 {
-  "title": "HOŞGELDİNİZ",
   "home-page": {
+    "title": "HOŞGELDİNİZ",
+    "converter": "Kur Hesaplama",
     "currencies-title": "Döviz değişimi",
     "currencies": {
       "1": "Çok çeşitli para birimleri mevcuttur",
@@ -11,6 +12,7 @@
       "6": "İşleminizden memnun değilseniz, satın alma işleminizi iade etmek için vardır",
       "7": "İyi döviz kuru garantisi"
     },
+    "currencies-link": "Diğer kurlar",
     "crypto-title": "KRİPTO PARA BİRİMLERİ",
     "crypto": "Fisiksel kripto. Para salim-atim burosu. Aninda, hizli ve guvenli. Dusuk kommisyonlar. Yuksek Limitler. Yalnızca birkaç adımda, güvenle kripto para yatırımı yapabilir, dilediğiniz zaman kolayca satabilirsiniz.",
     "contacts": "İstanbul’da yer alan döviz büromuza ait iletişim ve ulaşım bilgilerine bu sayfadan ulaşabilirsiniz."
