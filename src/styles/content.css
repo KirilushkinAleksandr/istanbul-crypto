@@ -15,15 +15,14 @@
   margin: 0 auto;
   width: 100%;
   padding-top: 30px;
-  border: 1px solid red;
 }
 
 .content__section_crypto {
-  background: url('../../images/crypto.jpg') round;
+  background: url('../images/crypto.jpg') round;
 }
 
 .content__section_coins {
-  background: url('../../images/coins.jpg') round;
+  background: url('../images/coins.jpg') round;
 }
 
 .content__title {
