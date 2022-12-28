@@ -15,7 +15,7 @@
 
 .header__logo {
   display: block;
-  background: url(../../images/logo.png) no-repeat;
+  background: url('../images/logo.png') no-repeat;
   background-size: 150px;
   max-width: 130px;
   margin-left: 8px;
