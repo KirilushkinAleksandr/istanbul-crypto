@@ -25,7 +25,7 @@ function ContactUs() {
           className="content__text form flex flex-column flex-align-center"
           onSubmit={(e) => handleSubmit(e)}
         >
-          <div className="content__title">{t("contact-us.title")}</div>
+          <div className="content__title black">{t("contact-us.title")}</div>
           <input
             className="content__text form__input"
             type="text"

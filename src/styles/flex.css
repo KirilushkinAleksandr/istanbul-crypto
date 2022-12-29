@@ -25,7 +25,3 @@
 .flex-wrap {  
   flex-wrap: wrap;
 }
-
-.flex-center {
-  justify-content: center;
-}

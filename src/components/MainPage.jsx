@@ -12,10 +12,10 @@ function MainPage() {
   const switchShowFAQ = () =>
     faqRef.current && faqRef.current.classList.toggle(showFAQclass);
 
-  const cryptoComponents = []
+  const cryptoComponents = [];
 
   t("home-page.crypto").split(". ").forEach((data) => {
-    cryptoComponents.push(<div className='crypto_item'>{data}</div>)
+    cryptoComponents.push(<div className="crypto__item">{data}</div>)
   });
 
   return (
