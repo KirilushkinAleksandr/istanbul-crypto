@@ -16,3 +16,8 @@
     padding: 48px 19px 36px;
   }
 }
+
+.footer__item {
+  font-size: 19px;
+  line-height: 1.22;
+}

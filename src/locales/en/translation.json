@@ -1,8 +1,18 @@
 {
-  "title": "WELCOME",
   "home-page": {
+    "title": "WELCOME",
+    "converter": "Currency Converter",
     "currencies-title": "Currency exchange",
-    "currencies": "A wide range of currencies available. Total transparency in your transaction: Our price monitors at our branches will show you our exchange rates. These prices are updated daily. Excellence in Customer Service.Our branches at Istanbul are open all year round in a wide time frame.Your banknotes are recorded by our video cameras to offer you the best security.If you are not happy with your transaction you have rights to return your purchase.Best exchange rate guaranteed.",
+    "currencies": {
+      "1": "A wide range of currencies available",
+      "2": "Total transparency in your transaction: Our price monitors at our branches will show you our exchange rates. These prices are updated daily",
+      "3": "Excellence in Customer Service",
+      "4": "Our branches at Istanbul are open all year round in a wide time frame",
+      "5": "Your banknotes are recorded by our video cameras to offer you the best security",
+      "6": "If you are not happy with your transaction you have rights to return your purchase",
+      "7": "Best exchange rate guaranteed"
+    },
+    "currencies-link": "Other currencies",
     "crypto-title": "CRYPTO CURRENCIES",
     "crypto": "Buy and sell cryptocurrencies with cash. Instantly, easy and safely. Low commissions. High limits. Exchange offices. In just a few steps, you can safely invest in crypto money and easily sell it whenever you want.",
     "contacts": "You can find the contact and transportation information of our exchange offices located in Istanbul on this page."
@@ -23,7 +33,7 @@
   },
   "about-us": {
     "title": "ABOUT US",
-    "text": "BJB Exchange has embraced the concept of trust and quality service since its establishment and put it at the center of its business. As BJB Exchange, we think that the most important component for our reputation in our sector is honesty. For a long time, we have had the professional expertise, in-depth market knowledge, technological infrastructure and commitment to provide you with an unmatched level of service that sets the standard in the foreign currency exchange industry. Over the years we have built a reputation for honesty, reliability and quality of service. Each customer is important to us and we try to establish a mutually beneficial relationship with each one of them. Our reward is when our customers do business with us again and recommend our services to others."
+    "text": "BJB Exchange has embraced the concept of trust and quality service since its establishment and put it at the center of its business<br/><br/>As BJB Exchange, we think that the most important component for our reputation in our sector is honesty<br/><br/>For a long time, we have had the professional expertise, in-depth market knowledge, technological infrastructure and commitment to provide you with an unmatched level of service that sets the standard in the foreign currency exchange industry<br/><br/>Over the years we have built a reputation for honesty, reliability and quality of service<br/><br/>Each customer is important to us and we try to establish a mutually beneficial relationship with each one of them<br/><br/>Our reward is when our customers do business with us again and recommend our services to others"
   },
   "contact-us": {
     "title": "CONTACT US",

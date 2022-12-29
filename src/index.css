@@ -1,20 +1,15 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/inter.css);
-@import url(./styles/page/page.css);
 
-@import url(./styles/flex/flex.css);
+@import url(./styles/page.css);
 
-@import url(./styles/header/header.css);
+@import url(./styles/flex.css);
 
-@import url(./styles/content/content.css);
+@import url(./styles/header.css);
 
-@import url(./styles/form/form.css);
+@import url(./styles/content.css);
 
-@import url(./styles/address/address.css);
+@import url(./styles/form.css);
 
-@import url(./styles/footer/footer.css);
-@import url(./styles/footer/footer__group.css);
-@import url(./styles/footer/footer__item.css);
-
-@import url(./styles/address/address.css);
+@import url(./styles/footer.css);
 

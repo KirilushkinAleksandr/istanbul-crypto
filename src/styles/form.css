@@ -46,6 +46,10 @@
   padding: 5px;
 }
 
+.form__btn:hover {
+  background-color: #d7a205;
+}
+
 .form__btn_half-width {
   width: 50%;
 }
