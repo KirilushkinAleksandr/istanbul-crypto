@@ -19,7 +19,7 @@ function Header() {
         <li className="header__menu-item">{t('about-us.title')}</li>
       </ul>
       <ReactFlagsSelect
-        className="header_lang"
+        className="header__lang"
         selected={selected}
         onSelect={(code) => setSelected(code)}
         countries={["US", "TR", "RU"]}

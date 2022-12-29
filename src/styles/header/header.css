@@ -42,6 +42,11 @@
   text-align: center;
 }
 
+.header__menu-item:hover {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
 .header__button {
   width: 30px;
   height: 30px;
@@ -52,4 +57,9 @@
 
 ul[role="listbox"] {
   color: #000;
+}
+
+.header__lang button {
+  color: rgb(234, 236, 239);
+  border: thin solid rgb(154, 153, 153);
 }

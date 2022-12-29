@@ -2,7 +2,15 @@
   "title": "HOŞGELDİNİZ",
   "home-page": {
     "currencies-title": "Döviz değişimi",
-    "currencies": "Çok çeşitli para birimleri mevcuttur. Tamamen şeffaf işlem: Şubelerimizdeki fiyat ekranlarımızdan döviz kurlarımızı görüntüleyebileceksiniz. Bu fiyatlar günlük olarak güncellenmektedir. Müşteri Hizmetlerinde Mükemmellik. İstanbul şubelerimiz geniş bir zaman dilimi içerisinde tüm yıl boyunca açıktır. En iyi güvenliği sunmak için banknotlarınız video kameralarımız tarafından kaydedilir. İşleminizden memnun değilseniz, satın alma işleminizi iade etmek için vardır. İyi döviz kuru garantisi.",
+    "currencies": {
+      "1": "Çok çeşitli para birimleri mevcuttur",
+      "2": "Tamamen şeffaf işlem: Şubelerimizdeki fiyat ekranlarımızdan döviz kurlarımızı görüntüleyebileceksiniz. Bu fiyatlar günlük olarak güncellenmektedir",
+      "3": "Müşteri Hizmetlerinde Mükemmellik",
+      "4": "İstanbul şubelerimiz geniş bir zaman dilimi içerisinde tüm yıl boyunca açıktır",
+      "5": "En iyi güvenliği sunmak için banknotlarınız video kameralarımız tarafından kaydedilir",
+      "6": "İşleminizden memnun değilseniz, satın alma işleminizi iade etmek için vardır",
+      "7": "İyi döviz kuru garantisi"
+    },
     "crypto-title": "KRİPTO PARA BİRİMLERİ",
     "crypto": "Fisiksel kripto. Para salim-atim burosu. Aninda, hizli ve guvenli. Dusuk kommisyonlar. Yuksek Limitler. Yalnızca birkaç adımda, güvenle kripto para yatırımı yapabilir, dilediğiniz zaman kolayca satabilirsiniz.",
     "contacts": "İstanbul’da yer alan döviz büromuza ait iletişim ve ulaşım bilgilerine bu sayfadan ulaşabilirsiniz."
@@ -23,7 +31,7 @@
   },
   "about-us": {
     "title": "HAKKIMIZDA",
-    "text": "BJB Exchange kurulduğu yıldan beri güven ve kaliteli hizmet anlayışına sahip çıkmış, işinin merkezine koymuştur. BJB Exchange olarak sektörümüzde en önemli itibarın dürüstlük olduğunu düşünüyoruz. Döviz ve altın sektöründe derin piyasa bilgisine sahip uzman kadromuz ve teknolojik altyapımızla uzun zamandir emsalsiz bir hizmet sunmaktayız. Kuruluşumuzdan bu yana dürüstlük, güvenilirlik ve hizmet kalitesi konusunda bir itibar oluşturduk. Müşteri memnuniyeti bizim için önemlidir ve her bir müşteriyle özenli bir ilişki kurmaya çalışırız. Ödülümüz, müşterilerimizin bizimle tekrar iş yapması ve hizmetlerimizi başkalarına tavsiye etmesidir."
+    "text": "BJB Exchange kurulduğu yıldan beri güven ve kaliteli hizmet anlayışına sahip çıkmış, işinin merkezine koymuştur<br/><br/>BJB Exchange olarak sektörümüzde en önemli itibarın dürüstlük olduğunu düşünüyoruz<br/><br/>Döviz ve altın sektöründe derin piyasa bilgisine sahip uzman kadromuz ve teknolojik altyapımızla uzun zamandir emsalsiz bir hizmet sunmaktayız<br/><br/>Kuruluşumuzdan bu yana dürüstlük, güvenilirlik ve hizmet kalitesi konusunda bir itibar oluşturduk<br/><br/>Müşteri memnuniyeti bizim için önemlidir ve her bir müşteriyle özenli bir ilişki kurmaya çalışırız<br/><br/>Ödülümüz, müşterilerimizin bizimle tekrar iş yapması ve hizmetlerimizi başkalarına tavsiye etmesidir"
   },
   "contact-us": {
     "title": "BİZE ULAŞIN",
