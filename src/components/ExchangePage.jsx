@@ -80,7 +80,7 @@ function ExchangePage() {
           >
             <div className="form__select-container flex">
               <div className="form__select-group flex flex-column">
-                <label>from</label>
+                <label className="form__select-label">{t("From")}</label>
                 <select
                   className="form__select"
                   onChange={(e) => handleFromChange(e)}
@@ -95,7 +95,7 @@ function ExchangePage() {
                 </select>
               </div>
               <div className="form__select-group flex flex-column">
-                <label>to</label>
+                <label className="form__select-label">{t("To")}</label>
                 <select
                   className="form__select flex flex-align-center"
                   onChange={(e) => handleToChange(e)}
