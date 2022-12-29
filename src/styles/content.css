@@ -49,6 +49,29 @@
   margin: 0 10px;
 }
 
+.content__text_l {
+  font-size: 20px;
+}
+
+.content__text_full-width {
+  width: 100%;
+}
+
+.content__block {
+  margin-top: 10px;
+}
+
+.content__block_bordered {
+  border: solid;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.content__block_third {
+  width: 33%;
+}
+
 .content__text_hidden {
   display: none;
 }
@@ -57,13 +80,6 @@
   text-decoration: none;
   background-color: transparent;
   color: #FFF;
-}
-
-.crypto__item {
-  border: solid;
-  border-radius: 15px;
-  padding: 15px;
-  margin: 10px;
 }
 
 .table {
@@ -100,8 +116,4 @@
 
 .text__center {
   text-align: center;
-}
-
-.redirect {
-  margin-top: 20px;
 }

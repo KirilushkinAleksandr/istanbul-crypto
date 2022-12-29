@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+
 import rates from "../common/exchange-rates.json";
-import cbRates from "../common/cb-rates.json";
 
 function ExchangePage() {
   const [fromAmount, setFromAmount] = useState(0);
@@ -17,15 +15,15 @@ function ExchangePage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const amount = inputRef.current.value;
-    const sellRate = rates.sell[fromCurrency] || 0;
-    const buyRate = rates.buy[toCurrency] || 0;
     if (fromCurrency === "TRY") {
       setFromAmount(amount);
-      setToAmount((amount / buyRate).toFixed(2));
+      const sellRate = rates[toCurrency].sell || 0;
+      setToAmount((amount / sellRate).toFixed(2));
       setIsResShown(true);
     } else if (toCurrency === "TRY") {
       setFromAmount(amount);
-      setToAmount((amount * sellRate).toFixed(2));
+      const buyRate = rates[fromCurrency].buy || 0;
+      setToAmount((amount * buyRate).toFixed(2));
       setIsResShown(true);
     }
   };
@@ -46,11 +44,11 @@ function ExchangePage() {
     }
   };
 
-  const offRates = [];
-  for (const key in cbRates) {
-    offRates.push({
+  const customRates = [];
+  for (const key in rates) {
+    customRates.push({
       name: key,
-      ...cbRates[key],
+      ...rates[key],
     });
   }
 
@@ -65,7 +63,7 @@ function ExchangePage() {
             <div className="table__item table__item-name">{t("exchange.sell")}</div>
             <div className="table__item table__item-name">{t("exchange.buy")}</div>
           </div>
-          {offRates.map((item, index) => (
+          {customRates.map((item, index) => (
             <div className="table__row flex flex-between" key={index}>
               <div className="table__item">{item.name}</div>
               <div className="table__item">{item.sell}</div>
@@ -115,6 +113,8 @@ function ExchangePage() {
               type="number"
               ref={inputRef}
               min={1}
+              step={0.01}
+              value={1}
               placeholder="amount"
               required
               onChange={() => setIsResShown(false)}
@@ -122,16 +122,13 @@ function ExchangePage() {
             <button className="form__btn">{t("exchange.get-rate")}</button>
           </form>
           <div
-            className={`content__text ${!isResShown &&
-              "content__text_hidden"} flex flex-column flex-align-center`}
+            className={`content__text content__block${!isResShown ?
+              " content__text_hidden" : ""} flex flex-column flex-align-center`}
           >
             {res}
           </div>
         </div>
       </div>
-      <Link to="/" className="content__text flex flex-column flex-align-center redirect">
-        {t("exchange.go-home")}
-      </Link>
     </section>
   );
 }

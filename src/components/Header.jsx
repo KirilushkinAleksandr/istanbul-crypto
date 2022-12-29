@@ -15,12 +15,14 @@ function Header() {
 
   return (
     <header className="header">
-      <a className="header__logo" href="/">
+      <Link to="/" className="header__logo">
         <img width={150} height={150} src={logo} alt="BJBI logo" />
-      </a>
+      </Link>
       <ul className="header__menu">
         <li className="header__menu-item">
-          <a href="#">{t("home-page.title")}</a>
+          <Link to="/" className="header__logo">
+            {t("home-page.title")}
+          </Link>
         </li>
         <li className="header__menu-item">
           <a href="#faq">{t("faq.title-short")}</a>
