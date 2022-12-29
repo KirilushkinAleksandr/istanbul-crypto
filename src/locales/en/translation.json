@@ -42,5 +42,15 @@
     "text": "Your question",
     "btn": "Send message"
   },
-  "address": "Аddress"
+  "address": "Аddress",
+  "exchange": {
+    "from": "From",
+    "to": "To",
+    "get-rate": "Get rate",
+    "go-home": "Go home page",
+    "rates": "Rates",
+    "currency": "Currency",
+    "sell": "Sell",
+    "buy": "Buy"
+  }
 }

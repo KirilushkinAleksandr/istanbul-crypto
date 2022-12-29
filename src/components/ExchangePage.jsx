@@ -57,13 +57,13 @@ function ExchangePage() {
   const res = `${fromAmount} ${fromCurrency} = ${toAmount} ${toCurrency}`;
   return (
     <section className="content__section content__section_coins flex flex-column flex-align-center">
-      <div className="content__title">rates</div>
+      <div className="content__title">{t("exchange.rates")}</div>
       <div className="rates flex flex-around">
         <div className="table content__text flex flex-column flex-align-center">
           <div className="table__row flex flex-between">
-            <div className="table__item">currency</div>
-            <div className="table__item">sell</div>
-            <div className="table__item">buy</div>
+            <div className="table__item table__item-name">{t("exchange.currency")}</div>
+            <div className="table__item table__item-name">{t("exchange.sell")}</div>
+            <div className="table__item table__item-name">{t("exchange.buy")}</div>
           </div>
           {offRates.map((item, index) => (
             <div className="table__row flex flex-between" key={index}>
@@ -80,7 +80,7 @@ function ExchangePage() {
           >
             <div className="form__select-container flex">
               <div className="form__select-group flex flex-column">
-                <label>from</label>
+                <label className="form__select-label">{t("exchange.from")}</label>
                 <select
                   className="form__select"
                   onChange={(e) => handleFromChange(e)}
@@ -95,7 +95,7 @@ function ExchangePage() {
                 </select>
               </div>
               <div className="form__select-group flex flex-column">
-                <label>to</label>
+                <label className="form__select-label">{t("exchange.to")}</label>
                 <select
                   className="form__select flex flex-align-center"
                   onChange={(e) => handleToChange(e)}
@@ -119,7 +119,7 @@ function ExchangePage() {
               required
               onChange={() => setIsResShown(false)}
             />
-            <button className="form__btn">get rate</button>
+            <button className="form__btn">{t("exchange.get-rate")}</button>
           </form>
           <div
             className={`content__text ${!isResShown &&
@@ -129,8 +129,8 @@ function ExchangePage() {
           </div>
         </div>
       </div>
-      <Link to="/" className="content__text flex flex-column flex-align-center">
-        back
+      <Link to="/" className="content__text flex flex-column flex-align-center redirect">
+        {t("exchange.go-home")}
       </Link>
     </section>
   );

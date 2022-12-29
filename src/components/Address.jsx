@@ -5,7 +5,7 @@ function Address() {
   const { t } = useTranslation();
 
   return (
-    <section>
+    <section className="content__section">
       <div className="content__title">{t('address')}</div>
       <div className='flex flex-between'>
         <iframe

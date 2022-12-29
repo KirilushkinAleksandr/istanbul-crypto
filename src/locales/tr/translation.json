@@ -42,5 +42,15 @@
     "text": "Sizin sorunuz",
     "btn": "Mesaj gönder"
   },
-  "address": "Adres"
+  "address": "Adres",
+  "exchange": {
+    "from": "From",
+    "to": "To",
+    "get-rate": "Get rate",
+    "go-home": "Go home page",
+    "rates": "Rates",
+    "currency": "Currency",
+    "sell": "Sell",
+    "buy": "Buy"
+  }
 }
