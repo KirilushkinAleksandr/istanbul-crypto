@@ -59,6 +59,13 @@
   color: #FFF;
 }
 
+.crypto__item {
+  border: solid;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+}
+
 .table {
   line-height: 25px;
   width: 100%;
