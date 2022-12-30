@@ -1,7 +1,7 @@
 {
-  "main.css": "/istanbul-crypto/static/css/main.26f7a3a2.chunk.css",
-  "main.js": "/istanbul-crypto/static/js/main.1a9f28c3.chunk.js",
-  "main.js.map": "/istanbul-crypto/static/js/main.1a9f28c3.chunk.js.map",
+  "main.css": "/istanbul-crypto/static/css/main.31c35b7a.chunk.css",
+  "main.js": "/istanbul-crypto/static/js/main.d240cf16.chunk.js",
+  "main.js.map": "/istanbul-crypto/static/js/main.d240cf16.chunk.js.map",
   "runtime~main.js": "/istanbul-crypto/static/js/runtime~main.ab2a6070.js",
   "runtime~main.js.map": "/istanbul-crypto/static/js/runtime~main.ab2a6070.js.map",
   "static/js/2.0e544dfa.chunk.js": "/istanbul-crypto/static/js/2.0e544dfa.chunk.js",
@@ -9,12 +9,12 @@
   "static/js/3.d8ac33f5.chunk.js": "/istanbul-crypto/static/js/3.d8ac33f5.chunk.js",
   "static/js/3.d8ac33f5.chunk.js.map": "/istanbul-crypto/static/js/3.d8ac33f5.chunk.js.map",
   "index.html": "/istanbul-crypto/index.html",
-  "precache-manifest.3a08a2c4f503d59655c2e1919911fe0c.js": "/istanbul-crypto/precache-manifest.3a08a2c4f503d59655c2e1919911fe0c.js",
+  "precache-manifest.4b261ac0d827d590660deac602ade897.js": "/istanbul-crypto/precache-manifest.4b261ac0d827d590660deac602ade897.js",
   "service-worker.js": "/istanbul-crypto/service-worker.js",
-  "static/css/main.26f7a3a2.chunk.css.map": "/istanbul-crypto/static/css/main.26f7a3a2.chunk.css.map",
-  "static/media/index.css": "/istanbul-crypto/static/media/crypto.0822e32c.jpg",
-  "static/media/circle-EU.png": "/istanbul-crypto/static/media/circle-EU.d02ffb4f.png",
-  "static/media/circle-US.png": "/istanbul-crypto/static/media/circle-US.f925d395.png",
+  "static/css/main.31c35b7a.chunk.css.map": "/istanbul-crypto/static/css/main.31c35b7a.chunk.css.map",
+  "static/media/index.css": "/istanbul-crypto/static/media/crypto.dea0b635.jpg",
   "static/media/logo.png": "/istanbul-crypto/static/media/logo.511e050a.png",
+  "static/media/sign-EUR.png": "/istanbul-crypto/static/media/sign-EUR.f49bcdbe.png",
+  "static/media/sign-USD.png": "/istanbul-crypto/static/media/sign-USD.c42fc20c.png",
   "static/media/telegram.f9be4275.svg": "/istanbul-crypto/static/media/telegram.f9be4275.svg"
 }
