@@ -20,12 +20,12 @@
   height: 400px;
   font-weight: bold;
   font-size: 32px;
-  color: #ffc000;
   text-transform: uppercase;
 }
 
 .content__section_coins-title {
   background: url('../images/coins-title.jpg') round;
+  color: #d73700;
 }
 
 .content__section_coins {
@@ -34,6 +34,7 @@
 
 .content__section_crypto-title {
   background: url('../images/crypto-title.png') round;
+  color: #f9ff00;
 }
 
 .content__section_crypto {
@@ -101,6 +102,11 @@
 .content__img {
   max-width: 50%;
   max-height: 50%;
+}
+
+.content__full-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .content__logo {

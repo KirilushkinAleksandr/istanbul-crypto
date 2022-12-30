@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import aero from "../images/aero-1.jpg";
+
 function Address() {
   const { t } = useTranslation();
 
@@ -17,9 +19,12 @@ function Address() {
           referrerPolicy="no-referrer-when-downgrade"
           title="Office map"
         />
-        <div className="form__btn_half-width">
-          Molla Fenari Mahallesi, Çuhacı Han Sokak, No:24 Kapalı Çarşı, 34120
-          Fatih/İstanbul
+        <div className="form__btn_half-width flex flex-column flex-evenly flex-align-center">
+          <div className=" text__center">
+            Molla Fenari Mahallesi, Çuhacı Han Sokak, No:24 Kapalı Çarşı, 34120
+            Fatih/İstanbul
+          </div>
+          <img src={aero} className="content__block content__full-img" />
         </div>
       </div>
     </section>

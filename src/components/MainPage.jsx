@@ -13,6 +13,8 @@ import flagUSA from "../images/flag-USA.png";
 import flagEU from "../images/flag-EU.png";
 import flagUK from "../images/flag-UK.svg";
 import logoTCMB from "../images/logo-TCMB.png";
+import about1 from "../images/about-1.jpg";
+import about2 from "../images/about-2.jpg";
 
 function MainPage() {
   const { t } = useTranslation();
@@ -191,10 +193,20 @@ function MainPage() {
       </section>
       <section className="content__section" id="about-us">
         <div className="content__title">{t("about-us.title")}</div>
-        <div
-          className="content__text text__center"
-          dangerouslySetInnerHTML={{ __html: t("about-us.text") }}
-        ></div>
+        <div className="content__block flex flex-align-center">
+          <img src={about1} className="content__img" />
+          <div
+            className="content__text text__center"
+            dangerouslySetInnerHTML={{ __html: t("about-us.text-1") }}
+          ></div>
+        </div>
+        <div className="content__block flex flex-align-center">
+          <div
+            className="content__text text__center"
+            dangerouslySetInnerHTML={{ __html: t("about-us.text-2") }}
+          ></div>
+          <img src={about2} className="content__img" />
+        </div>
       </section>
       <Address />
       <ContactUs />
