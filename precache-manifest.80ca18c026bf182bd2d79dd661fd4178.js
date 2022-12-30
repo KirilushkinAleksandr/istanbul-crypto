@@ -1,27 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "fa89b62a1704051e4cb8",
-    "url": "/istanbul-crypto/static/css/main.f339ed77.chunk.css"
+    "revision": "c797b996ad1c4ad8da78",
+    "url": "/istanbul-crypto/static/css/main.1c322659.chunk.css"
   },
   {
-    "revision": "fa89b62a1704051e4cb8",
-    "url": "/istanbul-crypto/static/js/main.9a7533ff.chunk.js"
+    "revision": "c797b996ad1c4ad8da78",
+    "url": "/istanbul-crypto/static/js/main.4afb55d5.chunk.js"
   },
   {
-    "revision": "1fe624fc1904801c16a8",
-    "url": "/istanbul-crypto/static/js/runtime~main.d021284b.js"
+    "revision": "2ca57b69b66c389a6c61",
+    "url": "/istanbul-crypto/static/js/runtime~main.458e72bd.js"
   },
   {
-    "revision": "5ceeb7cf4d10ff1bda16",
-    "url": "/istanbul-crypto/static/js/2.64f3b9ce.chunk.js"
+    "revision": "8332eee8b8ddd12a713c",
+    "url": "/istanbul-crypto/static/js/2.4f5b4178.chunk.js"
   },
   {
-    "revision": "8bac77e36a859918562a",
-    "url": "/istanbul-crypto/static/js/3.249b4070.chunk.js"
+    "revision": "7dd329510d223992ae45",
+    "url": "/istanbul-crypto/static/js/3.f3a4d0fe.chunk.js"
   },
   {
     "revision": "4cb111190129bbe1603a7068d120e505",
     "url": "/istanbul-crypto/static/media/logo-new.4cb11119.jpg"
+  },
+  {
+    "revision": "81f7dc819f03080d6d25cec598314292",
+    "url": "/istanbul-crypto/static/media/aero-1.81f7dc81.jpg"
   },
   {
     "revision": "f925d395216bf8d5173fddb4f7b7393a",
@@ -64,16 +68,16 @@ self.__precacheManifest = [
     "url": "/istanbul-crypto/static/media/Inter-Medium.027d14e7.woff2"
   },
   {
-    "revision": "49c59986c2a8f1a08a4002b17e2dc62d",
-    "url": "/istanbul-crypto/static/media/Inter-Black.49c59986.woff2"
-  },
-  {
     "revision": "d1f6b6e94d708080f08d1325bbc3835e",
     "url": "/istanbul-crypto/static/media/Inter-Medium.d1f6b6e9.woff"
   },
   {
     "revision": "af718f919aafb2f3178ac634c7f37082",
     "url": "/istanbul-crypto/static/media/Inter-Black.af718f91.woff"
+  },
+  {
+    "revision": "49c59986c2a8f1a08a4002b17e2dc62d",
+    "url": "/istanbul-crypto/static/media/Inter-Black.49c59986.woff2"
   },
   {
     "revision": "23cfb4ee3d4b32ca48006e37d9c3e2ce",
@@ -96,7 +100,7 @@ self.__precacheManifest = [
     "url": "/istanbul-crypto/static/media/telegram.f9be4275.svg"
   },
   {
-    "revision": "ee73ea0d1fb0929f52257b74742f960c",
+    "revision": "8c22ce59d7bdfc9a67965647f1275fdd",
     "url": "/istanbul-crypto/index.html"
   }
 ];
