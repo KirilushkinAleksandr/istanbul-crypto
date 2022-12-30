@@ -58,7 +58,7 @@ function ExchangePage() {
   return (
     <section className="content__section content__section_coins flex flex-column flex-align-center">
       <div className="content__title">{t("exchange.rates")}</div>
-      <div className="content__text_full-width flex flex-around">
+      <div className="content__text_full-width content-transform flex flex-around">
         <div className="table content__text flex flex-column flex-align-center">
           <div className="content__text_full-width flex flex-between">
             <div className="table__item table__item-name">{t("exchange.currency")}</div>

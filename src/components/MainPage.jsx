@@ -6,6 +6,8 @@ import Address from "./Address";
 import ContactUs from "./ContactUs";
 import rates from "../common/exchange-rates.json";
 import cbRates from "../common/cb-rates.json";
+import titleCoins from "../images/coins-title.jpg";
+import titleCrypto from "../images/crypto-title.png";
 import circleUSD from "../images/circle-US.png";
 import circleEUR from "../images/circle-EU.png";
 import flagRUS from "../images/flag-RUS.png";
@@ -62,8 +64,8 @@ function MainPage() {
   }
   return (
     <>
-      <section className="content__section content__section_coins-title content__title-section flex flex-center flex-align-center">
-        <div>{t("home-page.currencies-title")}</div>
+      <section className="content__section">
+        <img src={titleCoins} className="content__text_full-width" alt="" />
       </section>
       <section className="content__section content__section_coins flex flex-column flex-align-center">
         <div className="content__title">{t("home-page.currencies-title")}</div>
@@ -76,9 +78,9 @@ function MainPage() {
           <li className="content__item">{t("home-page.currencies.6")}</li>
           <li className="content__item">{t("home-page.currencies.7")}</li>
         </ul>
-        <div className="content__text content__text_full-width flex flex-between">
+        <div className="content__text content-transform content__text_full-width flex flex-between">
           <div className="content__block_bordered content__block_third flex flex-align-center">
-            <img src={circleUSD} className="content__img" alt="" />
+            <img src={circleUSD} className="content__icon" alt="" />
             <div className="flex flex-column flex-align-center flex-grow-1">
               <div className="content__block">USD</div>
               <div className="flex content__text_full-width">
@@ -100,7 +102,7 @@ function MainPage() {
             </div>
           </div>
           <div className="content__block_bordered content__block_third flex  flex-align-center">
-            <img src={circleEUR} className="content__img" alt="" />
+            <img src={circleEUR} className="content__icon" alt="" />
             <div className="flex flex-column flex-align-center flex-grow-1">
               <div className="content__block">EUR</div>
               <div className="flex content__text_full-width">
@@ -124,7 +126,7 @@ function MainPage() {
           <div className="content__block_bordered content__block_third">
             <div className="flex">
               <div className="content__logo flex flex-center flex-grow-1">
-                <img src={logoTCMB} width={30} />
+                <img src={logoTCMB} width={30} alt="" />
               </div>
               <div className="content__text flex-grow-1">
                 {t("exchange.sell")}
@@ -136,11 +138,16 @@ function MainPage() {
             {offRates.map((item, index) => (
               <div className="flex content__block" key={index}>
                 <div className="flex">
-                  <img src={currencyFlags[item.name]} width={30} height={20} />
+                  <img
+                    src={currencyFlags[item.name]}
+                    width={30}
+                    height={20}
+                    alt=""
+                  />
                 </div>
-                <div className="content__text">{item.name}</div>
-                <div className="content__text">{item.sell}</div>
-                <div className="content__text">{item.buy}</div>
+                <div className="content__text content__text_grow">{item.name}</div>
+                <div className="content__text content__text_grow">{item.sell}</div>
+                <div className="content__text content__text_grow">{item.buy}</div>
               </div>
             ))}
           </div>
@@ -149,8 +156,8 @@ function MainPage() {
           {t("home-page.currencies-link")}
         </Link>
       </section>
-      <section className="content__section content__section_crypto-title content__title-section flex flex-center flex-align-center">
-        <div>{t("home-page.crypto-title")}</div>
+      <section className="content__section">
+        <img src={titleCrypto} className=" content__text_full-width" alt="" />
       </section>
       <section className="content__section content__section_crypto">
         <div className="content__title">{t("home-page.crypto-title")}</div>
@@ -193,19 +200,19 @@ function MainPage() {
       </section>
       <section className="content__section" id="about-us">
         <div className="content__title">{t("about-us.title")}</div>
-        <div className="content__block flex flex-align-center">
-          <img src={about1} className="content__img" />
+        <div className="content__block flex flex-align-center content-transform">
+          <img src={about1} className="content__img" alt="" />
           <div
             className="content__text text__center"
             dangerouslySetInnerHTML={{ __html: t("about-us.text-1") }}
           ></div>
         </div>
-        <div className="content__block flex flex-align-center">
+        <div className="content__block flex flex-align-center content-transform">
           <div
             className="content__text text__center"
             dangerouslySetInnerHTML={{ __html: t("about-us.text-2") }}
           ></div>
-          <img src={about2} className="content__img" />
+          <img src={about2} className="content__img" alt="" />
         </div>
       </section>
       <Address />

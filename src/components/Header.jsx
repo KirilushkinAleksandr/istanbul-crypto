@@ -8,6 +8,7 @@ import logo from "../images/logo-new.jpg";
 function Header() {
   const { t, i18n } = useTranslation();
   const [selected, setSelected] = useState("US");
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     i18n.changeLanguage(selected === "US" ? "en" : selected.toLowerCase());
@@ -15,7 +16,7 @@ function Header() {
 
   return (
     <header className="header">
-      <Link to="/" className="header__logo">
+      <Link to="/" className="header__logo" onClick={() => setIsMobile(!isMobile)}>
         <img src={logo} width={150} height={150} alt="BJBI logo" />
       </Link>
       <ul className="header__menu">

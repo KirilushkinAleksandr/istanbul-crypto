@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer lang="en" className="footer">
+    <footer lang="en" className="footer flex-align-center">
       <p className="footer__item">&copy; BJBI Istanbul 2022 </p>
       <p>
         <a className="footer__item" href="tel:05323615498">

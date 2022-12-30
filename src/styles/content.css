@@ -19,26 +19,17 @@
 .content__title-section {
   height: 400px;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 36px;
   text-transform: uppercase;
-}
-
-.content__section_coins-title {
-  background: url('../images/coins-title.jpg') round;
-  color: #d73700;
 }
 
 .content__section_coins {
   background: url('../images/coins.jpg') round;
 }
 
-.content__section_crypto-title {
-  background: url('../images/crypto-title.png') round;
-  color: #f9ff00;
-}
-
 .content__section_crypto {
   background: url('../images/crypto.jpg') round;
+  height: 400px;
 }
 
 .content__title {
@@ -99,7 +90,7 @@
   color: #FFF;
 }
 
-.content__img {
+.content__img, .content__icon {
   max-width: 50%;
   max-height: 50%;
 }
@@ -139,4 +130,45 @@
 
 .text__center {
   text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  .content-transform {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content__title-section {
+    height: 200px;
+  }
+
+  .content__section_coins, .content__section_crypto {
+    background-repeat: round repeat;
+    height: auto;
+  }
+
+  .content__block_third {
+    width: 100%;
+  }
+
+  .content__text_grow {
+    flex-grow: 1;
+  }
+
+  .content__img {
+    max-width: 100%;
+  }
+
+  .content__icon {
+    max-width: 25%;
+    margin-right: 25%;
+  }
+
+  .table {
+    margin-bottom: 20px;
+  }
+
+  .map {
+    width: 300px;
+  }
 }
