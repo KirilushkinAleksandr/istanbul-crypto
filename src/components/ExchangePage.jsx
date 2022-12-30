@@ -46,25 +46,27 @@ function ExchangePage() {
 
   const customRates = [];
   for (const key in rates) {
-    customRates.push({
-      name: key,
-      ...rates[key],
-    });
+    if (key !== "TRY") {
+      customRates.push({
+        name: key,
+        ...rates[key],
+      });
+    }
   }
 
   const res = `${fromAmount} ${fromCurrency} = ${toAmount} ${toCurrency}`;
   return (
     <section className="content__section content__section_coins flex flex-column flex-align-center">
       <div className="content__title">{t("exchange.rates")}</div>
-      <div className="rates flex flex-around">
+      <div className="content__text_full-width flex flex-around">
         <div className="table content__text flex flex-column flex-align-center">
-          <div className="table__row flex flex-between">
+          <div className="content__text_full-width flex flex-between">
             <div className="table__item table__item-name">{t("exchange.currency")}</div>
             <div className="table__item table__item-name">{t("exchange.sell")}</div>
             <div className="table__item table__item-name">{t("exchange.buy")}</div>
           </div>
           {customRates.map((item, index) => (
-            <div className="table__row flex flex-between" key={index}>
+            <div className="content__text_full-width flex flex-between" key={index}>
               <div className="table__item">{item.name}</div>
               <div className="table__item">{item.sell}</div>
               <div className="table__item">{item.buy}</div>
@@ -114,7 +116,7 @@ function ExchangePage() {
               ref={inputRef}
               min={1}
               step={0.01}
-              value={1}
+              defaultValue={1}
               placeholder="amount"
               required
               onChange={() => setIsResShown(false)}

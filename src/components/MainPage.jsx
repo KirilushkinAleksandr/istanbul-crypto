@@ -1,4 +1,4 @@
-import React, { Fragment, useRef } from "react";
+import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -6,6 +6,13 @@ import Address from "./Address";
 import ContactUs from "./ContactUs";
 import rates from "../common/exchange-rates.json";
 import cbRates from "../common/cb-rates.json";
+import circleUSD from "../images/circle-US.png";
+import circleEUR from "../images/circle-EU.png";
+import flagRUS from "../images/flag-RUS.png";
+import flagUSA from "../images/flag-USA.png";
+import flagEU from "../images/flag-EU.png";
+import flagUK from "../images/flag-UK.svg";
+import logoTCMB from "../images/logo-TCMB.png";
 
 function MainPage() {
   const { t } = useTranslation();
@@ -22,14 +29,20 @@ function MainPage() {
   t("home-page.crypto")
     .split(". ")
     .forEach((data, index) => {
-      cryptoComponents.push(<div className="content__block_bordered" key={index}>{data}</div>);
+      cryptoComponents.push(
+        <div className="content__block_bordered" key={index}>
+          {data}
+        </div>
+      );
     });
 
   for (const key in cbRates) {
-    offRates.push({
-      name: key,
-      ...cbRates[key],
-    });
+    if (key !== "TRY") {
+      offRates.push({
+        name: key,
+        ...cbRates[key],
+      });
+    }
   }
   customRates.push({
     name: "USD",
@@ -39,9 +52,17 @@ function MainPage() {
     name: "EUR",
     ...rates["EUR"],
   });
-
+  const currencyFlags = {
+    USD: flagUSA,
+    EUR: flagEU,
+    GBP: flagUK,
+    RUB: flagRUS,
+  }
   return (
     <>
+      <section className="content__section content__section_coins-title content__title-section flex flex-center flex-align-center">
+        <div>{t("home-page.currencies-title")}</div>
+      </section>
       <section className="content__section content__section_coins flex flex-column flex-align-center">
         <div className="content__title">{t("home-page.currencies-title")}</div>
         <ul>
@@ -53,37 +74,81 @@ function MainPage() {
           <li className="content__item">{t("home-page.currencies.6")}</li>
           <li className="content__item">{t("home-page.currencies.7")}</li>
         </ul>
-
         <div className="content__text content__text_full-width flex flex-between">
-          <div className="content__block_bordered content__block_third">
-            <div className="table__item">USD</div>
-            <div className="table__item">{customRates[0].sell}</div>
-            <div className="table__item">{customRates[0].buy}</div>
+          <div className="content__block_bordered content__block_third flex flex-align-center">
+            <img src={circleUSD} className="content__img" alt="" />
+            <div className="flex flex-column flex-align-center flex-grow-1">
+              <div className="content__block">USD</div>
+              <div className="flex content__text_full-width">
+                <div className="content__block content__text">
+                  {t("exchange.sell")}
+                </div>
+                <div className="content__block flex-grow-1 text__center">
+                  {parseInt(customRates[0].sell)}
+                </div>
+              </div>
+              <div className="flex content__text_full-width">
+                <div className="content__block content__text">
+                  {t("exchange.buy")}
+                </div>
+                <div className="content__block flex-grow-1 text__center">
+                  {customRates[0].buy}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content__block_bordered content__block_third flex  flex-align-center">
+            <img src={circleEUR} className="content__img" alt="" />
+            <div className="flex flex-column flex-align-center flex-grow-1">
+              <div className="content__block">EUR</div>
+              <div className="flex content__text_full-width">
+                <div className="content__block content__text">
+                  {t("exchange.sell")}
+                </div>
+                <div className="content__block flex-grow-1 text__center">
+                  {customRates[1].sell}
+                </div>
+              </div>
+              <div className="flex content__text_full-width">
+                <div className="content__block content__text">
+                  {t("exchange.buy")}
+                </div>
+                <div className="content__block flex-grow-1 text__center">
+                  {customRates[1].buy}
+                </div>
+              </div>
+            </div>
           </div>
           <div className="content__block_bordered content__block_third">
-            <div className="table__item">EUR</div>
-            <div className="table__item">{customRates[1].sell}</div>
-            <div className="table__item">{customRates[1].buy}</div>
-          </div>
-          <div className="content__block_bordered content__block_third">
+            <div className="flex">
+              <div className="content__logo flex flex-center flex-grow-1">
+                <img src={logoTCMB} width={30} />
+              </div>
+              <div className="content__text flex-grow-1">
+                {t("exchange.sell")}
+              </div>
+              <div className="content__text flex-grow-1">
+                {t("exchange.buy")}
+              </div>
+            </div>
             {offRates.map((item, index) => (
-              <Fragment key={index}>
-                <div className="content__text" >
-                  {item.name}
+              <div className="flex content__block" key={index}>
+                <div className="flex">
+                  <img src={currencyFlags[item.name]} width={30} height={20} />
                 </div>
-                <div className="content__text">
-                  {item.sell}
-                </div>
-                <div className="content__text">
-                  {item.buy}
-                </div>
-              </Fragment>
+                <div className="content__text">{item.name}</div>
+                <div className="content__text">{item.sell}</div>
+                <div className="content__text">{item.buy}</div>
+              </div>
             ))}
           </div>
         </div>
         <Link to="currency-rates" className="content__block">
           {t("home-page.currencies-link")}
         </Link>
+      </section>
+      <section className="content__section content__section_crypto-title content__title-section flex flex-center flex-align-center">
+        <div>{t("home-page.crypto-title")}</div>
       </section>
       <section className="content__section content__section_crypto">
         <div className="content__title">{t("home-page.crypto-title")}</div>

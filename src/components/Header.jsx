@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import ReactFlagsSelect from "react-flags-select";
 import { Link } from "react-router-dom";
 
-import logo from "../images/logo.png";
+import logo from "../images/logo-new.jpg";
 
 function Header() {
   const { t, i18n } = useTranslation();
@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className="header">
       <Link to="/" className="header__logo">
-        <img width={150} height={150} src={logo} alt="BJBI logo" />
+        <img src={logo} width={150} height={150} alt="BJBI logo" />
       </Link>
       <ul className="header__menu">
         <li className="header__menu-item">
