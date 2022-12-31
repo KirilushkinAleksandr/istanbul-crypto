@@ -1,7 +1,7 @@
 {
   "name": "istanbul-crypto",
   "version": "0.1.0",
-  "homepage": "https://kirilushkinaleksandr.github.io/istanbul-crypto",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "i18next": "^22.3.0",

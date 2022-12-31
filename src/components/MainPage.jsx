@@ -166,7 +166,7 @@ function MainPage() {
         </div>
       </section>
       <section
-        className="content__section flex flex-column flex-center"
+        className="content__section content__section_anchored flex flex-column flex-center"
         id="faq"
       >
         <div
@@ -198,7 +198,7 @@ function MainPage() {
           <div className="content__block content__text">{t("faq.a-5")}</div>
         </div>
       </section>
-      <section className="content__section" id="about-us">
+      <section className="content__section content__section_anchored" id="about-us">
         <div className="content__title">{t("about-us.title")}</div>
         <div className="content__block flex flex-align-center content-transform">
           <img src={about1} className="content__img" alt="" />
