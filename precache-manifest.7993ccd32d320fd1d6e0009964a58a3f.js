@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "c45718ee6ec292a2c315",
-    "url": "/istanbul-crypto/static/css/main.a39340a1.chunk.css"
+    "revision": "73a7b64b44eb5fee51e6",
+    "url": "/istanbul-crypto/static/css/main.05376437.chunk.css"
   },
   {
-    "revision": "c45718ee6ec292a2c315",
+    "revision": "73a7b64b44eb5fee51e6",
     "url": "/istanbul-crypto/static/js/main.7c0d84a8.chunk.js"
   },
   {
@@ -56,36 +56,36 @@ self.__precacheManifest = [
     "url": "/istanbul-crypto/static/media/about-2.255b02f0.jpg"
   },
   {
-    "revision": "d1f6b6e94d708080f08d1325bbc3835e",
-    "url": "/istanbul-crypto/static/media/Inter-Medium.d1f6b6e9.woff"
+    "revision": "027d14e7d35bfa1b9c2eb0a92a69c103",
+    "url": "/istanbul-crypto/static/media/Inter-Medium.027d14e7.woff2"
   },
   {
-    "revision": "d22a0d6612cceed0724e681a3a1e90da",
-    "url": "/istanbul-crypto/static/media/Inter-Regular.d22a0d66.woff2"
+    "revision": "d1f6b6e94d708080f08d1325bbc3835e",
+    "url": "/istanbul-crypto/static/media/Inter-Medium.d1f6b6e9.woff"
   },
   {
     "revision": "4d127124f941ebf54a749cf9ab10e545",
     "url": "/istanbul-crypto/static/media/Inter-Regular.4d127124.woff"
   },
   {
-    "revision": "027d14e7d35bfa1b9c2eb0a92a69c103",
-    "url": "/istanbul-crypto/static/media/Inter-Medium.027d14e7.woff2"
+    "revision": "49c59986c2a8f1a08a4002b17e2dc62d",
+    "url": "/istanbul-crypto/static/media/Inter-Black.49c59986.woff2"
+  },
+  {
+    "revision": "d22a0d6612cceed0724e681a3a1e90da",
+    "url": "/istanbul-crypto/static/media/Inter-Regular.d22a0d66.woff2"
   },
   {
     "revision": "af718f919aafb2f3178ac634c7f37082",
     "url": "/istanbul-crypto/static/media/Inter-Black.af718f91.woff"
   },
   {
-    "revision": "23cfb4ee3d4b32ca48006e37d9c3e2ce",
-    "url": "/istanbul-crypto/static/media/coins.23cfb4ee.jpg"
-  },
-  {
-    "revision": "49c59986c2a8f1a08a4002b17e2dc62d",
-    "url": "/istanbul-crypto/static/media/Inter-Black.49c59986.woff2"
-  },
-  {
     "revision": "9e368b7400c4c5deb5cca6263e33f8b9",
     "url": "/istanbul-crypto/static/media/coins-title.9e368b74.jpg"
+  },
+  {
+    "revision": "23cfb4ee3d4b32ca48006e37d9c3e2ce",
+    "url": "/istanbul-crypto/static/media/coins.23cfb4ee.jpg"
   },
   {
     "revision": "dea0b6355b00a4930a38b81e64e83ce1",
@@ -100,7 +100,7 @@ self.__precacheManifest = [
     "url": "/istanbul-crypto/static/media/telegram.f9be4275.svg"
   },
   {
-    "revision": "843faaacf0211a99cf27b9b765f4e62c",
+    "revision": "7d777b8cd9ade7cc8705e4ee4b1336f5",
     "url": "/istanbul-crypto/index.html"
   }
 ];
