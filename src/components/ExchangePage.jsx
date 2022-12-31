@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import rates from "../common/exchange-rates.json";
@@ -9,8 +9,11 @@ function ExchangePage() {
   const [toAmount, setToAmount] = useState(0);
   const [toCurrency, setToCurrency] = useState("TRY");
   const [isResShown, setIsResShown] = useState(false);
+  const pageRef = useRef(null);
   const inputRef = useRef(null);
   const { t } = useTranslation();
+
+  useEffect(() => pageRef.current && pageRef.current.scrollIntoView());
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -56,7 +59,7 @@ function ExchangePage() {
 
   const res = `${fromAmount} ${fromCurrency} = ${toAmount} ${toCurrency}`;
   return (
-    <section className="content__section content__section_coins flex flex-column flex-align-center">
+    <section ref={pageRef} className="content__section content__section_coins content__section_anchored flex flex-column flex-align-center">
       <div className="content__title">{t("exchange.rates")}</div>
       <div className="content__text_full-width content-transform flex flex-around">
         <div className="table content__text flex flex-column flex-align-center">
