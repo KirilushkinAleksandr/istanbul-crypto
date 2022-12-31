@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/istanbul-crypto/precache-manifest.0ae21890d3f1536de42fe0405eb8d2c6.js"
+  "/istanbul-crypto/precache-manifest.036a311c14613c29c6aa68e30ca7d215.js"
 );
 
 workbox.clientsClaim();

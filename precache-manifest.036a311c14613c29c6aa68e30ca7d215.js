@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a2247d94cab8b3fbee06",
-    "url": "/istanbul-crypto/static/css/main.19107d97.chunk.css"
+    "revision": "05c6a478d4d6522d2c17",
+    "url": "/istanbul-crypto/static/css/main.8293a1f1.chunk.css"
   },
   {
-    "revision": "a2247d94cab8b3fbee06",
-    "url": "/istanbul-crypto/static/js/main.dcea68e6.chunk.js"
+    "revision": "05c6a478d4d6522d2c17",
+    "url": "/istanbul-crypto/static/js/main.1c352b1e.chunk.js"
   },
   {
     "revision": "b1520a4b194fe7068f08",
@@ -64,24 +64,24 @@ self.__precacheManifest = [
     "url": "/istanbul-crypto/static/media/about-2.793bdff9.jpg"
   },
   {
-    "revision": "4d127124f941ebf54a749cf9ab10e545",
-    "url": "/istanbul-crypto/static/media/Inter-Regular.4d127124.woff"
+    "revision": "49c59986c2a8f1a08a4002b17e2dc62d",
+    "url": "/istanbul-crypto/static/media/Inter-Black.49c59986.woff2"
   },
   {
     "revision": "d1f6b6e94d708080f08d1325bbc3835e",
     "url": "/istanbul-crypto/static/media/Inter-Medium.d1f6b6e9.woff"
   },
   {
-    "revision": "027d14e7d35bfa1b9c2eb0a92a69c103",
-    "url": "/istanbul-crypto/static/media/Inter-Medium.027d14e7.woff2"
-  },
-  {
     "revision": "d22a0d6612cceed0724e681a3a1e90da",
     "url": "/istanbul-crypto/static/media/Inter-Regular.d22a0d66.woff2"
   },
   {
-    "revision": "49c59986c2a8f1a08a4002b17e2dc62d",
-    "url": "/istanbul-crypto/static/media/Inter-Black.49c59986.woff2"
+    "revision": "4d127124f941ebf54a749cf9ab10e545",
+    "url": "/istanbul-crypto/static/media/Inter-Regular.4d127124.woff"
+  },
+  {
+    "revision": "027d14e7d35bfa1b9c2eb0a92a69c103",
+    "url": "/istanbul-crypto/static/media/Inter-Medium.027d14e7.woff2"
   },
   {
     "revision": "af718f919aafb2f3178ac634c7f37082",
@@ -100,7 +100,7 @@ self.__precacheManifest = [
     "url": "/istanbul-crypto/static/media/telegram.f9be4275.svg"
   },
   {
-    "revision": "6d4480af32a0cc28088d618ec8a7044f",
+    "revision": "0000fab49779de024753b5f38c4d4732",
     "url": "/istanbul-crypto/index.html"
   }
 ];
