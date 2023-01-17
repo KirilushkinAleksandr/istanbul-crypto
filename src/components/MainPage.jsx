@@ -99,7 +99,13 @@ function MainPage() {
 
   return (
     <>
-      <section className="content__section content__section_anchored" ref={pageTopRef}>
+      <section className="content__section content__section_crypto content__section_anchored" ref={pageTopRef}>
+        <div className="content__title">{t("home-page.crypto-title")}</div>
+        <div className="content__text flex flex-between flex-wrap flex-align-center flex-center">
+          {cryptoComponents}
+        </div>
+      </section>
+      <section className="content__section">
         <img src={titleCoins} className="content__text_full-width" alt="" />
       </section>
       <section className="content__section content__section_coins flex flex-column flex-align-center">
@@ -199,12 +205,6 @@ function MainPage() {
       </section>
       <section className="content__section">
         <img src={titleCrypto} className=" content__text_full-width" alt="" />
-      </section>
-      <section className="content__section content__section_crypto">
-        <div className="content__title">{t("home-page.crypto-title")}</div>
-        <div className="content__text flex flex-between flex-wrap flex-align-center flex-center">
-          {cryptoComponents}
-        </div>
       </section>
       <section
         className="content__section content__section_anchored flex flex-column flex-center"

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import ReactFlagsSelect from "react-flags-select";
 import { Link } from "react-router-dom";
 
-import logo from "../images/logo-new.jpg";
+import logo from "../images/logo.svg";
 
 function Header() {
   const { t, i18n } = useTranslation();

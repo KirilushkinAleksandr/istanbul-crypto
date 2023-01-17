@@ -27,7 +27,7 @@
 .header__menu-item {
   width: 150px;
   text-align: center;
-  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .header__menu-item a:hover {

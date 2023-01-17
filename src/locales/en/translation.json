@@ -1,7 +1,7 @@
 {
   "home-page": {
-    "title": "WELCOME",
-    "converter": "Currency Converter",
+    "title": "Welcome",
+    "converter": "Currency converter",
     "currencies-title": "Currency exchange",
     "currencies": {
       "1": "A wide range of currencies available",
@@ -32,12 +32,12 @@
     "a-5": "You can buy or sell any crypto that is available on Binance. Please contact the office branch you wish to make the transaction at."
   },
   "about-us": {
-    "title": "ABOUT US",
+    "title": "About US",
     "text-1": "BJB Exchange has embraced the concept of trust and quality service since its establishment and put it at the center of its business<br/><br/>As BJB Exchange, we think that the most important component for our reputation in our sector is honesty<br/><br/>For a long time, we have had the professional expertise, in-depth market knowledge, technological infrastructure and commitment to provide you with an unmatched level of service that sets the standard in the foreign currency exchange industry<br/><br/>",
     "text-2": "Over the years we have built a reputation for honesty, reliability and quality of service<br/><br/>Each customer is important to us and we try to establish a mutually beneficial relationship with each one of them<br/><br/>Our reward is when our customers do business with us again and recommend our services to others"
   },
   "contact-us": {
-    "title": "CONTACT US",
+    "title": "Contact us",
     "name": "Your name",
     "mail": "Your e-mail",
     "text": "Your question",
