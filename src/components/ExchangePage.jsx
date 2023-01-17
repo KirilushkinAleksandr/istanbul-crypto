@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 import rates from "../common/exchange-rates.json";
 
@@ -9,8 +10,11 @@ function ExchangePage() {
   const [toAmount, setToAmount] = useState(0);
   const [toCurrency, setToCurrency] = useState("TRY");
   const [isResShown, setIsResShown] = useState(false);
+  const pageRef = useRef(null);
   const inputRef = useRef(null);
   const { t } = useTranslation();
+
+  useEffect(() => pageRef.current && pageRef.current.scrollIntoView());
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -56,17 +60,29 @@ function ExchangePage() {
 
   const res = `${fromAmount} ${fromCurrency} = ${toAmount} ${toCurrency}`;
   return (
-    <section className="content__section content__section_coins flex flex-column flex-align-center">
+    <section
+      ref={pageRef}
+      className="content__section content__section_coins content__section_anchored flex flex-column flex-align-center"
+    >
       <div className="content__title">{t("exchange.rates")}</div>
       <div className="content__text_full-width content-transform flex flex-around">
         <div className="table content__text flex flex-column flex-align-center">
           <div className="content__text_full-width flex flex-between">
-            <div className="table__item table__item-name">{t("exchange.currency")}</div>
-            <div className="table__item table__item-name">{t("exchange.sell")}</div>
-            <div className="table__item table__item-name">{t("exchange.buy")}</div>
+            <div className="table__item table__item-name">
+              {t("exchange.currency")}
+            </div>
+            <div className="table__item table__item-name">
+              {t("exchange.sell")}
+            </div>
+            <div className="table__item table__item-name">
+              {t("exchange.buy")}
+            </div>
           </div>
           {customRates.map((item, index) => (
-            <div className="content__text_full-width flex flex-between" key={index}>
+            <div
+              className="content__text_full-width flex flex-between"
+              key={index}
+            >
               <div className="table__item">{item.name}</div>
               <div className="table__item">{item.sell}</div>
               <div className="table__item">{item.buy}</div>
@@ -80,7 +96,9 @@ function ExchangePage() {
           >
             <div className="form__select-container flex">
               <div className="form__select-group flex flex-column">
-                <label className="form__select-label">{t("exchange.from")}</label>
+                <label className="form__select-label">
+                  {t("exchange.from")}
+                </label>
                 <select
                   className="form__select"
                   onChange={(e) => handleFromChange(e)}
@@ -121,11 +139,15 @@ function ExchangePage() {
               required
               onChange={() => setIsResShown(false)}
             />
+            <Link to="/" state={{ scrollContactUs: true }}>
+              {t("contact-us.title")}
+            </Link>
             <button className="form__btn">{t("exchange.get-rate")}</button>
           </form>
           <div
-            className={`content__text content__block${!isResShown ?
-              " content__text_hidden" : ""} flex flex-column flex-align-center`}
+            className={`content__text content__block${
+              !isResShown ? " content__text_hidden" : ""
+            } flex flex-column flex-align-center`}
           >
             {res}
           </div>

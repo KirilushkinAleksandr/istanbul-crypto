@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
 
 import Address from "./Address";
 import ContactUs from "./ContactUs";
@@ -20,11 +20,17 @@ import about2 from "../images/about-2.jpg";
 
 function MainPage() {
   const { t } = useTranslation();
+  const showFaqRef = useRef(null);
   const faqRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactUsRef = useRef(null);
+  const pageTopRef = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const showFAQclass = "content__text_hidden";
   const switchShowFAQ = () =>
-    faqRef.current && faqRef.current.classList.toggle(showFAQclass);
+    showFaqRef.current && showFaqRef.current.classList.toggle(showFAQclass);
 
   const cryptoComponents = [];
   const offRates = [];
@@ -62,9 +68,38 @@ function MainPage() {
     GBP: flagUK,
     RUB: flagRUS,
   }
+
+  useEffect(() => {
+    navigate(location.pathname, { replace: true });
+  }, []);
+
+  useEffect(() => {
+    if (location.state && location.state.scrollFAQ) {
+      scrollToTarget(faqRef);
+    }
+    if (location.state && location.state.scrollAbout) {
+      scrollToTarget(aboutRef);
+    }
+    if (location.state && location.state.scrollContactUs) {
+      scrollToTarget(contactUsRef);
+    }
+    if (location.state && location.state.scrollTop) {
+      scrollToTarget(pageTopRef);
+    }
+    navigate(location.pathname, { replace: true });
+  }, [location.state]);
+
+  const scrollToTarget = (ref) => {
+    setTimeout(() => {
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }, 500);
+  };
+
   return (
     <>
-      <section className="content__section">
+      <section className="content__section content__section_anchored" ref={pageTopRef}>
         <img src={titleCoins} className="content__text_full-width" alt="" />
       </section>
       <section className="content__section content__section_coins flex flex-column flex-align-center">
@@ -145,9 +180,15 @@ function MainPage() {
                     alt=""
                   />
                 </div>
-                <div className="content__text content__text_grow">{item.name}</div>
-                <div className="content__text content__text_grow">{item.sell}</div>
-                <div className="content__text content__text_grow">{item.buy}</div>
+                <div className="content__text content__text_grow">
+                  {item.name}
+                </div>
+                <div className="content__text content__text_grow">
+                  {item.sell}
+                </div>
+                <div className="content__text content__text_grow">
+                  {item.buy}
+                </div>
               </div>
             ))}
           </div>
@@ -168,6 +209,7 @@ function MainPage() {
       <section
         className="content__section content__section_anchored flex flex-column flex-center"
         id="faq"
+        ref={faqRef}
       >
         <div
           className="content__title content__title_clickable"
@@ -175,7 +217,10 @@ function MainPage() {
         >
           {t("faq.title")}
         </div>
-        <div className={`${showFAQclass}`} ref={faqRef}>
+        <Link to="/" state={{ scrollContactUs: true }}>
+          {t("contact-us.title")}
+        </Link>
+        <div className={`${showFAQclass}`} ref={showFaqRef}>
           <div className="content__block content__text_l">
             1. {t("faq.q-1")}
           </div>
@@ -198,7 +243,11 @@ function MainPage() {
           <div className="content__block content__text">{t("faq.a-5")}</div>
         </div>
       </section>
-      <section className="content__section content__section_anchored" id="about-us">
+      <section
+        className="content__section content__section_anchored"
+        id="about-us"
+        ref={aboutRef}
+      >
         <div className="content__title">{t("about-us.title")}</div>
         <div className="content__block flex flex-align-center content-transform">
           <img src={about1} className="content__img" alt="" />
@@ -216,7 +265,7 @@ function MainPage() {
         </div>
       </section>
       <Address />
-      <ContactUs />
+      <ContactUs scrollRef={contactUsRef} />
     </>
   );
 }

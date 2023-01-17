@@ -16,20 +16,28 @@ function Header() {
 
   return (
     <header className="header">
-      <Link to="/" className="header__logo" onClick={() => setIsMobile(!isMobile)}>
+      <Link
+        to="/"
+        className="header__logo"
+        onClick={() => setIsMobile(!isMobile)}
+      >
         <img src={logo} width={150} height={150} alt="BJBI logo" />
       </Link>
       <ul className="header__menu">
         <li className="header__menu-item">
-          <Link to="/" className="header__logo">
+          <Link to="/" state={{ scrollTop: true }} className="header__logo">
             {t("home-page.title")}
           </Link>
         </li>
         <li className="header__menu-item">
-          <a href="#faq">{t("faq.title-short")}</a>
+          <Link to="/" state={{ scrollFAQ: true }}>
+            {t("faq.title-short")}
+          </Link>
         </li>
         <li className="header__menu-item">
-          <a href="#about-us">{t("about-us.title")}</a>
+          <Link to="/" state={{ scrollAbout: true }}>
+            {t("about-us.title")}
+          </Link>
         </li>
         <li className="header__menu-item">
           <Link to="currency-rates">{t("home-page.converter")}</Link>

@@ -25,7 +25,7 @@ function Address() {
           width="400"
           height="300"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           title="Office map"
           className="map"
         />

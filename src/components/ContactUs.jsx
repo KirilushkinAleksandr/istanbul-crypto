@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useTranslation } from "react-i18next";
 
-function ContactUs() {
+function ContactUs({scrollRef}) {
   const { t } = useTranslation();
 
   const nameRef = useRef(null);
@@ -20,7 +20,7 @@ function ContactUs() {
   };
 
   return (
-    <section className="content__section flex flex-center">
+    <section className="content__section flex flex-center" ref={scrollRef}>
         <form
           className="content__text form flex flex-column flex-align-center"
           onSubmit={(e) => handleSubmit(e)}
