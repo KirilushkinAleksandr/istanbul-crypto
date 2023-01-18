@@ -6,7 +6,7 @@ import Address from "./Address";
 import ContactUs from "./ContactUs";
 import rates from "../common/exchange-rates.json";
 import cbRates from "../common/cb-rates.json";
-import titleCoins from "../images/coins-title.jpg";
+import payPorter from "../images/payporter.svg";
 import titleCrypto from "../images/crypto-title.png";
 import circleUSD from "../images/circle-US.png";
 import circleEUR from "../images/circle-EU.png";
@@ -40,7 +40,7 @@ function MainPage() {
     .split(". ")
     .forEach((data, index) => {
       cryptoComponents.push(
-        <div className="content__block_bordered" key={index}>
+        <div className="content__block_filled" key={index}>
           {data}
         </div>
       );
@@ -99,14 +99,17 @@ function MainPage() {
 
   return (
     <>
-      <section className="content__section content__section_crypto content__section_anchored" ref={pageTopRef}>
+      <section className="content__section content__section_crypto content__section_anchored flex flex-column flex-align-center" ref={pageTopRef}>
         <div className="content__title">{t("home-page.crypto-title")}</div>
         <div className="content__text flex flex-between flex-wrap flex-align-center flex-center">
           {cryptoComponents}
         </div>
+        <button className="form__btn form__btn_half-width">
+            {t("contact-us.btn")}
+          </button>
       </section>
       <section className="content__section">
-        <img src={titleCoins} className="content__text_full-width" alt="" />
+        <img src={payPorter} className="content__text_full-width" alt="" />
       </section>
       <section className="content__section content__section_coins flex flex-column flex-align-center">
         <div className="content__title">{t("home-page.currencies-title")}</div>

@@ -45,9 +45,10 @@
   width: 100%;
   height: 50px;
   margin-top: 30px;
-  background-color: #ffc000;
-  border: 1px solid black;
-  border-radius: 5px;
+  background-color: #292523;
+  color: #D9B972;
+  border: 1px solid #D9B972;
+  border-radius: 8px;
   padding: 5px;
 }
 
