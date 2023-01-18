@@ -100,12 +100,12 @@ function MainPage() {
   return (
     <>
       <section className="content__section content__section_crypto content__section_anchored flex flex-column flex-align-center" ref={pageTopRef}>
-        <div className="content__title">{t("home-page.crypto-title")}</div>
-        <div className="content__text flex flex-between flex-wrap flex-align-center flex-center">
+        <div className="content__title crypto__title">{t("home-page.crypto-title")}</div>
+        <div className="content__text crypto__text flex flex-between flex-wrap flex-align-center flex-center">
           {cryptoComponents}
         </div>
-        <button className="form__btn form__btn_half-width">
-            {t("contact-us.btn")}
+        <button className="crypto_btn form__btn form__btn_half-width">
+            {t("crypto.btn")}
           </button>
       </section>
       <section className="content__section">
@@ -123,45 +123,49 @@ function MainPage() {
           <li className="content__item">{t("home-page.currencies.7")}</li>
         </ul>
         <div className="content__text content-transform content__text_full-width flex flex-between">
-          <div className="content__block_bordered content__block_third flex flex-align-center">
-            <img src={circleUSD} className="content__icon" alt="" />
+          <div className="content__block_bordered">
+            <div className="content__block_header">
+              <div className="content__block_title">USD</div>
+              <img src={flagUSA} className="content__icon" alt="" />
+            </div>
             <div className="flex flex-column flex-align-center flex-grow-1">
-              <div className="content__block">USD</div>
-              <div className="flex content__text_full-width">
-                <div className="content__block content__text">
+              <div className="flex content__text_full-width content__block_line flex-between">
+                <div className="content__text">
                   {t("exchange.sell")}
                 </div>
-                <div className="content__block flex-grow-1 text__center">
+                <div>
                   {parseInt(customRates[0].sell)}
                 </div>
               </div>
-              <div className="flex content__text_full-width">
-                <div className="content__block content__text">
+              <div className="flex content__text_full-width content__block_line flex-between">
+                <div className="content__text">
                   {t("exchange.buy")}
                 </div>
-                <div className="content__block flex-grow-1 text__center">
+                <div>
                   {customRates[0].buy}
                 </div>
               </div>
             </div>
           </div>
-          <div className="content__block_bordered content__block_third flex  flex-align-center">
-            <img src={circleEUR} className="content__icon" alt="" />
+          <div className="content__block_bordered">
+            <div className="content__block_header">
+              <div className="content__block_title">EUR</div>
+              <img src={flagEU} className="content__icon" alt="" />
+            </div>
             <div className="flex flex-column flex-align-center flex-grow-1">
-              <div className="content__block">EUR</div>
-              <div className="flex content__text_full-width">
-                <div className="content__block content__text">
+              <div className="flex content__text_full-width content__block_line flex-between">
+                <div className="content__text">
                   {t("exchange.sell")}
                 </div>
-                <div className="content__block flex-grow-1 text__center">
+                <div>
                   {customRates[1].sell}
                 </div>
               </div>
-              <div className="flex content__text_full-width">
-                <div className="content__block content__text">
+              <div className="flex content__text_full-width content__block_line flex-between">
+                <div className="content__text">
                   {t("exchange.buy")}
                 </div>
-                <div className="content__block flex-grow-1 text__center">
+                <div>
                   {customRates[1].buy}
                 </div>
               </div>
@@ -202,7 +206,7 @@ function MainPage() {
             ))}
           </div>
         </div>
-        <Link to="currency-rates" className="content__block">
+        <Link to="currency-rates" className="content__block form__btn currency__btn flex flex-center flex-align-center">
           {t("home-page.currencies-link")}
         </Link>
       </section>

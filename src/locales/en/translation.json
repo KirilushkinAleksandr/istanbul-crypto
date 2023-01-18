@@ -17,6 +17,9 @@
     "crypto": "Buy and sell cryptocurrencies with cash. Instantly, easy and safely. Low commissions. High limits. Exchange offices. In just a few steps, you can safely invest in crypto money and easily sell it whenever you want.",
     "contacts": "You can find the contact and transportation information of our exchange offices located in Istanbul on this page."
   },
+  "crypto": {
+    "btn": "Get useful info of crypto"
+  },
   "faq": {
     "title": "Frequently Asked Questions",
     "title-short": "FAQ",

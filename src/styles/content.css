@@ -1,7 +1,7 @@
 .content {
   margin: 0 auto;
   min-height: 50vh;
-  max-width: 880px;
+  max-width: 1280px;
 }
 
 @media screen and (max-width: 880px) {
@@ -33,11 +33,24 @@
 
 .content__section_crypto {
   background: url('../images/crypto.jpg') round;
+  padding: 87px 0 88px;  
+}
+
+.crypto_btn, .currency__btn {
+  max-width: 358px;
+}
+
+.crypto__title {
+  max-width: 503px;
+}
+
+.crypto__text {
+  max-width: 604px;
 }
 
 .content__title {
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 500;
   padding: 32px;
   text-align: center;
   text-transform: uppercase;
@@ -77,11 +90,29 @@
   margin-top: 10px;
 }
 
+.content__block_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.content__block_title {
+  font-size: 64px;
+}
+
 .content__block_bordered {
-  border: solid;
-  border-radius: 15px;
-  padding: 15px;
+  border: solid #D9B972 0.5px;
+  padding: 16px 32px;
   margin: 10px;
+  width: 395px;
+  border-radius: 24px;
+}
+
+.content__block_line {
+  border: solid #76757a 0.5px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 8px;
 }
 
 .content__block_filled {
@@ -93,8 +124,8 @@
   text-align: center;
 }
 
-.content__block_third {
-  width: 33%;
+.content__block_line {
+  border: solid #D9B972 0.5px;
 }
 
 .content__block_half {
@@ -110,6 +141,12 @@
 .content__img, .content__icon {
   max-width: 50%;
   max-height: 50%;
+}
+
+.content__icon {
+  width: 52px;
+  height: 39px;
+  margin-left: 12px;
 }
 
 .content__full-img {
@@ -142,7 +179,33 @@
 }
 
 .content__item {
-  font-size: large;
+  max-width: 604px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1B1B1F;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  padding: 16px;
+  margin-bottom: 16px;
+  justify-content: center;
 }
 
 .text__center {
@@ -178,11 +241,7 @@
 
   .content__img {
     max-width: 100%;
-  }
-
-  .content__icon {
-    max-width: 25%;
-    margin-right: 25%;
+    height: 100%;
   }
 
   .table {
