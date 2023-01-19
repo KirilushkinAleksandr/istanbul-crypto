@@ -20,38 +20,38 @@ function ContactUs({scrollRef}) {
   };
 
   return (
-    <section className="content__section flex flex-center" ref={scrollRef}>
-        <form
-          className="content__text form flex flex-column flex-align-center"
-          onSubmit={(e) => handleSubmit(e)}
-        >
-          <div className="content__title">{t("contact-us.title")}</div>
-          <input
-            className="content__text form__input"
-            type="text"
-            placeholder={t("contact-us.name")}
-            required
-            ref={nameRef}
-          />
-          <input
-            className="content__text form__input"
-            type="email"
-            placeholder={t("contact-us.mail")}
-            required
-            ref={emailRef}
-          />
-          <input
-            className="content__text form__input"
-            type="text"
-            placeholder={t("contact-us.text")}
-            required
-            ref={msgRef}
-          />
-          <button className="form__btn form__btn_half-width">
-            {t("contact-us.btn")}
-          </button>
-        </form>
-      </section>
+    <section className="content__section" ref={scrollRef}>
+      <div className="content__title">{t("contact-us.title")}</div>
+      <form
+        className="content__text form flex flex-column flex-align-center"
+        onSubmit={(e) => handleSubmit(e)}
+      >
+        <input
+          className="content__text form__input"
+          type="text"
+          placeholder={t("contact-us.name")}
+          required
+          ref={nameRef}
+        />
+        <input
+          className="content__text form__input"
+          type="email"
+          placeholder={t("contact-us.mail")}
+          required
+          ref={emailRef}
+        />
+        <input
+          className="content__text form__input"
+          type="text"
+          placeholder={t("contact-us.text")}
+          required
+          ref={msgRef}
+        />
+        <button className="form__btn form__btn_half-width">
+          {t("contact-us.btn")}
+        </button>
+      </form>
+    </section>
   );
 }
 

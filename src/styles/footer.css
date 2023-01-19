@@ -1,12 +1,10 @@
 .footer {
   color: #545454;
-  max-width: 880px;
+  max-width: 1280px;
   margin: 0px auto;
   padding: 62px 0 34px;
-  font-size: 19px;
-  line-height: 1.22;
-  display: flex;
-  justify-content: space-between;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 @media screen and (max-width: 880px) {
@@ -20,4 +18,12 @@
 .footer__item {
   font-size: 19px;
   line-height: 1.22;
+}
+
+.footer__text {
+  color: #FFF;
+}
+
+.footer__icon {
+  margin-right: 20px;
 }

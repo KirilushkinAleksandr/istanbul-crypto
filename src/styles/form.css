@@ -1,10 +1,9 @@
 .form {
-  width: 100%;
-  height: 100%;
-  max-width: 500px;
-  border: solid 1px #FCD535;
-  padding: 20px;
-  border-radius: 10px;
+  width: fit-content;
+  border: solid 1px #D9B972;
+  padding: 20px 80px 40px 80px;
+  border-radius: 40px;
+  margin: 50px auto;
 }
 
 .form__select {
@@ -31,13 +30,13 @@
 }
 
 .form__input {
-  width: 100%;
-  height: 50px;
-  border: 1px solid #999;
+  width: 604px;
+  height: 72px;
+  border: 1px solid #000;
   border-radius: 5px;
   margin-top: 30px;
   padding: 0 10px;
-  border: solid 1px #FCD535;
+  border: solid 1px #D9B972;
 }
 
 .form__btn {
@@ -58,5 +57,6 @@
 }
 
 .form__btn_half-width {
-  width: 50%;
+  width: fit-content;
+  padding: 12px 48px;
 }

@@ -5,14 +5,12 @@ import Header from "./Header";
 import Footer from "./Footer";
 import MainPage from "./MainPage";
 import ExchangePage from "./ExchangePage";
-import MessengerButtons from "./MessengerButtons";
 
 function App() {
   return (
     <div className="page">
       <Header />
       <main className="content">
-        <MessengerButtons />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/currency-rates" element={<ExchangePage />} />
