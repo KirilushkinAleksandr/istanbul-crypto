@@ -54,6 +54,7 @@
     "rates": "Rates",
     "currency": "Currency",
     "sell": "Sell",
-    "buy": "Buy"
+    "buy": "Buy",
+    "amount": "Количество"
   }
 }

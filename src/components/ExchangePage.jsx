@@ -3,13 +3,14 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import rates from "../common/exchange-rates.json";
+import arrows from "../images/arrows.svg";
 
 function ExchangePage() {
   const [fromAmount, setFromAmount] = useState(0);
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toAmount, setToAmount] = useState(0);
   const [toCurrency, setToCurrency] = useState("TRY");
-  const [isResShown, setIsResShown] = useState(false);
+  const [isResShown, setIsResShown] = useState(true);
   const pageRef = useRef(null);
   const inputRef = useRef(null);
   const { t } = useTranslation();
@@ -62,11 +63,87 @@ function ExchangePage() {
   return (
     <section
       ref={pageRef}
-      className="content__section content__section_coins content__section_anchored flex flex-column flex-align-center"
+      className="exchange content__section_anchored flex flex-column flex-align-center"
     >
-      <div className="content__title">{t("exchange.rates")}</div>
       <div className="content__text_full-width content-transform flex flex-around">
-        <div className="table content__text flex flex-column flex-align-center">
+        <div className="content__text form-exchange flex flex-column flex-align-center">
+          <form
+            className="flex flex-column flex-align-center"
+            onSubmit={(e) => handleSubmit(e)}
+          >
+            <div className="form__select-container flex">
+              <div className="flex flex-column form-exchange__field">
+                <label className="form-exchange__select-label">
+                  {t("exchange.amount")}
+                </label>
+                <input
+                  className="form-exchange__input"
+                  type="number"
+                  ref={inputRef}
+                  min={1}
+                  step={0.01}
+                  defaultValue={1}
+                  placeholder="amount"
+                  required
+                  onChange={() => setIsResShown(false)}
+                />
+              </div>
+              <div className="flex flex-column form-exchange__field">
+                <label className="form-exchange__select-label">
+                    {t("exchange.from")}
+                </label>
+                <select
+                  className="form-exchange__select"
+                  onChange={(e) => handleFromChange(e)}
+                  value={fromCurrency}
+                >
+                  <option value="USD" defaultValue>
+                    USD
+                  </option>
+                  <option value="RUB">RUB</option>
+                  <option value="EUR">EUR</option>
+                  <option value="TRY">TRY</option>
+                </select>
+              </div>
+              <img src={arrows} className="form-exchange__arrows"/>
+              <div className="flex flex-column form-exchange__field">
+                <label className="form-exchange__select-label">{t("exchange.to")}</label>
+                <select
+                  className="form-exchange__select flex flex-align-center"
+                  onChange={(e) => handleToChange(e)}
+                  value={toCurrency}
+                >
+                  <option value="USD">USD</option>
+                  <option value="RUB">RUB</option>
+                  <option value="EUR">EUR</option>
+                  <option value="TRY" defaultValue>
+                    TRY
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div className="flex form__select-container">
+              <div
+                className={`form-exchange__result content__text content__block${
+                  !isResShown ? " content__text_hidden" : ""
+                } flex flex-column flex-align-center`}
+              >
+                {res || 'dsdfsdf'}
+              </div>
+              <div className="flex">
+                <Link to="/" state={{ scrollContactUs: true }}>
+                  <div className="form-exchange__btn-light">
+                    {t("contact-us.title")}
+                  </div>
+                </Link>
+                <button className="form-exchange__btn">{t("exchange.get-rate")}</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div className="content__title">{t("exchange.rates")}</div>
+      <div className="table content__text flex flex-column flex-align-center">
           <div className="content__text_full-width flex flex-between">
             <div className="table__item table__item-name">
               {t("exchange.currency")}
@@ -89,70 +166,6 @@ function ExchangePage() {
             </div>
           ))}
         </div>
-        <div className="content__text form flex flex-column flex-align-center">
-          <form
-            className="form__content flex flex-column flex-align-center"
-            onSubmit={(e) => handleSubmit(e)}
-          >
-            <div className="form__select-container flex">
-              <div className="form__select-group flex flex-column">
-                <label className="form__select-label">
-                  {t("exchange.from")}
-                </label>
-                <select
-                  className="form__select"
-                  onChange={(e) => handleFromChange(e)}
-                  value={fromCurrency}
-                >
-                  <option value="USD" defaultValue>
-                    USD
-                  </option>
-                  <option value="RUB">RUB</option>
-                  <option value="EUR">EUR</option>
-                  <option value="TRY">TRY</option>
-                </select>
-              </div>
-              <div className="form__select-group flex flex-column">
-                <label className="form__select-label">{t("exchange.to")}</label>
-                <select
-                  className="form__select flex flex-align-center"
-                  onChange={(e) => handleToChange(e)}
-                  value={toCurrency}
-                >
-                  <option value="USD">USD</option>
-                  <option value="RUB">RUB</option>
-                  <option value="EUR">EUR</option>
-                  <option value="TRY" defaultValue>
-                    TRY
-                  </option>
-                </select>
-              </div>
-            </div>
-            <input
-              className="form__input"
-              type="number"
-              ref={inputRef}
-              min={1}
-              step={0.01}
-              defaultValue={1}
-              placeholder="amount"
-              required
-              onChange={() => setIsResShown(false)}
-            />
-            <Link to="/" state={{ scrollContactUs: true }}>
-              {t("contact-us.title")}
-            </Link>
-            <button className="form__btn">{t("exchange.get-rate")}</button>
-          </form>
-          <div
-            className={`content__text content__block${
-              !isResShown ? " content__text_hidden" : ""
-            } flex flex-column flex-align-center`}
-          >
-            {res}
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
