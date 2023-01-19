@@ -54,6 +54,7 @@
 
 .form__btn:hover {
   background-color: #d7a205;
+  color: #292523;
 }
 
 .form__btn_half-width {

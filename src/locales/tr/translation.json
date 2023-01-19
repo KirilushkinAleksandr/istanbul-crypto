@@ -17,6 +17,9 @@
     "crypto": "Fisiksel kripto. Para salim-atim burosu. Aninda, hizli ve guvenli. Dusuk kommisyonlar. Yuksek Limitler. Yalnızca birkaç adımda, güvenle kripto para yatırımı yapabilir, dilediğiniz zaman kolayca satabilirsiniz.",
     "contacts": "İstanbul’da yer alan döviz büromuza ait iletişim ve ulaşım bilgilerine bu sayfadan ulaşabilirsiniz."
   },
+  "crypto": {
+    "btn": "Get useful info of crypto"
+  },
   "faq": {
     "title": "Sıkça Sorulan Sorular",
     "title-short": "SSS",

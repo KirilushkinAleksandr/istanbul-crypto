@@ -4,19 +4,17 @@ import { Link, useLocation, useNavigate} from "react-router-dom";
 
 import Address from "./Address";
 import ContactUs from "./ContactUs";
+import Carousel from "./Carousel";
 import rates from "../common/exchange-rates.json";
 import cbRates from "../common/cb-rates.json";
 import payPorter from "../images/payporter.svg";
-import titleCrypto from "../images/crypto-title.png";
-import circleUSD from "../images/circle-US.png";
-import circleEUR from "../images/circle-EU.png";
+import flagEUsmall from "../images/flag-EU-small.png";
+import flagUSAsmall from "../images/flag-USA-small.png";
 import flagRUS from "../images/flag-RUS.png";
 import flagUSA from "../images/flag-USA.png";
 import flagEU from "../images/flag-EU.png";
 import flagUK from "../images/flag-UK.svg";
 import logoTCMB from "../images/logo-TCMB.png";
-import about1 from "../images/about-1.jpg";
-import about2 from "../images/about-2.jpg";
 
 function MainPage() {
   const { t } = useTranslation();
@@ -100,12 +98,12 @@ function MainPage() {
   return (
     <>
       <section className="content__section content__section_crypto content__section_anchored flex flex-column flex-align-center" ref={pageTopRef}>
-        <div className="content__title">{t("home-page.crypto-title")}</div>
-        <div className="content__text flex flex-between flex-wrap flex-align-center flex-center">
+        <div className="content__title crypto__title">{t("home-page.crypto-title")}</div>
+        <div className="content__text crypto__text flex flex-between flex-wrap flex-align-center flex-center">
           {cryptoComponents}
         </div>
-        <button className="form__btn form__btn_half-width">
-            {t("contact-us.btn")}
+        <button className="crypto_btn form__btn form__btn_half-width">
+            {t("crypto.btn")}
           </button>
       </section>
       <section className="content__section">
@@ -123,45 +121,49 @@ function MainPage() {
           <li className="content__item">{t("home-page.currencies.7")}</li>
         </ul>
         <div className="content__text content-transform content__text_full-width flex flex-between">
-          <div className="content__block_bordered content__block_third flex flex-align-center">
-            <img src={circleUSD} className="content__icon" alt="" />
+          <div className="content__block_bordered">
+            <div className="content__block_header">
+              <div className="content__block_title">USD</div>
+              <img src={flagUSAsmall} className="content__icon" alt="" />
+            </div>
             <div className="flex flex-column flex-align-center flex-grow-1">
-              <div className="content__block">USD</div>
-              <div className="flex content__text_full-width">
-                <div className="content__block content__text">
+              <div className="flex content__text_full-width content__block_line flex-between">
+                <div className="content__text">
                   {t("exchange.sell")}
                 </div>
-                <div className="content__block flex-grow-1 text__center">
+                <div>
                   {parseInt(customRates[0].sell)}
                 </div>
               </div>
-              <div className="flex content__text_full-width">
-                <div className="content__block content__text">
+              <div className="flex content__text_full-width content__block_line flex-between">
+                <div className="content__text">
                   {t("exchange.buy")}
                 </div>
-                <div className="content__block flex-grow-1 text__center">
+                <div>
                   {customRates[0].buy}
                 </div>
               </div>
             </div>
           </div>
-          <div className="content__block_bordered content__block_third flex  flex-align-center">
-            <img src={circleEUR} className="content__icon" alt="" />
+          <div className="content__block_bordered">
+            <div className="content__block_header">
+              <div className="content__block_title">EUR</div>
+              <img src={flagEUsmall} className="content__icon" alt="" />
+            </div>
             <div className="flex flex-column flex-align-center flex-grow-1">
-              <div className="content__block">EUR</div>
-              <div className="flex content__text_full-width">
-                <div className="content__block content__text">
+              <div className="flex content__text_full-width content__block_line flex-between">
+                <div className="content__text">
                   {t("exchange.sell")}
                 </div>
-                <div className="content__block flex-grow-1 text__center">
+                <div>
                   {customRates[1].sell}
                 </div>
               </div>
-              <div className="flex content__text_full-width">
-                <div className="content__block content__text">
+              <div className="flex content__text_full-width content__block_line flex-between">
+                <div className="content__text">
                   {t("exchange.buy")}
                 </div>
-                <div className="content__block flex-grow-1 text__center">
+                <div>
                   {customRates[1].buy}
                 </div>
               </div>
@@ -170,7 +172,7 @@ function MainPage() {
           <div className="content__block_bordered content__block_third">
             <div className="flex">
               <div className="content__logo flex flex-center flex-grow-1">
-                <img src={logoTCMB} width={30} alt="" />
+                <img src={logoTCMB} width={152} alt="" />
               </div>
               <div className="content__text flex-grow-1">
                 {t("exchange.sell")}
@@ -180,7 +182,7 @@ function MainPage() {
               </div>
             </div>
             {offRates.map((item, index) => (
-              <div className="flex content__block" key={index}>
+              <div className="flex content__block content__block_line" key={index}>
                 <div className="flex">
                   <img
                     src={currencyFlags[item.name]}
@@ -188,9 +190,9 @@ function MainPage() {
                     height={20}
                     alt=""
                   />
-                </div>
-                <div className="content__text content__text_grow">
-                  {item.name}
+                  <div className="content__text content__text_grow">
+                    {item.name}
+                  </div>
                 </div>
                 <div className="content__text content__text_grow">
                   {item.sell}
@@ -202,12 +204,9 @@ function MainPage() {
             ))}
           </div>
         </div>
-        <Link to="currency-rates" className="content__block">
+        <Link to="currency-rates" className="content__block form__btn currency__btn flex flex-center flex-align-center">
           {t("home-page.currencies-link")}
         </Link>
-      </section>
-      <section className="content__section">
-        <img src={titleCrypto} className=" content__text_full-width" alt="" />
       </section>
       <section
         className="content__section content__section_anchored flex flex-column flex-center"
@@ -251,21 +250,12 @@ function MainPage() {
         id="about-us"
         ref={aboutRef}
       >
-        <div className="content__title">{t("about-us.title")}</div>
-        <div className="content__block flex flex-align-center content-transform">
-          <img src={about1} className="content__img" alt="" />
-          <div
-            className="content__text text__center"
-            dangerouslySetInnerHTML={{ __html: t("about-us.text-1") }}
-          ></div>
-        </div>
-        <div className="content__block flex flex-align-center content-transform">
-          <div
-            className="content__text text__center"
-            dangerouslySetInnerHTML={{ __html: t("about-us.text-2") }}
-          ></div>
-          <img src={about2} className="content__img" alt="" />
-        </div>
+        <div className="content__title content__title-section">{t("about-us.title")}</div>
+        <div
+          className="content__text text__center"
+          dangerouslySetInnerHTML={{ __html: t("about-us.text-1") }}
+        ></div>
+        <Carousel />
       </section>
       <Address />
       <ContactUs scrollRef={contactUsRef} />
