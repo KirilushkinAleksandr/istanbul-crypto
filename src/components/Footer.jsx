@@ -25,8 +25,8 @@ function Footer() {
       <div className="footer__text flex flex-between">
         <p className="footer__item">&copy; BJBI Istanbul 2022 </p>
         <p className="footer__item">
-          <a className="footer__item" href="mailto:bjbi@mail.ru">
-            bjbi@mail.ru
+          <a className="footer__item" href="mailto:info@bjbi.org ">
+            info@bjbi.org 
           </a>
         </p>
         <p>
