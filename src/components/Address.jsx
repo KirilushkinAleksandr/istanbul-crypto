@@ -1,8 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import aero from "../images/aero-1.jpg";
-
 function Address() {
   const { t } = useTranslation();
 
@@ -24,7 +22,6 @@ function Address() {
           <div className=" text__center">
             Gümüşsuyu, Taksım Zafer Cd., 34435 Beyoğlu/İstanbul
           </div>
-          <img src={aero} className="content__block content__full-img" alt="" />
         </div>
       </div>
     </section>
