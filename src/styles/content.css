@@ -179,6 +179,10 @@
   color: #B39351;
 }
 
+.table__item-flag {
+  width: fit-content;
+}
+
 .table .form {
   width: auto;
 }

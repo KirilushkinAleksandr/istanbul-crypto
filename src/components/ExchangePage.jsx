@@ -53,6 +53,7 @@ function ExchangePage() {
   for (const key in rates) {
     if (key !== "TRY") {
       customRates.push({
+        img: require(`../images/flags-exchange/${key}.svg`),
         name: key,
         ...rates[key],
       });
@@ -145,6 +146,7 @@ function ExchangePage() {
       <div className="content__title">{t("exchange.rates")}</div>
       <div className="table content__text flex flex-column flex-align-center">
           <div className="content__text_full-width flex flex-between">
+            <div className="table__item table__item-name"></div>
             <div className="table__item table__item-name">
               {t("exchange.currency")}
             </div>
@@ -160,6 +162,9 @@ function ExchangePage() {
               className="content__text_full-width flex flex-between"
               key={index}
             >
+              <div className="table__item">
+                <img src={item.img} className="table__item-flag"></img>
+              </div>
               <div className="table__item">{item.name}</div>
               <div className="table__item">{item.sell}</div>
               <div className="table__item">{item.buy}</div>
