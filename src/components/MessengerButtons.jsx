@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as IconTG } from '../images/telegram.svg';
+import IconTG from '../images/telegram.png';
 
 function MessengerButtons() {
   return (
@@ -9,8 +9,8 @@ function MessengerButtons() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="page__link">
-        <IconTG  />
+      <div className="telegram__link">
+        <img src={IconTG} />
       </div>
     </a>
   );
