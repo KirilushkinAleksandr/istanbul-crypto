@@ -48,11 +48,12 @@
 }
 
 .content__title {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: 500;
   padding: 32px;
   text-align: center;
   text-transform: uppercase;
+  line-height: 76px;
 }
 
 .content__title_clickable {
@@ -209,6 +210,15 @@
   margin: auto;
   font-size: 20px;
   line-height: 28px;
+}
+
+.map {
+  width: 604px;
+  height: 335px;
+  left: 314px;
+  top: 320px;
+  border-radius: 20px;
+  margin: 64px 24px;
 }
 
 @media screen and (max-width: 880px) {
