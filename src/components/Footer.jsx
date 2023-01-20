@@ -18,15 +18,15 @@ function Footer() {
           <img src={logo} width={150} height={150} alt="BJBI logo" />
         </Link>
         <div className="flex">
-          <img className="footer__icon" src={facebook} />
-          <img className="footer__icon" src={instagram} />          
+          <img className="footer__icon" src={facebook} alt="" />
+          <img className="footer__icon" src={instagram} alt="" />          
           <a
             href="https://wa.me/905335794451"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div className="footer__whatsapp">
-              <img src={whatsapp}/>
+              <img src={whatsapp} alt="" />
             </div>
           </a>
         </div>

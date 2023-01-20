@@ -52,21 +52,21 @@ function Currency() {
         <li className="content__item content__item-medium">{t("home-page.currencies.2")}</li>
         <li className="content__item content__item-small">{t("home-page.currencies.3")}</li>
       </ul>
-      <div className="flex flex-center" onClick={() => setIsOpen(true)}>
-        <img src={dots} className="content__dropdown"/>
+      <div className="flex flex-center">
+        <img src={dots} alt="" onClick={() => setIsOpen(true)} className="content__dropdown content_clickable"/>
       </div>
     </div>
   );
 
   const List = () => (
-    <ul onClick={() => setIsOpen(false)} className="content__list">
-      <li className="content__item">{t("home-page.currencies.1")}</li>
-      <li className="content__item">{t("home-page.currencies.2")}</li>
-      <li className="content__item">{t("home-page.currencies.3")}</li>
-      <li className="content__item">{t("home-page.currencies.4")}</li>
-      <li className="content__item">{t("home-page.currencies.5")}</li>
-      <li className="content__item">{t("home-page.currencies.6")}</li>
-      <li className="content__item">{t("home-page.currencies.7")}</li>
+    <ul onClick={() => setIsOpen(false)} className="content__list content_clickable">
+      <li className="content__item content_clickable">{t("home-page.currencies.1")}</li>
+      <li className="content__item content_clickable">{t("home-page.currencies.2")}</li>
+      <li className="content__item content_clickable">{t("home-page.currencies.3")}</li>
+      <li className="content__item content_clickable">{t("home-page.currencies.4")}</li>
+      <li className="content__item content_clickable">{t("home-page.currencies.5")}</li>
+      <li className="content__item content_clickable">{t("home-page.currencies.6")}</li>
+      <li className="content__item content_clickable">{t("home-page.currencies.7")}</li>
     </ul>
   );
 

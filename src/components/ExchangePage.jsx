@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import ReactFlagsSelect from "react-flags-select";
 
 import rates from "../common/exchange-rates.json";
 import arrows from "../images/arrows.svg";
@@ -76,13 +75,13 @@ function ExchangePage() {
     <>
       <div className="flex">
         <span>{Number(fromAmount).toFixed(2)}</span>
-        <img src={selectOptions[fromCurrency]} />
+        <img src={selectOptions[fromCurrency]} alt="" />
         <span>{fromCurrency}</span>
       </div>
       <span>=</span>
       <div className="flex">
         <span>{Number(toAmount).toFixed(2)}</span>
-        <img src={selectOptions[toCurrency]} />
+        <img src={selectOptions[toCurrency]} alt="" />
         <span>{toCurrency}</span>
       </div>
     </>
@@ -115,9 +114,9 @@ function ExchangePage() {
                   className="form-exchange__input"
                   type="number"
                   ref={inputRef}
-                  min={1.00}
+                  min={1.0}
                   step={0.01}
-                  defaultValue={1.00.toFixed(2)}
+                  defaultValue={(1.0).toFixed(2)}
                   placeholder="amount"
                   required
                   onChange={() => setIsResShown(false)}
@@ -125,27 +124,48 @@ function ExchangePage() {
               </div>
               <div className="flex flex-column form-exchange__field">
                 <label className="form-exchange__select-label">
-                    {t("exchange.from")}
+                  {t("exchange.from")}
                 </label>
                 <div className="flex">
-                  <div><img src={selectOptions[fromCurrency]} className="form-exchange__select-img"/></div>
+                  <div>
+                    <img
+                      src={selectOptions[fromCurrency]}
+                      className="form-exchange__select-img"
+                      alt=""
+                    />
+                  </div>
                   <select
                     className="form-exchange__select"
                     onChange={(e) => handleFromChange(e)}
                     value={fromCurrency}
                   >
-                    <option value="USD" defaultValue>USD</option>
+                    <option value="USD" defaultValue>
+                      USD
+                    </option>
                     <option value="RUB">RUB</option>
                     <option value="EUR">EUR</option>
                     <option value="TRY">TRY</option>
                   </select>
                 </div>
               </div>
-              <img src={arrows} onClick={() => handleSwap()} className="form-exchange__arrows"/>
+              <img
+                src={arrows}
+                onClick={() => handleSwap()}
+                className="form-exchange__arrows"
+                alt=""
+              />
               <div className="flex flex-column form-exchange__field">
-                <label className="form-exchange__select-label">{t("exchange.to")}</label>
+                <label className="form-exchange__select-label">
+                  {t("exchange.to")}
+                </label>
                 <div className="flex">
-                  <div><img src={selectOptions[toCurrency]} className="form-exchange__select-img"/></div>
+                  <div>
+                    <img
+                      src={selectOptions[toCurrency]}
+                      className="form-exchange__select-img"
+                      alt=""
+                    />
+                  </div>
                   <select
                     className="form-exchange__select flex flex-align-center"
                     onChange={(e) => handleToChange(e)}
@@ -154,15 +174,15 @@ function ExchangePage() {
                     <option value="USD">USD</option>
                     <option value="RUB">RUB</option>
                     <option value="EUR">EUR</option>
-                    <option value="TRY" defaultValue>TRY</option>
+                    <option value="TRY" defaultValue>
+                      TRY
+                    </option>
                   </select>
                 </div>
               </div>
             </div>
             <div className="flex form__select-container">
-              <div
-                className="flex flex-row form-exchange__result content__text content__block flex flex-column flex-align-center"
-              >
+              <div className="flex flex-row form-exchange__result content__text content__block flex flex-column flex-align-center">
                 {isResShown && res}
               </div>
               <div className="flex flex-center">
@@ -171,7 +191,9 @@ function ExchangePage() {
                     {t("contact-us.title")}
                   </div>
                 </Link>
-                <button className="form-exchange__btn">{t("exchange.get-rate")}</button>
+                <button className="form-exchange__btn">
+                  {t("exchange.get-rate")}
+                </button>
               </div>
             </div>
           </form>
@@ -179,32 +201,32 @@ function ExchangePage() {
       </div>
       <div className="content__title">{t("exchange.rates")}</div>
       <div className="table content__text flex flex-column flex-align-center">
-          <div className="content__text_full-width flex flex-between">
-            <div className="table__item table__item-name"></div>
-            <div className="table__item table__item-name">
-              {t("exchange.currency")}
-            </div>
-            <div className="table__item table__item-name">
-              {t("exchange.sell")}
-            </div>
-            <div className="table__item table__item-name">
-              {t("exchange.buy")}
-            </div>
+        <div className="content__text_full-width flex flex-between">
+          <div className="table__item table__item-name"></div>
+          <div className="table__item table__item-name">
+            {t("exchange.currency")}
           </div>
-          {customRates.map((item, index) => (
-            <div
-              className="content__text_full-width flex flex-between"
-              key={index}
-            >
-              <div className="table__item">
-                <img src={item.img} className="table__item-flag"></img>
-              </div>
-              <div className="table__item">{item.name}</div>
-              <div className="table__item">{Number(item.sell).toFixed(2)}</div>
-              <div className="table__item">{Number(item.buy).toFixed(2)}</div>
-            </div>
-          ))}
+          <div className="table__item table__item-name">
+            {t("exchange.sell")}
+          </div>
+          <div className="table__item table__item-name">
+            {t("exchange.buy")}
+          </div>
         </div>
+        {customRates.map((item, index) => (
+          <div
+            className="content__text_full-width flex flex-between"
+            key={index}
+          >
+            <div className="table__item">
+              <img src={item.img} className="table__item-flag" alt="" />
+            </div>
+            <div className="table__item">{item.name}</div>
+            <div className="table__item">{Number(item.sell).toFixed(2)}</div>
+            <div className="table__item">{Number(item.buy).toFixed(2)}</div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
