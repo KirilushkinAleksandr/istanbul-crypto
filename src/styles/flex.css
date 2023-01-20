@@ -33,3 +33,7 @@
 .flex-grow-1 {
   flex-grow: 1;
 }
+
+.flex-end {
+  justify-content: end;
+}
