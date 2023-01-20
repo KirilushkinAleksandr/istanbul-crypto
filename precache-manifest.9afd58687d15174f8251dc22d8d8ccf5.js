@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "a8bde19f4262493c4160",
-    "url": "./static/css/main.ec9e19ae.chunk.css"
+    "revision": "8624bdbe7389f4da9fd7",
+    "url": "./static/css/main.49d7a2f0.chunk.css"
   },
   {
-    "revision": "a8bde19f4262493c4160",
-    "url": "./static/js/main.3a611238.chunk.js"
+    "revision": "8624bdbe7389f4da9fd7",
+    "url": "./static/js/main.5295b7d0.chunk.js"
   },
   {
-    "revision": "54e92b2af6f09b97ea48",
-    "url": "./static/js/runtime~main.70f80954.js"
+    "revision": "66d80f7689bbcf4eda0f",
+    "url": "./static/js/runtime~main.8a2f3b9e.js"
   },
   {
-    "revision": "b1d927beba6a0c564bab",
-    "url": "./static/js/2.933468f2.chunk.js"
+    "revision": "40b92b7d4b51af66b79f",
+    "url": "./static/js/2.b67e4a71.chunk.js"
   },
   {
-    "revision": "e897de3d059808493f9f",
-    "url": "./static/js/3.5aaf3fca.chunk.js"
+    "revision": "50ee3c8b5b065e8c8cba",
+    "url": "./static/js/3.26d8ba2d.chunk.js"
   },
   {
     "revision": "717080ccce5ec36ecad0fb9b3f6f0adb",
@@ -30,6 +30,10 @@ self.__precacheManifest = [
   {
     "revision": "5af8a5fd375a23494468a36a9b548df5",
     "url": "./static/media/facebook.5af8a5fd.svg"
+  },
+  {
+    "revision": "4709b06d5acaa18650b73582773e8a32",
+    "url": "./static/media/whatsapp.4709b06d.svg"
   },
   {
     "revision": "dceac5562f22211749b62f2bb8555351",
@@ -120,16 +124,24 @@ self.__precacheManifest = [
     "url": "./static/media/USD.ffbac567.svg"
   },
   {
-    "revision": "6a41a11820a0822408abb546c3952360",
-    "url": "./static/media/ellipse.6a41a118.svg"
+    "revision": "d6cd444515f72d0508bf106dbe42bbae",
+    "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
+  },
+  {
+    "revision": "e981e8dcf70e0413e00f8ad42e24bc9c",
+    "url": "./static/media/plus.e981e8dc.svg"
+  },
+  {
+    "revision": "e9f02ea277831a0ea955507ed7b86349",
+    "url": "./static/media/minus.e9f02ea2.svg"
   },
   {
     "revision": "8e9701d8efc7df15706b06712b1c6de1",
     "url": "./static/media/SF-Mono-Regular.8e9701d8.otf"
   },
   {
-    "revision": "d6cd444515f72d0508bf106dbe42bbae",
-    "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
+    "revision": "6a41a11820a0822408abb546c3952360",
+    "url": "./static/media/ellipse.6a41a118.svg"
   },
   {
     "revision": "0e9c24e2e9015ec4284addc27012a91d",
@@ -148,7 +160,7 @@ self.__precacheManifest = [
     "url": "./static/media/crypto.de93b963.jpg"
   },
   {
-    "revision": "f016ebf057e231ff064c018c61fa17d6",
+    "revision": "7e0f40449c9e958c72a72e6bda5b2de1",
     "url": "./index.html"
   }
 ];
