@@ -124,16 +124,16 @@ self.__precacheManifest = [
     "url": "./static/media/ellipse.6a41a118.svg"
   },
   {
-    "revision": "0e9c24e2e9015ec4284addc27012a91d",
-    "url": "./static/media/SF-Mono-Heavy.0e9c24e2.otf"
+    "revision": "8e9701d8efc7df15706b06712b1c6de1",
+    "url": "./static/media/SF-Mono-Regular.8e9701d8.otf"
   },
   {
     "revision": "d6cd444515f72d0508bf106dbe42bbae",
     "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
   },
   {
-    "revision": "8e9701d8efc7df15706b06712b1c6de1",
-    "url": "./static/media/SF-Mono-Regular.8e9701d8.otf"
+    "revision": "0e9c24e2e9015ec4284addc27012a91d",
+    "url": "./static/media/SF-Mono-Heavy.0e9c24e2.otf"
   },
   {
     "revision": "753a1db35877e724f6a61c1e99855eb6",
