@@ -48,8 +48,8 @@ function Header() {
           className="header__lang"
           selected={selected}
           onSelect={(code) => setSelected(code)}
-          countries={["US", "TR", "RU"]}
-          customLabels={{ US: "EN", TR: "TR", RU: "RU" }}
+          countries={["US", "TR", "RU", "UA", "SA"]}
+          customLabels={{ US: "EN", TR: "TR", RU: "RU", UA: "UA", SA: "SA" }}
         />
       </div>
     </header>
