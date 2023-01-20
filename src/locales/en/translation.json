@@ -56,5 +56,109 @@
     "sell": "Sell",
     "buy": "Buy",
     "amount": "Amount"
-  }
+  },
+  "stablecoin": {
+    "title": "What Is a Stablecoin?",
+    "text1": "A stablecoin is a cryptoasset pegged to another asset, such as fiat currencies or precious metals. Stablecoins are designed to maintain a relatively stable price so that users can avoid the volatility risks common in the crypto markets.",
+    "text2": "There are three types of stablecoin: fiat-backed, crypto-backed, and algorithmic. Fiat-backed stablecoins, like BUSD, are pegged to traditional fiat currencies. They maintain a peg by keeping fiat reserves that can be exchanged for the stablecoin. Crypto-backed stablecoins (such as DAI) over-collateralize their tokens to factor in crypto price volatility, and algorithmic stablecoins control supply without the need for reserves.",
+    "text3": "Due to their practical use and large market capitalization, regulators are beginning to take a closer look at stablecoins. Some governments are even creating their own to maintain control over the currency."
+  },
+  "introduction": {
+    "title": "Introduction",
+    "text": "Cryptocurrencies aren’t all about volatility. In fact, some of them are specifically designed to maintain a fixed price: stablecoins. In an industry where coins and tokens can crash overnight, there is a massive demand for currencies that mix blockchain benefits with the ability to track a more stable commodity. If you haven’t started using stablecoins while trading or investing, it’s worth learning more about them as well as the benefits and drawbacks they bring."
+  },
+  "stablecoin-crypto": {
+    "title": "What is a stablecoin in cryptocurrency?",
+    "text1": "Stablecoins are digital assets that track the value of fiat currencies or other assets. For example, you can purchase tokens pegged to the dollar, euro, yen, and even gold and oil. A stablecoin allows the holder to lock in profits and losses and transfer value at a stable price on peer-to-peer blockchain networks.",
+    "text2": "Bitcoin (BTC), Ether (ETH), and other altcoins have always historically been volatile. While this provides many opportunities for speculation, it does have drawbacks. Volatility makes it challenging to use cryptocurrencies for day-to-day payments. For example, merchants may take $5 in BTC for a coffee one day but find their BTC worth 50% less the next. This makes it challenging to plan and operate a business around.",
+    "text3": "Before, crypto investors and traders had no way to lock in a profit or avoid volatility without converting crypto back into fiat. The creation of stablecoins provided a simple solution to these two issues. Today, you can easily get in and out of crypto volatility using stablecoins like BUSD or USDC."
+  },
+  "how-works": {
+    "title": "How do stablecoins work?",
+    "text": "Creating a coin that tracks another commodity’s price or value requires a pegging mechanism. There are multiple ways to do this, and most rely on another asset acting as collateral. Some methods have proved more successful than others, but there is still no such thing as a guaranteed peg.",
+    "fiat-backed": {
+      "title": "Fiat-backed stablecoins",
+      "text1": "A fiat-backed stablecoin keeps a fiat currency, such as USD or GBP, in reserves. For example, each BUSD is backed up by a real US dollar held as collateral. Users can then convert from fiat into a stablecoin and vice versa at the pegged rate. If the price of the token drifts from the underlying fiat, arbitrageurs will quickly bring the price back to the fixed rate.",
+      "text2": "Let’s say BUSD is trading above one dollar. Arbitrageurs turn US dollars into BUSD and sell it for more on the market. This increases the supply of BUSD for sale and lowers the price to one dollar again. If BUSD trades below one dollar, traders purchase BUSD and convert it to USD. This increases demand for BUSD, raising its price back to one."
+    },
+    "crypto-backed": {
+      "title": "Crypto-backed stablecoins",
+      "text1": "Crypto-backed stablecoins work in a similar way as fiat-backed stablecoins. But instead of using dollars or another currency as reserves, we have cryptocurrencies acting as collateral. As the crypto market is highly volatile, crypto-backed stablecoins usually over-collateralize the reserves as a measure against price swings.",
+      "text2": "Crypto-backed stablecoins use smart contracts to manage minting and burning. This makes the process more reliable as users can independently audit the contracts. However, some crypto-backed stablecoins are run by Decentralized Autonomous Organizations (DAOs), where the community can vote for changes in the project. In this case, you will have to get involved or just trust the DAO to make the best decisions.",
+      "text3": "Let’s look at an example. To mint $100 of a DAI pegged to USD, you will need to provide $150 of crypto working at 1.5x collateral. Once you have your DAI, you can use it how you want. You could transfer it, invest with it, or simply keep it. If you want your collateral back, you’ll need to pay back the 100 DAI. However, if your collateral drops below a certain collateral ratio or the loan’s value, it will be liquidated.",
+      "text4": "When the stablecoin is below $1, incentives are created for holders to return their stablecoin for the collateral. This decreases the supply of the coin, causing the price to rise back to $1. When it’s above $1, users are incentivized to create the token, increasing its supply and lowering the price. DAI is one example, but all crypto-backed stablecoins rely on a mix of game theory and on-chain algorithms to incentivize price stability."
+    },
+    "algorithmic": {
+      "title": "Algorithmic stablecoins",
+      "text1": "Algorithmic stablecoins take a different approach by removing the need for reserves. Instead, algorithms and smart contracts manage the supply of the tokens issued. This model is much rarer than crypto or fiat-backed stablecoins and more challenging to run successfully.",
+      "text2": "Essentially, an algorithmic stablecoin system will reduce the token supply if the price falls below the fiat currency it tracks. This could be done via locked staking, burning, or buy-backs. If the price surpasses the value of the fiat currency, new tokens enter into circulation to reduce the stablecoin’s value."
+    }
+  },
+  "advantages-stablecoins": {
+    "title": "What are the advantages of stablecoins?",
+    "text1": "Stablecoins are versatile and powerful tools for investors, traders, and cryptocurrency users. Their main strengths include the fact that: ",
+    "text2": "1. Stablecoins can be used for day-to-day payments. Shops, businesses, and individuals value stability. Due to high volatility, cryptocurrencies haven’t achieved widespread use for payment processing. Large stablecoins have a track record of maintaining their peg, making them suitable for daily use.",
+    "text3": "2. Stablecoins have the benefits of being blockchain-based. You can send a stablecoin to anyone globally who has a compatible crypto wallet (which can be created for free in seconds). Double-spending and false transactions are also almost impossible to do. These qualities, and more, make stablecoins incredibly versatile.",
+    "text4": "3. Stablecoins can be used by traders and investors to hedge their portfolios. Allocating a certain percentage of a portfolio to stabilized coins is an effective way to reduce overall risk. Your portfolio as a whole will be more resistant to market price swings, and you will also have funds on hand in case a good opportunity shows up. You can also sell crypto for stablecoins during a market downturn and repurchase them at a lower price (i.e., shorting). Stablecoins allow you to enter and exit positions conveniently, without the need to take money off-chain."
+  },
+  "disadvantages-stablecoins": {
+    "title": "What are the disadvantages of stablecoins?",
+    "text1": "Despite their potential to support widespread cryptocurrency adoption, stablecoins still have limitations:",
+    "text2": "1. Stablecoins aren’t guaranteed to maintain their peg. While some large projects have a good track record, there have also been many projects that have failed. When a stablecoin has constant issues maintaining its peg, it can dramatically lose its value.",
+    "text3": "2. Lack of transparency. Not all stablecoins release full public audits and many provide only regular attestations. Private accountants carry these out on behalf of the stablecoin issuers.",
+    "text4": "3. Fiat-collateralized stablecoins are usually more centralized than other cryptocurrencies. A central entity holds the collateral and may also be subject to external financial regulation. This gives them significant control over the coin. You also need to trust that the issuer has the reserves they claim.",
+    "text5": "4. Crypto-collateralized and uncollateralized coins rely heavily on their community to function. It’s common to have open governance mechanisms in crypto projects, meaning that users get a say in the development and running of each project. As such, you need to get involved or trust the developers and community to run the project responsibly."
+  },
+  "stablecoin-use-cases": {
+    "title": "Stablecoin use cases",
+    "text": "Let’s take a deeper dive into two popular stablecoins available on the market: BUSD and DAI.",
+    "busd": {
+      "title": "Fiat-backed stablecoin: Binance USD (BUSD)",
+      "text": "BUSD is a USD-backed stablecoin created by Paxos with branding support from Binance. It's approved by The New York State Department of Financial Services, and regular attestations confirm that fiat reserves are equal to the supply of BUSD. Through Paxos’ website, you can directly mint new BUSD or burn BUSD for the underlying collateral. This mechanism allows for arbitrage that keeps BUSD successfully pegged."
+    },
+    "dai": {
+      "title": "Crypto-backed stablecoin: MakerDAO (DAI)",
+      "text": "DAI is a crypto-backed stablecoins that tracks USD on Ethereum. The coin is managed by the MakerDAO community that holds the governance token MKR. You can use MKR to create and vote on proposals to change the project. DAI is over-collateralized to deal with the volatility of crypto, and users enter into Collateralized Debt Positions (CDPs) that manage their collateral. The whole process is run via smart contracts."
+    }
+  },
+  "stablecoins-regulated": {
+    "title": "Are stablecoins regulated?",
+    "text": "Stablecoins have caught regulators’ interest worldwide due to their unique mix of fiat and crypto. As they are designed to maintain a stable price, they are useful for reasons other than speculation. They also can be transferred internationally cheaply and quickly. Some countries are even experimenting with creating their own stablecoins. As a stablecoin is a type of cryptocurrency, it will likely fall under the same regulations as crypto in your local jurisdiction. Issuing stablecoins with fiat reserves may also need regulatory approval."
+  },
+  "closing-thoughts": {
+    "title": "Closing thoughts",
+    "text1": "It’s hard to find an investor or trader nowadays who hasn’t held a stablecoin at some point. Stablecoins are often held in crypto exchanges so that traders can quickly capitalize on new market opportunities. As we’ve discussed, they are also very useful to enter and exit positions without having to cash out into fiat. Apart from trading and investing, stablecoins can be used for making payments, worldwide transfers, or earning passive income with staking in the DeFi ecosystem.",
+    "text2": "Even though they are an integral part of crypto and enabled the creation of a new financial system, you shouldn’t underestimate the risks. We’ve seen stablecoin projects with failing pegs, missing reserves, and lawsuit problems. So while stablecoins are incredibly versatile tools, don’t forget they are still a cryptocurrency and hold similar risks. You can mitigate risks by diversifying your portfolio, but make sure to do your own research before investing or trading and don't invest more than you can afford to lose.",
+    "text3": "Disclaimer: Cryptocurrency investment is subject to high market risk. Binance is not responsible for any of your trading losses. The statements made in this article are for educational purposes only and should not be considered financial advice or an investment recommendation."
+  },
+  "history": {
+    "title": "History of Blockchain",
+    "text": "The underlying technology behind cryptocurrencies is the blockchain. It allows every client in the network to reach consensus without ever having to trust each other."
+  },
+  "early-days": {
+    "title": "The early days",
+    "text1": "The idea behind blockchain technology was described as early as 1991 when research scientists Stuart Haber and W. Scott Stornetta introduced a computationally practical solution for time-stamping digital documents so that they could not be backdated or tampered with.",
+    "text2": "The system used a cryptographically secured chain of blocks to store the time-stamped documents and in 1992 Merkle trees were incorporated to the design, making it more efficient by allowing several documents to be collected into one block. However, this technology went unused and the patent lapsed in 2004, four years before the inception of Bitcoin."
+  },
+  "reusable": {
+    "title": "Reusable Proof Of Work",
+    "text1": "In 2004, computer scientist and cryptographic activist Hal Finney (Harold Thomas Finney II)  introduced a system called RPoW, Reusable Proof Of Work. The system worked by receiving a non-exchangeable or a non-fungible Hashcash based proof of work token and in return created an RSA-signed token that could then be transferred from person to person.",
+    "text2": "RPoW solved the double spending problem by keeping the ownership of tokens registered on a trusted server that was designed to allow users throughout the world to verify its correctness and integrity in real time.",
+    "text3": "RPoW can be considered as an early prototype and a significant early step in the history of cryptocurrencies."
+  },
+  "bitcoin-network": {
+    "title": "Bitcoin network",
+    "text1": "In late 2008 a white paper introducing a decentralized peer-to-peer electronic cash system - called Bitcoin - was posted to a cryptography mailing list by a person or group using the pseudonym Satoshi Nakamoto.",
+    "text2": "Based on the Hashcash proof of work algorithm, but rather than using a hardware trusted computing function like the RPoW, the double spending protection in Bitcoin was provided by a decentralized peer-to-peer protocol for tracking and verifying the transactions. In short, Bitcoins are “mined” for a reward using the proof-of-work mechanism by individual miners and then verified by the decentralized nodes in the network.",
+    "text3": "On the 3rd of January 2009, Bitcoin came to existence when the first bitcoin block was mined by Satoshi Nakamoto, which had a reward of 50 bitcoins. The first recipient of Bitcoin was Hal Finney, he received 10 bitcoins from Satoshi Nakamoto in the world's first bitcoin transaction on 12 January 2009."
+  },
+  "ethereum": {
+    "title": "Ethereum",
+    "text1": "In 2013, Vitalik Buterin, a programmer and a co-founder of the Bitcoin Magazine stated that Bitcoin needed a scripting language for building decentralized applications. Failing to gain agreement in the community, Vitalik started the development of a new blockchain-based distributed computing platform, Ethereum, that featured a scripting functionality, called smart contracts.",
+    "text2": "Smart contracts are programs or scripts that are deployed and executed on the Ethereum blockchain, they can be used for example to make a transaction if certain conditions are met. Smart contracts are written in specific programming languages and compiled into bytecode, which a decentralized Turing-complete virtual machine, called the Ethereum virtual machine (EVM) can then read and execute.",
+    "text3": "Developers are also able to create and publish applications that run inside Ethereum blockchain. These applications are usually referred to as DApps (decentralized applications) and there are already hundreds of DApps running in the Ethereum blockchain, including social media platforms, gambling applications, and financial exchanges.",
+    "text4": "The cryptocurrency of Ethereum is called Ether, it can be transferred between accounts and is used to pay the fees for the computational power used when executing smart contracts.",
+    "text5": "Today blockchain technology is gaining a lot of mainstream attention and is already used in a variety of applications, not limited to cryptocurrencies. For more information about blockchain and other interesting topics, don’t forget to watch our other videos on Binance Academy."
+  },
+  "source": "Source: Binance Academy"
 }
