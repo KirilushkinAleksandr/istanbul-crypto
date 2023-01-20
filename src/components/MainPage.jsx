@@ -70,9 +70,9 @@ function MainPage() {
         <div className="content__text crypto__text flex flex-between flex-wrap flex-align-center flex-center">
           {cryptoComponents}
         </div>
-        <button className="crypto_btn form__btn form__btn_half-width">
-            {t("crypto.btn")}
-          </button>
+        <Link to="crypto-info" className="content__block form__btn currency__btn flex flex-center flex-align-center">
+          {t("crypto.btn")}
+        </Link>
       </section>
       <section className="content__section">
         <img src={payPorter} className="content__text_full-width" alt="" />

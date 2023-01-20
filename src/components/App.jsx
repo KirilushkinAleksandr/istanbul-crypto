@@ -5,6 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import MainPage from "./MainPage";
 import ExchangePage from "./ExchangePage";
+import CryptoInfoPage from "./CryptoInfoPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/currency-rates" element={<ExchangePage />} />
+          <Route path="/crypto-info" element={<CryptoInfoPage />} />
           <Route
             path="*"
             element={
