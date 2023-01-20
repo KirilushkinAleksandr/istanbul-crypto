@@ -31,7 +31,7 @@ function Footer() {
         </p>
         <p>
           <a className="footer__item" href="tel:05323615498">
-            +90 532 361 54 98
+            +90 533 579 44 51
           </a>
         </p>
       </div>

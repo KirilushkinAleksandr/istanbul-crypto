@@ -20,7 +20,7 @@ function Address() {
         />
       </div>
       <div className="text__center">
-        Gümüşsuyu, Taksım Zafer Cd., 34435 Beyoğlu/İstanbul
+        Gökalp Mah., Prof. Dr. Muammer Aksoy Cad. 39/B, 34020 Zeytinburnu/İstanbul
       </div>
     </section>
   );

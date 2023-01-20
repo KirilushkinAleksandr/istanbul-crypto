@@ -5,7 +5,7 @@ import IconTG from '../images/telegram.png';
 function MessengerButtons() {
   return (
     <a
-      href="https://t.me/bjbi_seamen"
+      href="https://t.me/bjbi_org"
       target="_blank"
       rel="noopener noreferrer"
     >
