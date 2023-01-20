@@ -9,7 +9,7 @@ import next from "../images/next.png";
 const CarouselItem = ({ imgSRC }) => {
   return (
     <div className="carousel-item">
-      <img src={imgSRC} />
+      <img src={imgSRC} alt="" />
     </div>
   )
 };
@@ -38,17 +38,17 @@ function Carousel() {
       <div className="carousel__text">
         <div className="indicators">
           <div onClick={() => updateIndex(activeIndex - 1)}>
-            <img src={prev} />
+            <img src={prev} alt="" />
           </div>
           <div onClick={() => updateIndex(activeIndex + 1)}>
-            <img src={next} />
+            <img src={next} alt="" />
           </div>
         </div>
         <div className="content__block flex flex-align-center content-transform">
           <div
             className="content__text text__center"
             dangerouslySetInnerHTML={{ __html: t("about-us.text-2") }}
-          ></div>
+          />
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ function MessengerButtons() {
       rel="noopener noreferrer"
     >
       <div className="telegram__link">
-        <img src={IconTG} />
+        <img src={IconTG} alt="" />
       </div>
     </a>
   );

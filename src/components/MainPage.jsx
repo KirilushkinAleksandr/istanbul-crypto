@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { createRef, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
@@ -11,17 +11,31 @@ import payPorter from "../images/payporter.svg";
 
 function MainPage() {
   const { t } = useTranslation();
-  const showFaqRef = useRef(null);
-  const faqRef = useRef(null);
+  const faqBlockRef = useRef(null);
   const aboutRef = useRef(null);
   const contactUsRef = useRef(null);
   const pageTopRef = useRef(null);
   const location = useLocation();
   const navigate = useNavigate();
-
+  
+  const faqs = [
+    {question: 'faq.q-1', answer: 'faq.a-1'},
+    {question: 'faq.q-2', answer: 'faq.a-2'},
+    {question: 'faq.q-3', answer: 'faq.a-3'},
+    {question: 'faq.q-4', answer: 'faq.a-4'},
+    {question: 'faq.q-5', answer: 'faq.a-5'},
+  ];
+  const iconFAQref = useRef(faqs.map(() => createRef()));
+  const iconOpenClass = "content_icon-open";
+  const iconCloseClass = "content_icon-close";
+  const showFAQref = useRef(faqs.map(() => createRef()));
   const showFAQclass = "content__text_hidden";
-  const switchShowFAQ = () =>
-    showFaqRef.current && showFaqRef.current.classList.toggle(showFAQclass);
+  const switchShowFAQ = (index) => {
+    iconFAQref.current[index] &&
+      iconFAQref.current[index].current.classList.toggle(iconCloseClass);
+    showFAQref.current[index] &&
+      showFAQref.current[index].current.classList.toggle(showFAQclass);
+  }
 
   const cryptoComponents = [];
 
@@ -41,7 +55,7 @@ function MainPage() {
 
   useEffect(() => {
     if (location.state && location.state.scrollFAQ) {
-      scrollToTarget(faqRef);
+      scrollToTarget(faqBlockRef);
     }
     if (location.state && location.state.scrollAbout) {
       scrollToTarget(aboutRef);
@@ -65,8 +79,13 @@ function MainPage() {
 
   return (
     <>
-      <section className="content__section content__section_crypto content__section_anchored flex flex-column flex-align-center" ref={pageTopRef}>
-        <div className="content__title crypto__title">{t("home-page.crypto-title")}</div>
+      <section
+        className="content__section content__section_crypto content__section_anchored flex flex-column flex-align-center"
+        ref={pageTopRef}
+      >
+        <div className="content__title crypto__title">
+          {t("home-page.crypto-title")}
+        </div>
         <div className="content__text crypto__text flex flex-between flex-wrap flex-align-center flex-center">
           {cryptoComponents}
         </div>
@@ -79,40 +98,34 @@ function MainPage() {
       </section>
       <Currency />
       <section
-        className="content__section content__section_anchored flex flex-column flex-center"
+        className="content__section content__section_anchored flex flex-between"
         id="faq"
-        ref={faqRef}
+        ref={faqBlockRef}
       >
-        <div
-          className="content__title content__title_clickable"
-          onClick={() => switchShowFAQ()}
-        >
-          {t("faq.title")}
+        <div>
+          <div className="content__title content__title_left-align">{t("faq.title")}</div>
+          <Link to="/" className="form__btn currency__btn flex flex-center flex-align-center" state={{ scrollContactUs: true }}>
+            {t("contact-us.title")}
+          </Link>
         </div>
-        <Link to="/" state={{ scrollContactUs: true }}>
-          {t("contact-us.title")}
-        </Link>
-        <div className={`${showFAQclass}`} ref={showFaqRef}>
-          <div className="content__block content__text_l">
-            1. {t("faq.q-1")}
-          </div>
-          <div className="content__block content__text">{t("faq.a-1")}</div>
-          <div className="content__block content__text_l">
-            2. {t("faq.q-2")}
-          </div>
-          <div className="content__block content__text">{t("faq.a-2")}</div>
-          <div className="content__block content__text_l">
-            3. {t("faq.q-3")}
-          </div>
-          <div className="content__block content__text">{t("faq.a-3")}</div>
-          <div className="content__block content__text_l">
-            4. {t("faq.q-4")}
-          </div>
-          <div className="content__block content__text">{t("faq.a-4")}</div>
-          <div className="content__block content__text_l">
-            5. {t("faq.q-5")}
-          </div>
-          <div className="content__block content__text">{t("faq.a-5")}</div>
+        <div>
+          {faqs.map((item, index) => (
+            <div key={index} className="content__block_question">
+              <div
+                ref={iconFAQref.current[index]}
+                className={`content__block flex flex-between content_clickable content_open ${iconOpenClass} ${iconCloseClass}`}
+                onClick={() => switchShowFAQ(index)}
+              >
+                {index + 1}. {t(item.question)}
+              </div>
+              <div
+                ref={showFAQref.current[index]}
+                className={`content__block content__block_answer ${showFAQclass}`}
+              >
+                {t(item.answer)}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
       <section
@@ -120,7 +133,9 @@ function MainPage() {
         id="about-us"
         ref={aboutRef}
       >
-        <div className="content__title content__title-section">{t("about-us.title")}</div>
+        <div className="content__title">
+          {t("about-us.title")}
+        </div>
         <div
           className="content__text text__center"
           dangerouslySetInnerHTML={{ __html: t("about-us.text-1") }}
