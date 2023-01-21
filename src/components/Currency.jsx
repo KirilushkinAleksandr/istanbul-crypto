@@ -86,7 +86,7 @@ function Currency() {
                 {t("exchange.sell")}
               </div>
               <div>
-                {parseInt(customRates[0].sell)}
+                {Number(customRates[0].sell).toFixed(2)}
               </div>
             </div>
             <div className="flex content__text_full-width content__block_line flex-between">
@@ -94,7 +94,7 @@ function Currency() {
                 {t("exchange.buy")}
               </div>
               <div>
-                {customRates[0].buy}
+                {Number(customRates[0].buy).toFixed(2)}
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ function Currency() {
                 {t("exchange.sell")}
               </div>
               <div>
-                {customRates[1].sell}
+                {Number(customRates[1].sell).toFixed(2)}
               </div>
             </div>
             <div className="flex content__text_full-width content__block_line flex-between">
@@ -118,7 +118,7 @@ function Currency() {
                 {t("exchange.buy")}
               </div>
               <div>
-                {customRates[1].buy}
+                {Number(customRates[1].buy).toFixed(2)}
               </div>
             </div>
           </div>
@@ -149,10 +149,10 @@ function Currency() {
                 </div>
               </div>
               <div className="content__text content__text_grow">
-                {item.sell}
+                {Number(item.sell).toFixed(2)}
               </div>
               <div className="content__text content__text_grow">
-                {item.buy}
+                {Number(item.buy).toFixed(2)}
               </div>
             </div>
           ))}

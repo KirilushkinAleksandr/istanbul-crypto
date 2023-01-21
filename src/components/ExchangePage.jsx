@@ -129,7 +129,7 @@ function ExchangePage() {
                   !isResShown ? " content__text_hidden" : ""
                 } flex flex-column flex-align-center`}
               >
-                {res || 'dsdfsdf'}
+                {res}
               </div>
               <div className="flex">
                 <Link to="/" state={{ scrollContactUs: true }}>
@@ -166,8 +166,8 @@ function ExchangePage() {
                 <img src={item.img} className="table__item-flag"></img>
               </div>
               <div className="table__item">{item.name}</div>
-              <div className="table__item">{item.sell}</div>
-              <div className="table__item">{item.buy}</div>
+              <div className="table__item">{Number(item.sell).toFixed(2)}</div>
+              <div className="table__item">{Number(item.buy).toFixed(2)}</div>
             </div>
           ))}
         </div>
