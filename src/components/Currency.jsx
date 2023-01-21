@@ -59,7 +59,7 @@ function Currency() {
   );
 
   const List = () => (
-    <ul onClick={() => setIsOpen(false)} className="content__list content_clickable">
+    <ul onClick={() => setIsOpen(false)} className="content__list content_clickable flex flex-column flex-align-center">
       <li className="content__item content_clickable">{t("home-page.currencies.1")}</li>
       <li className="content__item content_clickable">{t("home-page.currencies.2")}</li>
       <li className="content__item content_clickable">{t("home-page.currencies.3")}</li>
@@ -137,21 +137,21 @@ function Currency() {
           </div>
           {offRates.map((item, index) => (
             <div className="flex content__block content__block_line" key={index}>
-              <div className="flex">
+              <div className="flex table__currency">
                 <img
                   src={currencyFlags[item.name]}
                   width={30}
                   height={20}
                   alt=""
                 />
-                <div className="content__text content__text_grow">
+                <div className="content__text">
                   {item.name}
                 </div>
               </div>
-              <div className="content__text content__text_grow">
+              <div className="content__text flex-grow-1">
                 {Number(item.sell).toFixed(2)}
               </div>
-              <div className="content__text content__text_grow">
+              <div className="content__text flex-grow-1">
                 {Number(item.buy).toFixed(2)}
               </div>
             </div>

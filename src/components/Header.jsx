@@ -25,7 +25,7 @@ function Header() {
       >
         <img src={logo} className="header__logo-img" alt="BJBI logo" />
       </Link>
-      <div className="header_navigation">
+      <div className="header__navigation content-transform">
         <ul className="header__menu">
           <li className="header__menu-item">
             <Link to="/" state={{ scrollTop: true }} className="header__logo">

@@ -1,6 +1,7 @@
 .crypto__page {
   font-size: 18px;
   line-height: 22px;
+  padding: 24px;
 }
 
 .title {
@@ -21,4 +22,10 @@
 
 .crypto__page div {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .crypto__page {
+    padding: 12px;
+  }
 }
