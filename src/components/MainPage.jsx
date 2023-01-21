@@ -98,11 +98,11 @@ function MainPage() {
       </section>
       <Currency />
       <section
-        className="content__section content__section_anchored flex flex-between"
+        className="content__section content__section_anchored content-transform flex flex-between"
         id="faq"
         ref={faqBlockRef}
       >
-        <div>
+        <div className="flex flex-column flex-align-center">
           <div className="content__title content__title_left-align">{t("faq.title")}</div>
           <Link to="/" className="form__btn currency__btn flex flex-center flex-align-center" state={{ scrollContactUs: true }}>
             {t("contact-us.title")}
@@ -113,7 +113,7 @@ function MainPage() {
             <div key={index} className="content__block_question">
               <div
                 ref={iconFAQref.current[index]}
-                className={`content__block flex flex-between content_clickable content_open ${iconOpenClass} ${iconCloseClass}`}
+                className={`content__block flex flex-between content_clickable content_open ${iconOpenClass}`}
                 onClick={() => switchShowFAQ(index)}
               >
                 {index + 1}. {t(item.question)}

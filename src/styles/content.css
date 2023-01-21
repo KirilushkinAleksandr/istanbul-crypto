@@ -35,17 +35,18 @@
 }
 
 .content__section_coins {
-  background: url('../images/graph.png') no-repeat;
+  background: url('../images/graph.png') round no-repeat;
   margin-top: 72px;
 }
 
 .content__section_crypto {
-  background: url('../images/crypto.jpg') round;
-  padding: 87px 0 88px;  
+  background: url('../images/crypto.jpg') round no-repeat;
+  padding: 88px 0;  
 }
 
-.crypto__btn, .currency__btn {
+.currency__btn {
   max-width: 358px;
+  color: #D9B972;
 }
 
 .crypto__title {
@@ -63,6 +64,7 @@
   text-align: center;
   text-transform: uppercase;
   line-height: 76px;
+  word-break: break-word;
 }
 
 .content__title_left-align {
@@ -113,6 +115,7 @@
   padding: 16px 24px;
   margin: 10px;
   width: 395px;
+  max-width: 100%;
   border-radius: 24px;
   font-size: 20px;
 }
@@ -186,12 +189,17 @@
   width: fit-content;
 }
 
+.table__currency {
+  width: 280px;
+}
+
 .table .form {
   width: auto;
 }
 
 .content__item {
-  max-width: 604px;
+  width: 604px;
+  max-width: 100%;
 
   font-style: normal;
   font-weight: 500;
@@ -234,6 +242,7 @@
 
   width: 604px;
   height: 56px;
+  max-width: 100%;
 
   background: #FFFFFF;
   box-shadow: 0px 20px 4px rgba(0, 0, 0, 0.25);
@@ -262,6 +271,7 @@
 
   width: 460px;
   height: 96.37px;
+  max-width: 100%;
   
   background: #9B9B9B;
   box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
@@ -294,6 +304,7 @@
 
   width: 365px;
   height: 33.34px;
+  max-width: 100%;
 
   background: #49484d;
   border-radius: 0 0 5px 5px;
@@ -320,6 +331,7 @@
 .content__list {
   margin-top: 18px;
   padding: 0;
+  width: 100%;
 }
 
 .text__center {
@@ -339,19 +351,27 @@
   margin: 64px 24px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 768px) {
   .content {
     margin: 0 19px;
   }
 
+  .content__title {
+    font-size: 50px;
+  }
+
+  .content__title_left-align {
+    text-align: center;
+  }
+
   .content-transform {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .content__section_coins, .content__section_crypto {
-    background-repeat: round repeat;
-    height: auto;
+  .content__section_anchored {
+    scroll-margin-top: 0;
   }
 
   .content__block_third {
@@ -361,10 +381,6 @@
 
   .content__block_half {
     width: 100%;
-  }
-
-  .content__text_grow {
-    flex-grow: 1;
   }
 
   .content__img {
@@ -379,5 +395,15 @@
 
   .map {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content__section_crypto {
+    padding: 0;
+  }
+
+  .content__title {
+    font-size: 42px;
   }
 }

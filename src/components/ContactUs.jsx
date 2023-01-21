@@ -10,7 +10,8 @@ function ContactUs({scrollRef}) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const msgTemplate = `mailto:questions@bjbi.org?subject=Name: "${nameRef
+    const mailAddress = "questions@bjbi.org";
+    const msgTemplate = `mailto:${mailAddress}?subject=Name: "${nameRef
       .current.value || "none"}" e-mail: "${emailRef.current.value ||
       "none"}"&amp;body=${msgRef.current.value || "none"}`;
     const link = document.createElement("a");

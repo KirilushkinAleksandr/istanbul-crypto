@@ -53,3 +53,9 @@
 .indicators > button {
   margin: 5px;
 }
+
+@media screen and (max-width: 425px) {
+  .carousel {
+    height: 1015px;
+  }
+}
