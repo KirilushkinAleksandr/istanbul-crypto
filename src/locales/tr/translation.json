@@ -56,5 +56,109 @@
     "sell": "Sell",
     "buy": "Buy",
     "amount": "Amount"
-  }
+  },
+  "stablecoin": {
+    "title": "Sabit Coin Nedir?",
+    "text1": "Sabit coin, itibari para ya da kıymetli metal gibi fiyatı istikrarlı olan bir varlığa endeksli bir kripto varlıktır. Sabit coinler, kripto para piyasalarında yaygın olarak görülen fiyat oynaklıklarından kaçınmak üzere geliştirilmiştir.",
+    "text2": "Üç tür sabit coin vardır: itibari para destekli, kripto destekli ve algoritmik. BUSD gibi itibari para destekli sabit coinler geleneksel itibari paralara endekslidir. Sabit coine dönüştürülebilen itibari para rezervleri sayesinde endekslerini korurlar. Kripto destekli sabit coinler (DAI gibi) kripto fiyat oynaklığını dengelemek için tokenlerinde aşırı teminatlandırma yapar ve algoritmik sabit coinler de rezerve ihtiyaç duymadan arzlarını kontrol edebilir.",
+    "text3": "Yasal düzenleme kurumları, pratik kullanımları ve yüksek piyasa değerleri nedeniyle sabit coinleri daha yakından incelemeye başlamıştır. Bazı devletler, para birimleri üzerinde kontrollerini korumak için kendi sabit coinlerini yaratmaya bile yönelmiştir."
+  },
+  "introduction": {
+    "title": "Giriş",
+    "text": "Kripto paraların hepsinde oynaklık görülmez. Aslında bazıları, sabit bir fiyatı korumak üzere özel olarak tasarlanmıştır: sabit coinler. Coin ve tokenlerin bir gecede çakılabildiği bir sektörde, hem blockchain'in avantajlarına sahip hem de daha istikrarlı bir emtianın değerini takip eden para birimlerine yönelik çok büyük bir talep vardır. Alım satım ya da yatırım yaparken sabit coinleri kullanmaya başlamadıysanız, artıları ve eksileriyle bu coinler hakkında daha fazla bilgi edinmeniz faydanıza olacaktır."
+  },
+  "stablecoin-crypto": {
+    "title": "Kripto parada sabit coin nedir?",
+    "text1": "Sabit coinler, itibari paraların ya da diğer varlıkların değerini takip eden dijital varlıklardır. Örneğin, değeri dolar, euro, yen hatta altın ya da petrole endeksli tokenler satın alabilirsiniz. Bir sabit coin, coin sahibinin kar ve zararlarını kilitlemesine ve eşler arası blockchain ağlarında istikrarlı bir fiyat üzerinden değer transfer etmesine imkan tanır.",
+    "text2": "Bitcoin (BTC), Ether (ETH) ve diğer altcoinler, bugüne kadar hep fiyat dalgalanmaları yaşamıştır. Bu dalgalanmalar spekülasyon yapmak için pek çok fırsat yaratsa da bazı dezavantajlar da getirir. Oynaklık, günlük ödemeler için kripto paraları kullanmayı zorlaştırır. Örneğin, satıcılar kahve için bir gün 5 USD'lik BTC alırken bir sonraki gün BTC'lerinin değerinin %50 düştüğünü görebilir. Bu da işleri planlamayı ve yürütmeyi zorlaştırır.",
+    "text3": "Eskiden, kripto yatırımcılarının ve alım satım yapanların gelirlerini kilitlemesinin ve oynaklıktan kaçınmasının tek yolu kriptolarını itibari paraya dönüştürmesiydi. Fakat sabit coinlerin yaratılması, bu iki soruna basit bir çözüm getirmiştir. Günümüzde, BUSD ya da USDC gibi sabit coinleri kullanarak kriptoya girmeniz ya da oynaklıktan kaçınmak amacıyla kriptodan çıkmanız son derece kolaydır."
+  },
+  "how-works": {
+    "title": "Sabit coinler nasıl çalışır?",
+    "text": "Başka bir emtianın fiyatını ya da değerini takip eden bir coin yaratmak bir endeksleme mekanizması gerektirir. Bunu yapmanın birden fazla yolu vardır, fakat çoğu zaman teminat işlevi gören başka bir varlık kullanılır. Bazı yöntemler diğerlerine kıyasla daha başarılı olsa da garantili endeks diye bir şey yine de mümkün değildir.",
+    "fiat-backed": {
+      "title": "İtibari para destekli sabit coinler",
+      "text1": "İtibari para destekli bir sabit coin, rezervlerinde USD ya da GBP gibi bir itibarı para tutar. Örneğin her bir BUSD, teminat olarak tutulan gerçek bir ABD dolarıyla desteklenir. Kullanıcılar, endeks oranı üzerinden sabit coinlerle itibari paralar arasında geçiş yapabilir. Tokenin fiyatı dayanak itibari paradan uzaklaşırsa, arbitraj yapanlar fiyatı hızla sabit orana geri getirecektir.",
+      "text2": "BUSD'nin fiyatının bir doların üzerine çıktığını varsayalım. Arbitraj yapanlar ABD dolarını BUSD'ye dönüştürür ve bu BUSD'leri piyasada daha yüksek bir fiyattan satar. Bu da satışta olan BUSD arzını artırır ve fiyatı tekrar bir dolara düşürür. BUSD'nin fiyatı bir doların altına düşerse de kullanıcılar BUSD satın alır ve coinlerini USD'ye dönüştürür. Böylece BUSD için talep artar ve fiyat tekrar yükselir."
+    },
+    "crypto-backed": {
+      "title": "Kripto destekli sabit coinler",
+      "text1": "Kripto destekli sabit coinler de itibari para destekli sabit coinlere benzer şekilde çalışır. Fakat rezerv olarak dolar ya da başka bir para birimi kullanmak yerine teminat olarak kripto paralardan faydalanır. Kripto piyasası son derece oynak olduğu için kripto destekli sabit coinler fiyat dalgalanmalarına karşı önlem olarak genellikle rezervlerinde aşırı teminatlandırma yapar.",
+      "text2": "Kripto destekli sabit coinler, coin çıkarma ve yakma süreçlerini yönetmek için akıllı sözleşmeleri kullanır. Bu da kullanıcıların sözleşmeleri bağımsız olarak denetleyebilmesine imkan tanıyarak süreci daha güvenilir bir hale getirir. Fakat kripto destekli bazı sabit coinler, topluluğun projedeki değişikliklere yönelik oy kullanabildiği Merkeziyetsiz Otonom Organizasyonlar (DAO) tarafından idare edilir. Bu durumda, ya en iyi kararların alınacağı konusunda DAO'ya güvenmeniz ya da sizin de sürece dahil olmanız gerekir.",
+      "text3": "Bir örnek üzerinden ilerleyelim. USD'ye endeksli DAI'den 100 USD değerinde çıkarmak için 1,5x teminat olarak 150 USD değerinde kripto sunmanız gereklidir. DAI'lerinizi aldıktan sonra coinlerinizi istediğiniz şekilde kullanabilirsiniz. DAI'leri transfer edebilir, tutabilir ya da yatırımlarınızda kullanabilirsiniz. Teminatınızı geri almak isterseniz, 100 DAI'yi geri ödemeniz gerekir. Fakat teminatınız belirli bir teminat oranının ya da kredi değerinin altına düşerse likide edilir.",
+      "text4": "Sabit coin 1 USD'den düşük olduğunda, coin sahiplerinin teminatlarını geri almak için sabit coinlerini iade etmesine yönelik çeşitli teşvikler yaratılır. Bu da coinin arzını düşürerek fiyatın tekrar 1 USD'ye yükselmesine yol açar. Sabit coin 1 USD'den yüksek olduğunda ise kullanıcılar token yaratmaya teşvik edilir, böylece arz artar ve fiyat düşer. DAI örneklerden yalnızca bir tanesidir, fakat kripto para destekli tüm sabit coinler fiyat istikrarını teşvik etmek için oyun teorisi ve zincir üstü algoritmalarının bir karışımına dayanır."
+    },
+    "algorithmic": {
+      "title": "Algoritmik sabit coinler",
+      "text1": "Algoritmik sabit coinler, rezerve yönelik ihtiyacı ortadan kaldırarak farklı bir yaklaşım benimser. Çıkarılan tokenlerin arzı, bir merkez bankasının para politikasına benzer şekilde algoritmalar ve akıllı sözleşmeler tarafından idare edilir. Algoritmik model, kripto ya da itibari para destekli sabit coinlere kıyasla çok daha az kullanılır ve bu modelin başarıyla idare edilmesi daha zordur.",
+      "text2": "En temelde algoritmik bir sabit coin sistemi, fiyatın takip edilen itibari paranın altına düşmesi durumunda token arzını azaltır. Bunu yapmak için kilitli staking, yakımlar ya da geri alımlar kullanılabilir. Fiyat, itibari paranın değerinin üzerine çıkarsa da sabit coinin değerini düşürmek için dolaşıma yeni tokenler sokulur."
+    }
+  },
+  "advantages-stablecoins": {
+    "title": "Sabit coinlerin avantajları nelerdir?",
+    "text1": "Sabit coinler; yatırımcılar, alım satım yapanlar ve kripto para kullanıcıları için çok yönlü ve güçlü araçlardır. Güçlü olmalarını sağlayan başlıca özellikleri şunlardır: ",
+    "text2": "1. Sabit coinler günlük ödemeler için kullanılabilir. Dükkanlar, işletmeler ve bireyler istikrara önem verir. Oynaklıklarının yüksek olması nedeniyle kripto paraların ödemelerde kullanımı yaygınlaşmamıştır. Büyük sabit coinlerin endekslerini korumada bugüne kadarki başarısı, bu coinleri günlük kullanım için oldukça güvenilir ve uygun hale getirir.",
+    "text3": "2. Sabit coinler, blockchain tabanlı olmanın avantajlarına sahiptir. Bir sabit coini, uyumlu bir kripto cüzdanına (saniyeler içinde ücretsiz olarak bir cüzdan oluşturmak mümkündür) sahip, dünyanın herhangi bir yerindeki bir kişiye gönderebilirsiniz. Çift harcama ve yanlış işlem yapmak da neredeyse imkansızdır. Bu ve benzer özellikleri de sabit coinleri son derece çok yönlü bir hale getirir.",
+    "text4": "3. Sabit coinler, yatrımcılar tarafından portföylerini riskten korumak için kullanılabilir. Portföyün belirli bir yüzdesini sabit coinlere dağıtmak, genel riski azaltmanın etkili bir yoludur. Genel anlamda portföyünüz piyasa fiyatı dalgalanmalarına karşı daha dirençli hale gelir ve iyi bir fırsatın ortaya çıkması ihtimaline karşı elinizde hazır fon bulunur. Piyasa düşüşte olduğunda, kriptolarınızı sabit coinlere dönüştürebilir ve ileride daha düşük bir fiyattan bu kriptoları tekrar satın alabilirsiniz (yani açığa satış yapabilirsiniz). Sabit coinler, paranızı zincir dışına taşımak zorunda kalmadan rahatça pozisyonlardan çıkmanıza ya da pozisyonlara girmenize imkan tanır."
+  },
+  "disadvantages-stablecoins": {
+    "title": "Sabit coinlerin dezavantajları nelerdir?",
+    "text1": "Sabit coinler, geniş çaplı kripto para benimsenmesini destekleme potansiyellerine rağmen bazı dezavantajlara da sahiptir:",
+    "text2": "1. Sabit coinlerin endekslerini koruyacağı garanti değildir. Bazı büyük projeler bugüne kadar bunu başarmış olsa da başarısız olan pek çok proje de vardır. Bir sabit coin endeksini korumakta sürekli zorlanıyorsa, tüm değerini kaybedebilir.",
+    "text3": "2. Şeffaflık olmaması. Hem Tether (USDT) hem de USD Coin (USDC), denetimlerinin tamamını henüz herkese açık olarak yayınlamamıştır ve büyük sabit coinlerin çoğu yalnızca belirli aralıklarla denetlenir. Özel muhasebeciler, bu denetlemeleri sabit coin çıkaranların adına gerçekleştirir.",
+    "text4": "3. İtibari para destekli sabit coinler, genellikle diğer kripto paralardan daha merkezidir. Teminat bir birim tarafından tutulur ve bu birim dışarıdan finansal düzenlemelere de tabi olabilir. Bu da teminatı elinde tutan birime coin üzerinde önemli ölçüde kontrol tanır. Coin çıkaranların, iddia ettikleri rezervlere sahip olduklarına da güvenmeniz gerekir. ",
+    "text5": "4. Kriptoyla teminatlandırılmış ve teminatlandırılmamış coinlerin işlevlerini yerine getirmeleri büyük oranda topluluklarına bağlıdır. Kripto projelerinde açık yönetişim mekanizmalarına sıkça rastlanır. Diğer bir deyişle, kullanıcılar projelerin gelişiminde ve yürütülmesinde söz sahibidir. Dolayısıyla, ya sürece dahil olmanız ya da projeyi başarılı bir şekilde yürütecekleri konusunda geliştiricilere ve topluluğa güvenmeniz gerekir."
+  },
+  "stablecoin-use-cases": {
+    "title": "Sabit coin kullanım alanları",
+    "text": "Piyasadaki popüler iki sabit coin olan BUSD ve DAI'yi daha yakından inceleyelim.",
+    "busd": {
+      "title": "İtibari para destekli sabit coin: Binance USD (BUSD)",
+      "text": "BUSD, Paxos ve Binance tarafından oluşturulmuş bir sabit coindir. New York Finansal Hizmetler Departmanı, BUSD'yi düzenler ve itibari para rezervlerinin BUSD arzına denk olduğu düzenli denetimlerle onaylanır. Paxos'un web sitesinden doğrudan yeni BUSD'ler çıkarabilir ya da teminatınızı almak için BUSD yakabilirsiniz. Bu mekanizma, BUSD'nin endeksini başarıyla korumasını sağlayan arbitraja imkan tanır."
+    },
+    "dai": {
+      "title": "Kripto destekli sabit coin: MakerDAO (DAI)",
+      "text": "DAI, Ethereum üzerinde USD'yi takip eden en ünlü kripto destekli sabit coinlerden biridir. Coin, MKR yönetişim tokeninden tutan MakerDAO topluluğu tarafından idare edilir. MKR tokenlerinizi kullanarak projeye yönelik değişiklikler için öneriler oluşturabilir ve diğer önerileri oylayabilirsiniz. DAI, kriptonun oynaklığıyla başa çıkmak için aşırı teminatlandırma uygular ve kullanıcılar teminatlarını idare eden Teminatlandırılmış Borç Pozisyonlarına (CDP'ler) girer. Bu sürecin tamamı akıllı sözleşmeler tarafından yürütülür."
+    }
+  },
+  "stablecoins-regulated": {
+    "title": "Sabit coinler düzenlemeye tabi midir?",
+    "text": "Sabit coinler, itibari para ve kriptoyu benzersiz bir şekilde birleştirmeleriyle dünya genelinde düzenleyici kurumların ilgisini çekmiştir. Fiyatlarını istikrarlı tutmaları sayesinde spekülasyon dışında başka amaçlara yönelik de kullanışlı hale gelirler. Sabit coinlerle uluslararası transferler de hızlı ve ucuz bir şekilde yapılabilir. Bu nedenle bazı kişiler, bir ülkenin merkez bankası tarafından doğrudan kontrol edilememelerine rağmen sabit coinlerin itibari paraya rakip olabileceğini savunur. Bazı ülkeler, buna yanıt olarak kendi sabit coinlerini yaratma çalışmaları bile yapmaktadır.Sabit coin bir tür kripto para olduğundan, yerel yargı alanınızda muhtemelen kriptoyla aynı düzenlemelere tabi olacaktır. İtibari para rezervleriyle sabit coin çıkarmak için yasal onay da gerekli olabilir."
+  },
+  "closing-thoughts": {
+    "title": "Son Söz",
+    "text1": "Bugünlerde, bir noktada sabit coin tutmamış olan bir yatırımcı ya da kullanıcı bulmak oldukça zordur. Sabit coinler, yatırımcıların yeni piyasa fırsatlarından hızla faydalanabilmesi için genellikle kripto borsalarında tutulur. Daha önce de bahsettiğimiz gibi bu coinler, itibari paraya dönmek zorunda kalmadan pozisyonlardan çıkmak ya da pozisyonlara girmek için çok kullanışlıdır. Sabit coinler, alım satım ve yatırımın dışında ödemeler ve dünya genelinde transferler yapmak ya da DeFi ekosisteminde staking yaparak pasif gelir elde etmek için de oldukça kullanışlıdır.",
+    "text2": "Kriptonun temel parçaları olmaları ve yeni bir finansal sistemin yaratılmasına imkan tanımalarına rağmen riskler de göz ardı edilmemelidir. Bugüne kadar karşımıza endeksi yakalamayı başaramayan, eksik rezervlere sahip ve davalık olan sabit coin projeleri de çıkmıştır. Dolayısıyla, sabit coinler son derece esnek araçlar olsa da yine de kripto para oldukları ve benzer riskler taşıdıkları unutulmamalıdır. ",
+    "text3": "Portföyünüzü çeşitlendirerek riskleri azaltabilirsiniz, fakat alım satım ya da yatırım yapmadan önce mutlaka kendi araştırmanızı yapmalısınız."
+  },
+  "history": {
+    "title": "Block Zincirinin Tarihçesi",
+    "text": "Kripto para birimlerinin arkasındaki temel teknoloji blockchain'dir. Blockchain ağdaki bütün kullanıcıların birbirlerine güvenmek zorunda kalmadan mutabakata ulaşmasını sağlar."
+  },
+  "early-days": {
+    "title": "İlk günler",
+    "text1": "Blockchain teknolojisinin ardındaki fikir, bilim adamları Stuart Haber ve W. Scott Stornetta’nın hesaplama açısından kullanışlı bir çözüm ile dijital belgelerin zaman damgası ile kurcalanamaz veya geriye dönük olarak değiştirilememesi şeklinde 1991 yılında tanımlanmıştır.",
+    "text2": "Sistem, zaman damgalı belgelerin saklanması için kriptolanmış güvenli bir blockchaini kullanmış ve 1992 yılında Merkle ağaçları tasarıma dahil edilmesiyle birlikte birkaç belgenin bir blok halinde toplanması sağlanmış, buda sistemi daha verimli hale getirmiştir. Bununla birlikte, bu teknoloji kullanılmamış ve patent Bitcoin'in başlangıcından dört yıl önce, 2004 yılında sona ermiştir. "
+  },
+  "reusable": {
+    "title": "Yeniden Kullanılabilir İş İspatı",
+    "text1": "2004 yılında bilgisayar bilimcisi ve kriptografi aktivisti Hal Finney (Harold Thomas Finney II), yeniden kullanılabilir iş ispatı olan RPoW adlı bir sistemi tanıtmış; bu sistem, değiştirilemez ve özgün bir Hashcash tabanlı iş ispatı tokenı alarak çalışmaya başlamış ve karşılığında kişiden kişiye aktarılabilen bir RSA imzalı token oluşturmuştur.",
+    "text2": "Yeniden Kullanılabilir İş İspatı (RPoW), tokenların mülkiyetini, dünyanın her yerindeki kullanıcıların gerçek zamanlı olarak, verilerin doğruluğunu ve bütünlüğünü kontrol etmesine izin verecek şekilde tasarlanmış güvenilir bir sunucuda tutmak yoluyla, çifte harcama sorununu çözmüştür.",
+    "text3": "Yeniden Kullanılabilir İş İspatını (RPoW) kripto paranın tarihinde erken bir prototip ve önemli bir başlangıç adımı olarak düşünülebiliriz."
+  },
+  "bitcoin-network": {
+    "title": "Bitcoin Ağı",
+    "text1": "2008'in sonlarında, Bitcoin olarak adlandıralan merkezi olmayan eşler arası elektronik bir para sistemini tanıtan whitepaper, bir kişi veya grup tarafından Satoshi Nakamoto adını kullanılarak bir kriptografi posta listesine gönderilmiştir.",
+    "text2": "Bitcoin'de çifte harcama koruması, Hashcash iş ispatı algoritması dayanmakta ancak Yeniden Kullanılabilir İş İspatı (RPoW) gibi donanım tabanlı hesaplama işlevi kullanmak yerine, Bitcoin’de çifte harcama koruması, işlemleri takip eden ve doğrulayan, eşler arası dağıtık bir protokol tarafından sağlandı. Kısacası, Bitcoinler bireysel madenciler tarafından iş ispatı mekanizması kullanılarak ödül için “kazılır” ve daha sonra ağdaki merkezi olmayan bilgisayarlar tarafından doğrulanır. ",
+    "text3": "3 Ocak 2009'da, Bitcoin’in ilk bitcoin bloğu Satoshi Nakamoto tarafından ortaya çıkarıldığında, ona 50 bitcoin kazandırdı. Bitcoin'in ilk alıcısı olan Hal Finney, 12 Ocak 2009 tarihinde dünyanın ilk bitcoin işleminde Satoshi Nakamoto'dan 10 bitcoin aldı."
+  },
+  "ethereum": {
+    "title": "Ethereum",
+    "text1": "2013 yılında, bir programcı ve Bitcoin Dergisi'nin kurucularından biri olan Vitalik Buterin, Bitcoin'in merkezi olmayan uygulamalar oluşturabilmesi için bir betik diline ihtiyaç duyduğunu belirtti. Topluluk içinde anlaşmaya varamayan Vitalik, akıllı sözleşmeler olarak adlandırılan kodlama işlevi özelliği olan yeni dağıtık tabanlı bir blockchain hesaplama platformu olan Ethereum'u geliştirmeye başladı.",
+    "text2": "Akıllı sözleşmeler, Ethereum blockchain'inin üzerine yerleştirilen ve çalıştırılan programlar veya betiklerdir ve örnek vermek gerekirse belirli koşullar sağlandığında bir işlem yapmak için kullanılabilirler. Akıllı sözleşmeler, belirli programlama dillerinde yazılır ve Ethereum Sanal Makinesi (EVM) olarak adlandırılan, merkezi olmayan Turing-complete sanal makinesinin okuyabildiği ve yürütülebileceği baytkod olarak derlenirler.",
+    "text3": "Geliştiriciler ayrıca Ethereum blockchainin içinde çalışan uygulamalar oluşturabilir ve bu uygulamaları yayınlayabilir. Bu uygulamalar genellikle merkezi olmayan uygulamalar (DApps) olarak adlandırılır ve halihazırda  sosyal medya platformları, kumar uygulamaları ve finans uygulamaları da dahil olmak üzere Ethereum blockchain'inde çalışan yüzlerce merkezi olmayan uygulama  (DApp) vardır. ",
+    "text4": "Ethereum'un kripto para birimi Ether olarak adlandırılır, Ether hesaplar arasında birbirine yollanabilir ve akıllı sözleşmeler yürütülürken kullanılan hesaplama gücü için ücret ödemek için de kullanılır.",
+    "text5": "Bugün blockchain teknolojisi çok fazla ana akım dikkati üzerine çekmekte ve sadece kripto para birimleriyle sınırlı olmamak üzere çeşitli uygulamalarda kullanılmaktadır. Blockchain ve diğer ilginç konular hakkında daha fazla bilgi için Binance Academy'deki diğer videolarımızı izlemeyi unutmayın."
+  },
+  "source": "Source: Binance Academy"
 }
