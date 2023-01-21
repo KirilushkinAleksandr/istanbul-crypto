@@ -15,8 +15,12 @@
 
 .header__logo {
   max-width: 178px;
-  margin-left: 8px;
   width: 100%;
+  height: 150px;
+}
+
+.header__logo-img {
+  width: 150px;
   height: 150px;
 }
 
@@ -63,16 +67,39 @@ ul[role="listbox"] {
 
 @media screen and (max-width: 880px) {
   .header {
-    flex-direction: column;
     position: initial;
   }
 
+  .header__logo {
+    height: fit-content;
+    width: fit-content;
+  }
+
   .header__menu {
-    flex-direction: column;
-    padding: 0;
+    display: none;
   }
 
   .header__menu-item {
     margin-bottom: 10px;
   }
+
+  .header__lang button {
+    font-size: 20px !important;
+  }
 }
+
+@media screen and (max-width: 425px) {
+  .header__logo {
+    height: fit-content;
+  }
+
+  .header__logo-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header__lang button {
+    font-size: 20px !important;
+  }
+}
+
