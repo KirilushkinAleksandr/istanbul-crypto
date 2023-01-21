@@ -27,6 +27,13 @@
   border-radius: 3px;
 }
 
+.form-exchange__select-img {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+  position: absolute;
+}
+
 .form-exchange__field {
   margin: 0 26px;
   min-width: 150px;
@@ -78,5 +85,35 @@
 
 .form-exchange__result {
   margin-left: 26px;
+  color: #000;
+  margin-bottom: 20px;
 }
 
+.form-exchange__result img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;  
+  margin-top: -3px;
+}
+
+.form-exchange__result span {
+  margin: 0 10px;
+}
+
+
+@media screen and (max-width: 880px) {
+  .form__select-container, .form-exchange__result {
+    flex-direction: column;
+  }
+
+  .form-exchange__arrows {
+    height: 44px;
+    width: 44px;
+    margin: 20px auto;
+    transform: rotate(90deg);
+  }
+
+  .form-exchange__input {
+    width: 100%;
+  }
+}
