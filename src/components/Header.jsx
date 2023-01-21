@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import ReactFlagsSelect from "react-flags-select";
 import { Link } from "react-router-dom";
+import Navbar from "./NavBar";
 
 import logo from "../images/logo.svg";
 
@@ -16,12 +17,13 @@ function Header() {
 
   return (
     <header className="header">
+      <Navbar />
       <Link
         to="/"
         className="header__logo"
         onClick={() => setIsMobile(!isMobile)}
       >
-        <img src={logo} width={150} height={150} alt="BJBI logo" />
+        <img src={logo} className="header__logo-img" alt="BJBI logo" />
       </Link>
       <div className="header__navigation content-transform">
         <ul className="header__menu">
