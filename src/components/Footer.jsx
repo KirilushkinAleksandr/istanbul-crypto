@@ -9,7 +9,7 @@ import whatsapp from "../images/whatsapp.svg";
 function Footer() {
   return (
     <footer lang="en" className="footer">
-      <div className="flex flex-between flex-align-center">
+      <div className="flex flex-between flex-align-center footer__text">
         <Link
           to="/"
           state={{ scrollTop: true }}
@@ -39,8 +39,8 @@ function Footer() {
             info@bjbi.org 
           </a>
         </p>
-        <p>
-          <a className="footer__item" href="tel:+905335794451">
+        <p className="footer__item">
+          <a href="tel:+905335794451">
             +90 533 579 44 51
           </a>
         </p>

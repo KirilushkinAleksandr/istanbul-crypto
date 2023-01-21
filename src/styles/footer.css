@@ -7,17 +7,9 @@
   line-height: 28px;
 }
 
-@media screen and (max-width: 880px) {
-  .footer {
-    font-size: 14px;
-    line-height: 17px;
-    padding: 48px 19px 36px;
-  }
-}
 
 .footer__item {
   font-size: 19px;
-  line-height: 1.22;
 }
 
 .footer__text {
@@ -30,4 +22,21 @@
 
 .footer__whatsapp {
   margin-top: 5px;
+}
+
+@media screen and (max-width: 880px) {
+  .footer {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 48px 19px 36px;
+  }
+
+  .footer__item {
+    align-self: center;
+  }
+  
+  .footer__text {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
