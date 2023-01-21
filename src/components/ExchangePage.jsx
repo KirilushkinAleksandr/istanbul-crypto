@@ -18,6 +18,7 @@ function ExchangePage() {
   const pageRef = useRef(null);
   const inputRef = useRef(null);
   const { t } = useTranslation();
+  const hideResClass = 'form-exchange__result_hidden';
 
   useEffect(() => pageRef.current && pageRef.current.scrollIntoView());
 
@@ -70,22 +71,6 @@ function ExchangePage() {
     EUR: flagEU,
     TRY: flagTR,
   };
-
-  const res = (
-    <>
-      <div className="flex">
-        <span>{Number(fromAmount).toFixed(2)}</span>
-        <img src={selectOptions[fromCurrency]} alt="" />
-        <span>{fromCurrency}</span>
-      </div>
-      <span>=</span>
-      <div className="flex">
-        <span>{Number(toAmount).toFixed(2)}</span>
-        <img src={selectOptions[toCurrency]} alt="" />
-        <span>{toCurrency}</span>
-      </div>
-    </>
-  );
 
   const handleSwap = () => {
     const item = fromCurrency;
@@ -182,15 +167,29 @@ function ExchangePage() {
               </div>
             </div>
             <div className="flex form__select-container">
-              <div className="flex flex-row form-exchange__result content__text content__block flex flex-column flex-align-center">
-                {isResShown && res}
+              <div
+                className={`form-exchange__result content__text content__block flex flex-column flex-align-center ${
+                  !isResShown && hideResClass
+                }`}
+              >
+                <div className="flex">
+                  <span>{Number(fromAmount).toFixed(2)}</span>
+                  <img src={selectOptions[fromCurrency]} alt="" />
+                  <span>{fromCurrency}</span>
+                </div>
+                <span>=</span>
+                <div className="flex">
+                  <span>{Number(toAmount).toFixed(2)}</span>
+                  <img src={selectOptions[toCurrency]} alt="" />
+                  <span>{toCurrency}</span>
+                </div>
               </div>
               <div className="flex flex-center">
-                <Link to="/" state={{ scrollContactUs: true }}>
-                  <div className="form-exchange__btn-light">
+                <div className="form-exchange__btn form-exchange__btn_light">
+                  <Link to="/" state={{ scrollContactUs: true }}>
                     {t("contact-us.title")}
-                  </div>
-                </Link>
+                  </Link>
+                </div>
                 <button className="form-exchange__btn">
                   {t("exchange.get-rate")}
                 </button>

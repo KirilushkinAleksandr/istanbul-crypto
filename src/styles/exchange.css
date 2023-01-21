@@ -1,5 +1,6 @@
 .exchange {
   background: url("../images/ellipse.svg") round;
+  margin-top: 112px;
 }
 
 .form-exchange  {
@@ -37,7 +38,7 @@
 .form-exchange__field {
   margin: 0 26px;
   min-width: 150px;
-  width: 289px;
+  width: 290px;
 }
 
 .form-exchange__arrows {
@@ -55,10 +56,12 @@
   align-items: center;
   padding: 12px 16px;
   margin-right: 26px;
+  height: 45px;
 
   background: #59588D;
-  border-color: #59588D;
+  border: solid 1px #59588D;
   border-radius: 3px;
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 14px;
@@ -67,26 +70,24 @@
   color: #FFFFFF;
 }
 
-.form-exchange__btn-light {
-  align-items: center;
-  padding: 12px 16px;
-  margin-right: 26px;
-
+.form-exchange__btn_light {
   background: #FFF;
-  border: solid 1px #59588D;
-  border-radius: 3px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-
   color: #59588D;
+}
+
+.form-exchange__btn_light a:hover {
+  color: #59588D;
+  opacity: 0.5;
 }
 
 .form-exchange__result {
   margin-left: 26px;
   color: #000;
   margin-bottom: 20px;
+}
+
+.form-exchange__result_hidden {
+  visibility: hidden;
 }
 
 .form-exchange__result img {
@@ -101,9 +102,13 @@
 }
 
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 768px) {
   .form__select-container, .form-exchange__result {
     flex-direction: column;
+  }
+
+  .form-exchange__field {
+    margin: 0 10px;
   }
 
   .form-exchange__arrows {
