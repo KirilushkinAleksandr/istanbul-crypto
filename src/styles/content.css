@@ -122,7 +122,6 @@
 }
 
 .content__block_header {
-  display: flex;
   align-items: center;
   margin-bottom: 60px;
 }
@@ -182,8 +181,8 @@
 }
 
 .content__img, .content__icon {
-  max-width: 50%;
-  max-height: 50%;
+  width: 70px;
+  height: 52px;
 }
 
 .content__icon {

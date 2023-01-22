@@ -76,7 +76,7 @@ function Currency() {
       { isOpen ? <List /> : <PreView /> }
       <div className="content__text content-transform content__text_fix-width flex flex-between">
         <div className="content__block_bordered">
-          <div className="content__block_header">
+          <div className="content__block_header flex flex-between">
             <div className="content__block_title">USD</div>
             <img src={flagUSAsmall} className="content__icon" alt="" />
           </div>
@@ -100,7 +100,7 @@ function Currency() {
           </div>
         </div>
         <div className="content__block_bordered">
-          <div className="content__block_header">
+          <div className="content__block_header flex flex-between">
             <div className="content__block_title">EUR</div>
             <img src={flagEUsmall} className="content__icon" alt="" />
           </div>
