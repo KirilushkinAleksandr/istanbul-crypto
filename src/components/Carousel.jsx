@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import about1 from "../images/about-1.jpg";
 import about2 from "../images/about-2.jpg";
@@ -19,6 +19,19 @@ const imgArray = [about1, about2, about3];
 function Carousel() {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+
+  const getTime = () => {
+    const time = Date.now();
+    setSeconds(Math.floor((time / 1000) % 60));
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => getTime(), 3000);
+    updateIndex(activeIndex+1);
+
+    return () => clearInterval(interval);
+  }, [seconds]);
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
