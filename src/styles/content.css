@@ -26,6 +26,10 @@
   padding-top: 30px;
 }
 
+.content__section_no-gap {
+  padding: 0;
+}
+
 .content__section_anchored {
   scroll-margin-top: 151px;
 }
@@ -133,7 +137,7 @@
   font-size: 64px;
 }
 
-.content__section-marging-bottom {
+.content__section-margin-bottom {
   margin-bottom: 100px;
 }
 

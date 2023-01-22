@@ -79,11 +79,11 @@ function MainPage() {
 
   return (
     <>
-      <div className="separate__gold"></div>
       <section
         className="content__section content__section_crypto content__section_anchored flex flex-column flex-align-center"
         ref={pageTopRef}
       >
+      <div className="separate__gold"></div>
         <div className="content__title crypto__title">
           {t("home-page.crypto-title")}
         </div>
@@ -94,15 +94,14 @@ function MainPage() {
           {t("crypto.btn")}
         </Link>
       </section>
-      <div className="separate__gold"></div>
-      <section className="content__section content__section-marging-bottom">
+      <section className="content__section content__section-margin-bottom content__section_no-gap">
         <img src={payPorter} className="content__text_full-width" alt="" />
       </section>
       <div className="separate__gold"></div>
       <Currency />
       <div className="separate__silver"></div>
       <section
-        className="content__section content__section_anchored content__section-marging-bottom content__text_fix-width content-transform flex flex-betweenv"
+        className="content__section content__section_anchored content__section-margin-bottom content__text_fix-width content-transform flex flex-betweenv"
         id="faq"
         ref={faqBlockRef}
       >
@@ -135,7 +134,7 @@ function MainPage() {
       </section>
       <div className="separate__silver"></div>
       <section
-        className="content__section content__section_anchored content__section-marging-bottom"
+        className="content__section content__section_anchored content__section-margin-bottom"
         id="about-us"
         ref={aboutRef}
       >
