@@ -125,7 +125,7 @@ function Currency() {
         </div>
         <div className="content__block_bordered content__block_third">
           <div className="flex">
-            <div className="content__logo flex flex-center flex-grow-1">
+            <div className="content__logo flex-grow-1">
               <img src={logoTCMB} width={152} alt="" />
             </div>
             <div className="content__text flex-grow-1">
@@ -147,10 +147,10 @@ function Currency() {
                 </div>
               </div>
               <div className="content__text flex-grow-1">
-                {Number(item.sell).toFixed(2)}
+                {Number(item.sell).toFixed(2).toString().length === 5 ? Number(item.sell).toFixed(2) : '0' + Number(item.sell).toFixed(2)}
               </div>
               <div className="content__text flex-grow-1">
-                {Number(item.buy).toFixed(2)}
+                {Number(item.buy).toFixed(2).toString().length === 5 ? Number(item.buy).toFixed(2) : '0' + Number(item.buy).toFixed(2)}
               </div>
             </div>
           ))}
