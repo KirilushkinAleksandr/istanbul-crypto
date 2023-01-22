@@ -110,6 +110,7 @@
 
 .content__text_fix-width {
   width: 1280px;
+  padding: 0 20px;
 }
 
 .content__text_hidden {
