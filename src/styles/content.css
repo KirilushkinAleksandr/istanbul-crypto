@@ -1,7 +1,7 @@
 .content {
   margin: 0 auto;
   min-height: 50vh;
-  max-width: 1280px;
+  width: 100%;
 }
 
 .content_clickable {
@@ -64,6 +64,10 @@
   margin-bottom: 73px;
 }
 
+.currency__btn-margin {
+  margin-left: 32px;
+}
+
 .crypto__title {
   max-width: 503px;
 }
@@ -96,6 +100,10 @@
 
 .content__text_full-width {
   width: 100%;
+}
+
+.content__text_fix-width {
+  width: 1280px;
 }
 
 .content__text_hidden {
@@ -355,7 +363,7 @@
 
 .text__center {
   text-align: center;
-  max-width: 604px;
+  max-width: 50%;
   margin: auto;
   font-size: 20px;
   line-height: 28px;
@@ -367,7 +375,7 @@
   left: 314px;
   top: 320px;
   border-radius: 20px;
-  margin: 64px 24px;
+  margin: 64px auto;
 }
 
 .content__block_address {
@@ -375,8 +383,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .content {
-    margin: 0 19px;
+  .currency__btn-margin {
+    margin: auto;
   }
 
   .content__title {
@@ -385,6 +393,10 @@
 
   .content__title_left-align {
     text-align: center;
+  }
+
+  .text__center {
+    max-width: 604px;
   }
 
   .content-transform {

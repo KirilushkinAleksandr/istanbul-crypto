@@ -102,17 +102,17 @@ function MainPage() {
       <Currency />
       <div className="separate__silver"></div>
       <section
-        className="content__section content__section_anchored content__section-marging-bottom content-transform flex flex-betweenv"
+        className="content__section content__section_anchored content__section-marging-bottom content__text_fix-width content-transform flex flex-betweenv"
         id="faq"
         ref={faqBlockRef}
       >
-        <div className="flex flex-column flex-align-center">
+        <div className="flex flex-column">
           <div className="content__title content__title_left-align">{t("faq.title")}</div>
-          <Link to="/" className="form__btn currency__btn flex flex-center flex-align-center" state={{ scrollContactUs: true }}>
+          <Link to="/" className="form__btn currency__btn currency__btn-margin flex flex-center flex-align-center" state={{ scrollContactUs: true }}>
             {t("contact-us.title")}
           </Link>
         </div>
-        <div className="content__block_questions">
+        <div>
           {faqs.map((item, index) => (
             <div key={index} className="content__block_question">
               <div

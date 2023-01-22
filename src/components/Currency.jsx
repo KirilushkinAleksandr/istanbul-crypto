@@ -74,7 +74,7 @@ function Currency() {
     <section className="content__section content__section_coins flex flex-column flex-align-center">
       <div className="content__title">{t("home-page.currencies-title")}</div>
       { isOpen ? <List /> : <PreView /> }
-      <div className="content__text content-transform content__text_full-width flex flex-between">
+      <div className="content__text content-transform content__text_fix-width flex flex-between">
         <div className="content__block_bordered">
           <div className="content__block_header">
             <div className="content__block_title">USD</div>
