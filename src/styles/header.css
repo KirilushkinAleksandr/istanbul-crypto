@@ -61,9 +61,14 @@ ul[role="listbox"] {
   color: #000;
 }
 
+.header__lang {
+  padding: 0;
+}
+
 .header__lang button {
   color: rgb(234, 236, 239);
   border: 0;
+  padding: 0;
 }
 
 .ReactFlagsSelect-module_label__27pw9 {
