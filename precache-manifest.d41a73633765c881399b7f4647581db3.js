@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7e9f7c9df4917d30eeca",
-    "url": "./static/css/main.fb1a2dd2.chunk.css"
+    "revision": "cac2f358c63375499ec0",
+    "url": "./static/css/main.e4221501.chunk.css"
   },
   {
-    "revision": "7e9f7c9df4917d30eeca",
-    "url": "./static/js/main.1f27a768.chunk.js"
+    "revision": "cac2f358c63375499ec0",
+    "url": "./static/js/main.50980a8c.chunk.js"
   },
   {
     "revision": "f3a6ee076d6e1c43ed65",
@@ -132,6 +132,10 @@ self.__precacheManifest = [
     "url": "./static/media/plus.e981e8dc.svg"
   },
   {
+    "revision": "d6cd444515f72d0508bf106dbe42bbae",
+    "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
+  },
+  {
     "revision": "8e9701d8efc7df15706b06712b1c6de1",
     "url": "./static/media/SF-Mono-Regular.8e9701d8.otf"
   },
@@ -142,10 +146,6 @@ self.__precacheManifest = [
   {
     "revision": "e9f02ea277831a0ea955507ed7b86349",
     "url": "./static/media/minus.e9f02ea2.svg"
-  },
-  {
-    "revision": "d6cd444515f72d0508bf106dbe42bbae",
-    "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
   },
   {
     "revision": "6a41a11820a0822408abb546c3952360",
@@ -164,7 +164,7 @@ self.__precacheManifest = [
     "url": "./static/media/crypto.de93b963.jpg"
   },
   {
-    "revision": "ceb6fab57807183de041dc75a5e11a6b",
+    "revision": "5c3cd75e89ee138bf92d39967c6bb087",
     "url": "./index.html"
   }
 ];
