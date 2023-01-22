@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "7ab70f0e472c4c5c0ec8",
-    "url": "./static/css/main.64248d8e.chunk.css"
+    "revision": "7e9f7c9df4917d30eeca",
+    "url": "./static/css/main.fb1a2dd2.chunk.css"
   },
   {
-    "revision": "7ab70f0e472c4c5c0ec8",
-    "url": "./static/js/main.d5f19fc8.chunk.js"
+    "revision": "7e9f7c9df4917d30eeca",
+    "url": "./static/js/main.1f27a768.chunk.js"
   },
   {
     "revision": "f3a6ee076d6e1c43ed65",
     "url": "./static/js/runtime~main.6e986843.js"
   },
   {
-    "revision": "b109f53a65a3e9e90d21",
-    "url": "./static/js/2.288701f7.chunk.js"
+    "revision": "27e647767b9c4541e01a",
+    "url": "./static/js/2.27b52d37.chunk.js"
   },
   {
     "revision": "da2ab402e4728d49388f",
@@ -128,6 +128,10 @@ self.__precacheManifest = [
     "url": "./static/media/UAH.0f0460f7.svg"
   },
   {
+    "revision": "e981e8dcf70e0413e00f8ad42e24bc9c",
+    "url": "./static/media/plus.e981e8dc.svg"
+  },
+  {
     "revision": "8e9701d8efc7df15706b06712b1c6de1",
     "url": "./static/media/SF-Mono-Regular.8e9701d8.otf"
   },
@@ -140,31 +144,27 @@ self.__precacheManifest = [
     "url": "./static/media/minus.e9f02ea2.svg"
   },
   {
-    "revision": "e981e8dcf70e0413e00f8ad42e24bc9c",
-    "url": "./static/media/plus.e981e8dc.svg"
+    "revision": "d6cd444515f72d0508bf106dbe42bbae",
+    "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
   },
   {
     "revision": "6a41a11820a0822408abb546c3952360",
     "url": "./static/media/ellipse.6a41a118.svg"
   },
   {
-    "revision": "d6cd444515f72d0508bf106dbe42bbae",
-    "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
+    "revision": "3255349c9013bf758ed9eb3df4a3d131",
+    "url": "./static/media/graph.3255349c.png"
   },
   {
     "revision": "753a1db35877e724f6a61c1e99855eb6",
     "url": "./static/media/lines.753a1db3.png"
   },
   {
-    "revision": "3255349c9013bf758ed9eb3df4a3d131",
-    "url": "./static/media/graph.3255349c.png"
-  },
-  {
     "revision": "de93b9634c69ea5a4dceabf8fa2b15f3",
     "url": "./static/media/crypto.de93b963.jpg"
   },
   {
-    "revision": "63cb3cc13c1cd93b66a5f1fe3fd7c8d6",
+    "revision": "ceb6fab57807183de041dc75a5e11a6b",
     "url": "./index.html"
   }
 ];
