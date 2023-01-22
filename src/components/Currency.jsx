@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import flagEUsmall from "../images/flag-EU-small.png";
 import flagUSAsmall from "../images/flag-USA-small.png";
 import logoTCMB from "../images/logo-TCMB.png";
-import flagRUS from "../images/flag-RUS.png";
-import flagUSA from "../images/flag-USA.png";
-import flagEU from "../images/flag-EU.png";
-import flagUK from "../images/flag-UK.svg";
+import flagRUS from "../images/flags-exchange/RUB.svg";
+import flagUSA from "../images/flags-exchange/USD.svg";
+import flagEU from "../images/flags-exchange/EUR.svg";
+import flagUK from "../images/flags-exchange/GBP.svg";
 import rates from "../common/exchange-rates.json";
 import dots from "../images/dots.png";
 
@@ -140,8 +140,6 @@ function Currency() {
               <div className="flex table__currency">
                 <img
                   src={currencyFlags[item.name]}
-                  width={30}
-                  height={20}
                   alt=""
                 />
                 <div className="content__text">
