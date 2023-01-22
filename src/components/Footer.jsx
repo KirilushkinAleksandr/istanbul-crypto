@@ -33,9 +33,9 @@ function Footer() {
         <MessengerButtons />
       </div>
       <div className="footer__text flex flex-between">
-        <p className="footer__item">&copy; BJBI Istanbul 2022 </p>
+        <p className="footer__item">&copy; BJBI Istanbul 2023 </p>
         <p className="footer__item">
-          <a className="footer__item" href="mailto:info@bjbi.org ">
+          <a className="footer__item" href="mailto:info@bjbi.org">
             info@bjbi.org 
           </a>
         </p>

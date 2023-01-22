@@ -94,6 +94,12 @@
   color: #111;
 }
 
+.content__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
 .content__text {
   margin: 0 10px;
 }
@@ -202,7 +208,7 @@
 }
 
 .table__item {
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   width: 100%;
   padding: 10px;
   text-align: center;

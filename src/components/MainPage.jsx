@@ -108,6 +108,7 @@ function MainPage() {
       >
         <div className="flex flex-column">
           <div className="content__title content__title_left-align">{t("faq.title")}</div>
+          <div className="content__subtitle">{t("faq.subtitle")}</div>
           <Link to="/" className="form__btn currency__btn currency__btn-margin flex flex-center flex-align-center" state={{ scrollContactUs: true }}>
             {t("contact-us.title")}
           </Link>
@@ -120,7 +121,7 @@ function MainPage() {
                 className={`content__block flex flex-between content_clickable content_open ${iconOpenClass}`}
                 onClick={() => switchShowFAQ(index)}
               >
-                {index + 1}. {t(item.question)}
+                {t(item.question)}
               </div>
               <div
                 ref={showFAQref.current[index]}
