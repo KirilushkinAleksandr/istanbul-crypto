@@ -5,7 +5,7 @@
     "currencies-title": "Currency exchange",
     "currencies": {
       "1": "A wide range of currencies available",
-      "2": "Total transparency in your transaction: Our price monitors at our branches will show you our exchange rates. These prices are updated daily",
+      "2": "Total transparency in your transactions: Our price monitors at our branches will show you our exchange rates. These prices are updated daily",
       "3": "Excellence in Customer Service",
       "4": "Our branches at Istanbul are open all year round in a wide time frame",
       "5": "Your banknotes are recorded by our video cameras to offer you the best security",
@@ -23,6 +23,7 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "title-short": "FAQ",
+    "subtitle": "Have a question that is not answered? You can contact us.",
     "q-1": "Is it legal to exchange cryptocurrencies in Turkey?",
     "a-1": "Yes, it is legal to buy, sell or trade your crypto money as long as crypto money is not used to pay goods or services.",
     "q-2": "Do you accept debit cards or bank transfers or any form of online payment?",
