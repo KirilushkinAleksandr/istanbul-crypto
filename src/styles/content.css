@@ -404,6 +404,7 @@
 
   .text__center {
     max-width: 604px;
+    padding: 0 20px;
   }
 
   .content-transform {
