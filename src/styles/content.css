@@ -44,9 +44,24 @@
   padding: 88px 0;  
 }
 
+.separate__gold {
+  background: linear-gradient(#1B1B1F, #1B1B1F), linear-gradient(to right, #1B1B1F, #CFB070, #1B1B1F);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat;
+  border-top: 1px solid transparent;
+}
+
+.separate__silver {
+  background: linear-gradient(#1B1B1F, #1B1B1F), linear-gradient(to right, #1B1B1F, #FFFFFF, #1B1B1F);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat;
+  border-top: 1px solid transparent;
+}
+
 .currency__btn {
   max-width: 358px;
   color: #D9B972;
+  margin-bottom: 73px;
 }
 
 .crypto__title {
@@ -99,6 +114,10 @@
 
 .content__block_title {
   font-size: 64px;
+}
+
+.content__section-marging-bottom {
+  margin-bottom: 100px;
 }
 
 .content__block_question {
@@ -349,6 +368,10 @@
   top: 320px;
   border-radius: 20px;
   margin: 64px 24px;
+}
+
+.content__block_address {
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {

@@ -21,7 +21,7 @@ function ContactUs({scrollRef}) {
   };
 
   return (
-    <section className="content__section" ref={scrollRef}>
+    <section className="content__section content__section-marging-bottom" ref={scrollRef}>
       <div className="content__title">{t("contact-us.title")}</div>
       <form
         className="content__text form flex flex-column flex-align-center"
