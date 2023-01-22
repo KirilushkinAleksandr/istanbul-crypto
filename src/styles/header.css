@@ -82,10 +82,6 @@ ul[role="listbox"] {
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    position: initial;
-  }
-
   .header__logo {
     height: fit-content;
     width: fit-content;
