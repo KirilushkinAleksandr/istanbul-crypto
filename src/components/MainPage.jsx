@@ -79,6 +79,7 @@ function MainPage() {
 
   return (
     <>
+      <div className="separate__gold"></div>
       <section
         className="content__section content__section_crypto content__section_anchored flex flex-column flex-align-center"
         ref={pageTopRef}
@@ -93,12 +94,15 @@ function MainPage() {
           {t("crypto.btn")}
         </Link>
       </section>
-      <section className="content__section">
+      <div className="separate__gold"></div>
+      <section className="content__section content__section-marging-bottom">
         <img src={payPorter} className="content__text_full-width" alt="" />
       </section>
+      <div className="separate__gold"></div>
       <Currency />
+      <div className="separate__silver"></div>
       <section
-        className="content__section content__section_anchored content-transform flex flex-between"
+        className="content__section content__section_anchored content__section-marging-bottom content-transform flex flex-betweenv"
         id="faq"
         ref={faqBlockRef}
       >
@@ -108,7 +112,7 @@ function MainPage() {
             {t("contact-us.title")}
           </Link>
         </div>
-        <div>
+        <div className="content__block_questions">
           {faqs.map((item, index) => (
             <div key={index} className="content__block_question">
               <div
@@ -128,8 +132,9 @@ function MainPage() {
           ))}
         </div>
       </section>
+      <div className="separate__silver"></div>
       <section
-        className="content__section content__section_anchored"
+        className="content__section content__section_anchored content__section-marging-bottom"
         id="about-us"
         ref={aboutRef}
       >
@@ -142,8 +147,11 @@ function MainPage() {
         ></div>
         <Carousel />
       </section>
+      <div className="separate__silver"></div>
       <Address />
+      <div className="separate__silver"></div>
       <ContactUs scrollRef={contactUsRef} />
+      <div className="separate__silver"></div>
     </>
   );
 }

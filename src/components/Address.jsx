@@ -5,7 +5,7 @@ function Address() {
   const { t } = useTranslation();
 
   return (
-    <section className="content__section">
+    <section className="content__section content__section-marging-bottom">
       <div className="content__title">{t("address")}</div>
       <div className="content__text text__center">
         {t("home-page.contacts")}
@@ -21,7 +21,7 @@ function Address() {
           className="map"
         />
       </div>
-      <div className="text__center">
+      <div className="text__center content__block_address">
         Gökalp Mah., Prof. Dr. Muammer Aksoy Cad. 39/B, 34020
         Zeytinburnu/İstanbul
       </div>
