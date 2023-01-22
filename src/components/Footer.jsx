@@ -15,7 +15,7 @@ function Footer() {
           state={{ scrollTop: true }}
           className="header__logo"
         >
-          <img src={logo} width={150} height={150} alt="BJBI logo" />
+          <img src={logo} width={150} height={150} alt="BJBİ logo" />
         </Link>
         <div className="flex">
           <img className="footer__icon" src={facebook} alt="" />
@@ -33,7 +33,7 @@ function Footer() {
         <MessengerButtons />
       </div>
       <div className="footer__text flex flex-between">
-        <p className="footer__item">&copy; BJBI Istanbul 2023 </p>
+        <p className="footer__item">&copy; BJBİ Istanbul 2023 </p>
         <p className="footer__item">
           <a className="footer__item" href="mailto:info@bjbi.org">
             info@bjbi.org 
