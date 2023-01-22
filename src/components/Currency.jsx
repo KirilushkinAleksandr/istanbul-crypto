@@ -48,9 +48,9 @@ function Currency() {
   const PreView = () => (
     <div className="content__list">
      <ul>
-        <li className="content__item content__item-large">{t("home-page.currencies.1")}</li>
-        <li className="content__item content__item-medium">{t("home-page.currencies.2")}</li>
-        <li className="content__item content__item-small">{t("home-page.currencies.3")}</li>
+        <li onClick={() => setIsOpen(true)} className="content__item content_clickable content__item-large">{t("home-page.currencies.1")}</li>
+        <li onClick={() => setIsOpen(true)} className="content__item content_clickable content__item-medium">{t("home-page.currencies.2")}</li>
+        <li onClick={() => setIsOpen(true)} className="content__item content_clickable content__item-small">{t("home-page.currencies.3")}</li>
       </ul>
       <div className="flex flex-center">
         <img src={dots} alt="" onClick={() => setIsOpen(true)} className="content__dropdown content_clickable"/>
