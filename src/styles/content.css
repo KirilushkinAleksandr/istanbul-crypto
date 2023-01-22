@@ -70,6 +70,7 @@
 
 .crypto__title {
   max-width: 503px;
+  font-weight: 700 !important;
 }
 
 .crypto__text {
