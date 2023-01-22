@@ -17,6 +17,22 @@
 @font-face {
   font-family: 'SF-Mono';
   font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("SF-Mono-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'SF-Mono';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("SF-Mono-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'SF-Mono';
+  font-style:  normal;
   font-weight: 900;
   font-display: swap;
   src: url("SF-Mono-Heavy.otf") format("opentype");

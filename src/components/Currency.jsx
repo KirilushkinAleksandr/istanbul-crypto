@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import flagEUsmall from "../images/flag-EU-small.png";
 import flagUSAsmall from "../images/flag-USA-small.png";
 import logoTCMB from "../images/logo-TCMB.png";
-import flagRUS from "../images/flag-RUS.png";
-import flagUSA from "../images/flag-USA.png";
-import flagEU from "../images/flag-EU.png";
-import flagUK from "../images/flag-UK.svg";
+import flagRUS from "../images/flags-exchange/RUB.svg";
+import flagUSA from "../images/flags-exchange/USD.svg";
+import flagEU from "../images/flags-exchange/EUR.svg";
+import flagUK from "../images/flags-exchange/GBP.svg";
 import rates from "../common/exchange-rates.json";
 import dots from "../images/dots.png";
 
@@ -48,9 +48,9 @@ function Currency() {
   const PreView = () => (
     <div className="content__list">
      <ul>
-        <li className="content__item content__item-large">{t("home-page.currencies.1")}</li>
-        <li className="content__item content__item-medium">{t("home-page.currencies.2")}</li>
-        <li className="content__item content__item-small">{t("home-page.currencies.3")}</li>
+        <li onClick={() => setIsOpen(true)} className="content__item content_clickable content__item-large">{t("home-page.currencies.1")}</li>
+        <li onClick={() => setIsOpen(true)} className="content__item content_clickable content__item-medium">{t("home-page.currencies.2")}</li>
+        <li onClick={() => setIsOpen(true)} className="content__item content_clickable content__item-small">{t("home-page.currencies.3")}</li>
       </ul>
       <div className="flex flex-center">
         <img src={dots} alt="" onClick={() => setIsOpen(true)} className="content__dropdown content_clickable"/>
@@ -76,7 +76,7 @@ function Currency() {
       { isOpen ? <List /> : <PreView /> }
       <div className="content__text content-transform content__text_fix-width flex flex-between">
         <div className="content__block_bordered">
-          <div className="content__block_header">
+          <div className="content__block_header flex flex-between">
             <div className="content__block_title">USD</div>
             <img src={flagUSAsmall} className="content__icon" alt="" />
           </div>
@@ -100,7 +100,7 @@ function Currency() {
           </div>
         </div>
         <div className="content__block_bordered">
-          <div className="content__block_header">
+          <div className="content__block_header flex flex-between">
             <div className="content__block_title">EUR</div>
             <img src={flagEUsmall} className="content__icon" alt="" />
           </div>
@@ -125,7 +125,7 @@ function Currency() {
         </div>
         <div className="content__block_bordered content__block_third">
           <div className="flex">
-            <div className="content__logo flex flex-center flex-grow-1">
+            <div className="content__logo flex-grow-1">
               <img src={logoTCMB} width={152} alt="" />
             </div>
             <div className="content__text flex-grow-1">
@@ -140,8 +140,6 @@ function Currency() {
               <div className="flex table__currency">
                 <img
                   src={currencyFlags[item.name]}
-                  width={30}
-                  height={20}
                   alt=""
                 />
                 <div className="content__text">
@@ -149,10 +147,10 @@ function Currency() {
                 </div>
               </div>
               <div className="content__text flex-grow-1">
-                {Number(item.sell).toFixed(2)}
+                {Number(item.sell).toFixed(2).toString().length === 5 ? Number(item.sell).toFixed(2) : '0' + Number(item.sell).toFixed(2)}
               </div>
               <div className="content__text flex-grow-1">
-                {Number(item.buy).toFixed(2)}
+                {Number(item.buy).toFixed(2).toString().length === 5 ? Number(item.buy).toFixed(2) : '0' + Number(item.buy).toFixed(2)}
               </div>
             </div>
           ))}

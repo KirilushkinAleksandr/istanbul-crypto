@@ -1,7 +1,8 @@
 .crypto__page {
   font-size: 18px;
   line-height: 22px;
-  padding: 24px;
+  padding: 24px 0;
+  width: 80% !important;
 }
 
 .title {

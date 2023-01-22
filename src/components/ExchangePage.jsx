@@ -26,7 +26,7 @@ function ExchangePage() {
     e.preventDefault();
     const amount = Number(inputRef.current.value).toFixed(2);
     if (fromCurrency === "TRY") {
-      setFromAmount(Number(amount).toFixed(2));
+      setFromAmount(amount);
       const sellRate = rates[toCurrency].sell || 0;
       setToAmount((amount / sellRate).toFixed(2));
       setIsResShown(true);
@@ -101,8 +101,6 @@ function ExchangePage() {
                   ref={inputRef}
                   min={1.0}
                   step={0.01}
-                  defaultValue={(1.0).toFixed(2)}
-                  placeholder="amount"
                   required
                   onChange={() => setIsResShown(false)}
                 />
