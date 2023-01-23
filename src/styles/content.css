@@ -71,6 +71,8 @@
 .crypto__title {
   max-width: 503px;
   font-weight: 700 !important;
+  background: linear-gradient(45deg, transparent, black, transparent);
+  border-radius: 50%;
 }
 
 .crypto__text {
