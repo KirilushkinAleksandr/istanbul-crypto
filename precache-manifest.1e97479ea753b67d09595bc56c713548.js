@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "667af3ff69b789dd4c5a",
-    "url": "./static/css/main.68d8b367.chunk.css"
+    "revision": "dba5380cc97710a92ac9",
+    "url": "./static/css/main.0603cef2.chunk.css"
   },
   {
-    "revision": "667af3ff69b789dd4c5a",
-    "url": "./static/js/main.8f015f21.chunk.js"
+    "revision": "dba5380cc97710a92ac9",
+    "url": "./static/js/main.72b2d2e2.chunk.js"
   },
   {
     "revision": "54e92b2af6f09b97ea48",
     "url": "./static/js/runtime~main.70f80954.js"
   },
   {
-    "revision": "d650a8dff67352295e30",
-    "url": "./static/js/2.f4893250.chunk.js"
+    "revision": "2c1af2850d9d785667ed",
+    "url": "./static/js/2.a781e106.chunk.js"
   },
   {
     "revision": "e897de3d059808493f9f",
@@ -128,10 +128,6 @@ self.__precacheManifest = [
     "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
   },
   {
-    "revision": "e981e8dcf70e0413e00f8ad42e24bc9c",
-    "url": "./static/media/plus.e981e8dc.svg"
-  },
-  {
     "revision": "096048104d0ca07dddb7aab3b39b495a",
     "url": "./static/media/SF-Mono-Bold.09604810.otf"
   },
@@ -140,43 +136,47 @@ self.__precacheManifest = [
     "url": "./static/media/minus.e9f02ea2.svg"
   },
   {
+    "revision": "e981e8dcf70e0413e00f8ad42e24bc9c",
+    "url": "./static/media/plus.e981e8dc.svg"
+  },
+  {
     "revision": "0e9c24e2e9015ec4284addc27012a91d",
     "url": "./static/media/SF-Mono-Heavy.0e9c24e2.otf"
-  },
-  {
-    "revision": "6a41a11820a0822408abb546c3952360",
-    "url": "./static/media/ellipse.6a41a118.svg"
-  },
-  {
-    "revision": "3255349c9013bf758ed9eb3df4a3d131",
-    "url": "./static/media/graph.3255349c.png"
   },
   {
     "revision": "e6567f397c55dba8523a4f9b7bf7174e",
     "url": "./static/media/bg-lines.e6567f39.png"
   },
   {
-    "revision": "b6081171840e488e95eb86518b087333",
-    "url": "./static/media/light-faq.b6081171.png"
-  },
-  {
-    "revision": "6607388bde0232ec9c94fc059b3788aa",
-    "url": "./static/media/light-about.6607388b.png"
+    "revision": "3255349c9013bf758ed9eb3df4a3d131",
+    "url": "./static/media/graph.3255349c.png"
   },
   {
     "revision": "561766e87833546fb5e3966a250aecf7",
     "url": "./static/media/light-address.561766e8.png"
   },
   {
+    "revision": "b6081171840e488e95eb86518b087333",
+    "url": "./static/media/light-faq.b6081171.png"
+  },
+  {
     "revision": "5cbbe2e802d5214644c7652ee80b999d",
     "url": "./static/media/light-contact.5cbbe2e8.png"
+  },
+  {
+    "revision": "6607388bde0232ec9c94fc059b3788aa",
+    "url": "./static/media/light-about.6607388b.png"
+  },
+  {
+    "revision": "c25570c5f01f4e26781f11b07b84d371",
+    "url": "./static/media/bg.c25570c5.png"
   },
   {
     "revision": "92bcae2acbafd47286f3e021deffbae2",
     "url": "./static/media/crypto.92bcae2a.png"
   },
   {
-    "revision": "0491b1c3e1e4743085bd0d8dc7ec7007",
+    "revision": "d811779b9c93d8ccdc5eb0a4243486fd",
     "url": "./index.html"
   }
 ];
