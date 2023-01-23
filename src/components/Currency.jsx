@@ -74,7 +74,7 @@ function Currency() {
   return (
     <section className="content__section content__section_coins flex flex-column flex-align-center">
       <div className="content__title">{t("home-page.currencies-title")}</div>
-      { isOpen ? <List /> : <PreView /> }
+      {isOpen ? <List /> : <PreView />}
       <div className="content__text currency-transform content-transform content__text_fix-width flex flex-between">
         <div className="content__block_bordered">
           <div className="content__block_header flex flex-between">
@@ -83,19 +83,19 @@ function Currency() {
           </div>
           <div className="flex flex-column flex-align-center flex-grow-1">
             <div className="flex content__text_full-width content__block_line flex-between">
-              <div className="content__text">
-                {t("exchange.sell")}
-              </div>
+              <div className="content__text">{t("exchange.sell")}</div>
               <div>
-                {customRates[0].sell}
+                {customRates[1].sell.toString().length === 5
+                  ? customRates[1].sell
+                  : "0" + customRates[1].sell}
               </div>
             </div>
             <div className="flex content__text_full-width content__block_line flex-between">
-              <div className="content__text">
-                {t("exchange.buy")}
-              </div>
+              <div className="content__text">{t("exchange.buy")}</div>
               <div>
-                {customRates[0].buy}
+                {customRates[1].buy.toString().length === 5
+                  ? customRates[1].buy
+                  : "0" + customRates[1].buy}
               </div>
             </div>
           </div>
@@ -107,19 +107,19 @@ function Currency() {
           </div>
           <div className="flex flex-column flex-align-center flex-grow-1">
             <div className="flex content__text_full-width content__block_line flex-between">
-              <div className="content__text">
-                {t("exchange.sell")}
-              </div>
+              <div className="content__text">{t("exchange.sell")}</div>
               <div>
-                {customRates[1].sell}
+                {customRates[1].sell.toString().length === 5
+                  ? customRates[1].sell
+                  : "0" + customRates[1].sell}
               </div>
             </div>
             <div className="flex content__text_full-width content__block_line flex-between">
-              <div className="content__text">
-                {t("exchange.buy")}
-              </div>
+              <div className="content__text">{t("exchange.buy")}</div>
               <div>
-                {customRates[1].buy}
+                {customRates[1].buy.toString().length === 5
+                  ? customRates[1].buy
+                  : "0" + customRates[1].buy}
               </div>
             </div>
           </div>
@@ -132,32 +132,33 @@ function Currency() {
             <div className="content__text flex-grow-1">
               {t("exchange.sell")}
             </div>
-            <div className="content__text flex-grow-1">
-              {t("exchange.buy")}
-            </div>
+            <div className="content__text flex-grow-1">{t("exchange.buy")}</div>
           </div>
           {offRates.map((item, index) => (
-            <div className="flex content__block content__block_line" key={index}>
+            <div
+              className="flex content__block content__block_line"
+              key={index}
+            >
               <div className="flex table__currency">
-                <img
-                  src={currencyFlags[item.name]}
-                  alt=""
-                />
-                <div className="content__text">
-                  {item.name}
-                </div>
+                <img src={currencyFlags[item.name]} alt="" />
+                <div className="content__text">{item.name}</div>
               </div>
               <div className="content__text flex-grow-1">
-                {item.sell.toString().length === 5 ? item.sell : '0' + item.sell}
+                {item.sell.toString().length === 5
+                  ? item.sell
+                  : "0" + item.sell}
               </div>
               <div className="content__text flex-grow-1">
-                {item.buy.toString().length === 5 ? item.buy : '0' + item.buy}
+                {item.buy.toString().length === 5 ? item.buy : "0" + item.buy}
               </div>
             </div>
           ))}
         </div>
       </div>
-      <Link to="currency-rates" className="content__block form__btn currency__btn flex flex-center flex-align-center">
+      <Link
+        to="currency-rates"
+        className="content__block form__btn currency__btn flex flex-center flex-align-center"
+      >
         {t("home-page.currencies-link")}
       </Link>
     </section>
