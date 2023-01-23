@@ -110,10 +110,13 @@ function ExchangePage() {
                   {t("exchange.from")}
                 </label>
                 <div className="flex">
-                  <div>
+                  <div
+                    className="form-exchange__select-img"
+                  >
                     <img
                       src={selectOptions[fromCurrency]}
-                      className="form-exchange__select-img"
+                      width={24}
+                      height={24}
                       alt=""
                     />
                   </div>
@@ -142,10 +145,14 @@ function ExchangePage() {
                   {t("exchange.to")}
                 </label>
                 <div className="flex">
-                  <div>
+                  <div
+                    className="form-exchange__select-img"
+                  >
                     <img
                       src={selectOptions[toCurrency]}
-                      className="form-exchange__select-img"
+
+                      width={24}
+                      height={24}
                       alt=""
                     />
                   </div>

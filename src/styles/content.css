@@ -35,7 +35,7 @@
 }
 
 .content__section_exchange {
-  background: url("../images/lines.png");
+  background: url("../images/bg-lines.png");
 }
 
 .content__section_coins {
@@ -44,8 +44,24 @@
 }
 
 .content__section_crypto {
-  background: url('../images/crypto.jpg') round no-repeat;
+  background: url('../images/crypto.png') round no-repeat;
   padding: 88px 0;  
+}
+
+.content__section_faq {
+  background: url('../images/light-faq.png') round no-repeat;
+}
+
+.content__section_about {
+  background: url('../images/light-about.png') round no-repeat;
+}
+
+.content__section_address {
+  background: url('../images/light-address.png') round no-repeat;
+}
+
+.content__section_contact {
+  background: url('../images/light-contact.png') round no-repeat;
 }
 
 .separate__gold {
@@ -55,32 +71,15 @@
   border-top: 1px solid transparent;
 }
 
-.separate__silver {
-  background: linear-gradient(#1B1B1F, #1B1B1F), linear-gradient(to right, #1B1B1F, #FFFFFF, #1B1B1F);
-  background-origin: padding-box, border-box;
-  background-repeat: no-repeat;
-  border-top: 1px solid transparent;
-}
-
 .currency__btn {
   max-width: 358px;
   color: #D9B972;
   margin-bottom: 73px;
+  text-align: center;
 }
 
 .currency__btn-margin {
   margin-left: 32px;
-}
-
-.crypto__title {
-  max-width: 503px;
-  font-weight: 700 !important;
-  background: linear-gradient(45deg, transparent, black, transparent);
-  border-radius: 50%;
-}
-
-.crypto__text {
-  max-width: 604px;
 }
 
 .content__title {
@@ -101,10 +100,20 @@
   color: #111;
 }
 
+.crypto__title {
+  max-width: 503px;
+  font-weight: 700;
+}
+
+.crypto__text {
+  max-width: 604px;
+}
+
 .content__subtitle {
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
+  padding-left: 32px;
 }
 
 .content__text {
@@ -303,7 +312,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12.1854px 18.2781px;
+  padding: 12.1854px 18px;
   gap: 6.09px;
   margin: auto;
   
@@ -395,8 +404,20 @@
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 1906px) {
+  .currency-transform {
+    margin-top: 12%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .currency-transform {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 1025px) {
-  .currency {
+  .currency-transform {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -412,6 +433,11 @@
     font-size: 50px;
   }
 
+  .content__subtitle {
+    padding-left: 0;
+    text-align: center;
+  }
+
   .content__title_left-align {
     text-align: center;
   }
@@ -425,6 +451,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .content__section_crypto {
+    padding: 0;
   }
 
   .content__section_anchored {
@@ -455,10 +485,6 @@
 }
 
 @media screen and (max-width: 425px) {
-  .content__section_crypto {
-    padding: 0;
-  }
-
   .content__title {
     font-size: 42px;
   }

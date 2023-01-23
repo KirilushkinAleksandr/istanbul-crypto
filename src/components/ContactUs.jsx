@@ -13,7 +13,7 @@ function ContactUs({scrollRef}) {
     const mailAddress = "questions@bjbi.org";
     const msgTemplate = `mailto:${mailAddress}?subject=From: "${nameRef
       .current.value || "none"}" e-mail: "${emailRef.current.value ||
-      "none"}"&amp;body=${msgRef.current.value || "no info"}`;
+      "none"}" question: "${msgRef.current.value || "no info"}"`;
     const link = document.createElement("a");
     link.setAttribute("href", msgTemplate);
     link.click();
@@ -21,7 +21,10 @@ function ContactUs({scrollRef}) {
   };
 
   return (
-    <section className="content__section content__section-margin-bottom" ref={scrollRef}>
+    <section
+      className="content__section content__section-margin-bottom content__section_contact"
+      ref={scrollRef}
+    >
       <div className="content__title">{t("contact-us.title")}</div>
       <form
         className="content__text form flex flex-column flex-align-center"
