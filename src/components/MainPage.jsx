@@ -8,6 +8,7 @@ import Carousel from "./Carousel";
 import Currency from "./Currency";
 
 import payPorter from "../images/payporter.jpg";
+import payPorterMobile from "../images/payporter-mobile.jpg";
 
 function MainPage() {
   const { t } = useTranslation();
@@ -98,7 +99,14 @@ function MainPage() {
         </Link>
       </section>
       <section className="content__section content__section-margin-bottom content__section_no-gap">
-        <img src={payPorter} className="content__text_full-width" alt="" />
+        <img
+          srcSet={`${payPorterMobile} 375w,
+        ${payPorter} 1000w`}
+          sizes="(max-width: 425px) 50vw, 100vw"
+          src={payPorter}
+          className="content__text_full-width"
+          alt=""
+        />
       </section>
 
       <Currency />

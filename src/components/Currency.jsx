@@ -12,7 +12,7 @@ import flagUK from "../images/flags-exchange/GBP.svg";
 import rates from "../common/exchange-rates.json";
 import dots from "../images/dots.png";
 
-import cbRates from "../common/cb-rates.json";
+import cbRates from "./cbr.json";
 
 const currencyFlags = {
   USD: flagUSA,

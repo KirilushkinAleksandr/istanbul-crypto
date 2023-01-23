@@ -71,9 +71,9 @@ ul[role="listbox"] {
   padding: 0;
 }
 
-.ReactFlagsSelect-module_label__27pw9 {
+span.ReactFlagsSelect-module_label__27pw9 {
   font-family: 'SF-Mono';
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .ReactFlagsSelect-module_selectFlag__2q5gC svg {
@@ -81,8 +81,12 @@ ul[role="listbox"] {
   width: 20px;
 }
 
-.ReactFlagsSelect-module_selectOptionWithlabel__2GpmM {
-  padding: 4px 5px;
+li.ReactFlagsSelect-module_selectOptionWithlabel__2GpmM {
+  padding: 3px 5px;
+}
+
+ul.ReactFlagsSelect-module_selectOptions__3LNBJ {
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
