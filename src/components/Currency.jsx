@@ -40,7 +40,8 @@ function Currency() {
     if (key !== "TRY") {
       offRates.push({
         name: key,
-        ...cbRates[key],
+        sell: ((parseInt(cbRates[key].sell * 100)) / 100).toFixed(2),
+        buy: ((parseInt(cbRates[key].buy * 100)) / 100).toFixed(2),
       });
     }
   }
@@ -74,7 +75,7 @@ function Currency() {
     <section className="content__section content__section_coins flex flex-column flex-align-center">
       <div className="content__title">{t("home-page.currencies-title")}</div>
       { isOpen ? <List /> : <PreView /> }
-      <div className="content__text content-transform content__text_fix-width flex flex-between">
+      <div className="content__text currency content-transform content__text_fix-width flex flex-between">
         <div className="content__block_bordered">
           <div className="content__block_header flex flex-between">
             <div className="content__block_title">USD</div>
@@ -86,7 +87,7 @@ function Currency() {
                 {t("exchange.sell")}
               </div>
               <div>
-                {Number(customRates[0].sell).toFixed(2)}
+                {customRates[0].sell}
               </div>
             </div>
             <div className="flex content__text_full-width content__block_line flex-between">
@@ -94,7 +95,7 @@ function Currency() {
                 {t("exchange.buy")}
               </div>
               <div>
-                {Number(customRates[0].buy).toFixed(2)}
+                {customRates[0].buy}
               </div>
             </div>
           </div>
@@ -110,7 +111,7 @@ function Currency() {
                 {t("exchange.sell")}
               </div>
               <div>
-                {Number(customRates[1].sell).toFixed(2)}
+                {customRates[1].sell}
               </div>
             </div>
             <div className="flex content__text_full-width content__block_line flex-between">
@@ -118,7 +119,7 @@ function Currency() {
                 {t("exchange.buy")}
               </div>
               <div>
-                {Number(customRates[1].buy).toFixed(2)}
+                {customRates[1].buy}
               </div>
             </div>
           </div>
@@ -147,10 +148,10 @@ function Currency() {
                 </div>
               </div>
               <div className="content__text flex-grow-1">
-                {Number(item.sell).toFixed(2).toString().length === 5 ? Number(item.sell).toFixed(2) : '0' + Number(item.sell).toFixed(2)}
+                {item.sell.toString().length === 5 ? item.sell : '0' + item.sell}
               </div>
               <div className="content__text flex-grow-1">
-                {Number(item.buy).toFixed(2).toString().length === 5 ? Number(item.buy).toFixed(2) : '0' + Number(item.buy).toFixed(2)}
+                {item.buy.toString().length === 5 ? item.buy : '0' + item.buy}
               </div>
             </div>
           ))}

@@ -391,6 +391,14 @@
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 1025px) {
+  .currency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .currency__btn-margin {
     margin: auto;
@@ -420,7 +428,6 @@
   }
 
   .content__block_third {
-    width: 100%;
     font-size: 20px;
   }
 
