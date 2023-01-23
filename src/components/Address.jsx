@@ -5,7 +5,7 @@ function Address() {
   const { t } = useTranslation();
 
   return (
-    <section className="content__section content__section-margin-bottom">
+    <section className="content__section content__section-margin-bottom content__section_address">
       <div className="content__title">{t("address")}</div>
       <div className="content__text text__center">
         {t("home-page.contacts")}
