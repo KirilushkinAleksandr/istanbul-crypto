@@ -23,7 +23,7 @@ function Header() {
         className="header__logo"
         onClick={() => setIsMobile(!isMobile)}
       >
-        <img src={logo} className="header__logo-img" alt="BJBİ logo" />
+        <img src={logo} className="header__logo-img" alt="BJBi logo" />
       </Link>
       <div className="header__navigation content-transform">
         <ul className="header__menu">
