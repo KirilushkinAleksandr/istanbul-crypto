@@ -1,7 +1,7 @@
 {
-  "main.css": "./static/css/main.0603cef2.chunk.css",
-  "main.js": "./static/js/main.72b2d2e2.chunk.js",
-  "main.js.map": "./static/js/main.72b2d2e2.chunk.js.map",
+  "main.css": "./static/css/main.c755c97f.chunk.css",
+  "main.js": "./static/js/main.38ba2a69.chunk.js",
+  "main.js.map": "./static/js/main.38ba2a69.chunk.js.map",
   "runtime~main.js": "./static/js/runtime~main.70f80954.js",
   "runtime~main.js.map": "./static/js/runtime~main.70f80954.js.map",
   "static/js/2.a781e106.chunk.js": "./static/js/2.a781e106.chunk.js",
@@ -9,9 +9,9 @@
   "static/js/3.5aaf3fca.chunk.js": "./static/js/3.5aaf3fca.chunk.js",
   "static/js/3.5aaf3fca.chunk.js.map": "./static/js/3.5aaf3fca.chunk.js.map",
   "index.html": "./index.html",
-  "precache-manifest.1e97479ea753b67d09595bc56c713548.js": "./precache-manifest.1e97479ea753b67d09595bc56c713548.js",
+  "precache-manifest.06b2b21f1a378d5ead9a04aa48b2b045.js": "./precache-manifest.06b2b21f1a378d5ead9a04aa48b2b045.js",
   "service-worker.js": "./service-worker.js",
-  "static/css/main.0603cef2.chunk.css.map": "./static/css/main.0603cef2.chunk.css.map",
+  "static/css/main.c755c97f.chunk.css.map": "./static/css/main.c755c97f.chunk.css.map",
   "static/media/AUD.svg": "./static/media/AUD.0385cea8.svg",
   "static/media/CAD.svg": "./static/media/CAD.7370c94e.svg",
   "static/media/CHF.svg": "./static/media/CHF.e55b62da.svg",
@@ -35,6 +35,6 @@
   "static/media/flag-TR.png": "./static/media/flag-TR.b04ac1e2.png",
   "static/media/instagram.svg": "./static/media/instagram.334ba6ad.svg",
   "static/media/logo.svg": "./static/media/logo.717080cc.svg",
-  "static/media/payporter.svg": "./static/media/payporter.7e002466.svg",
+  "static/media/payporter.jpg": "./static/media/payporter.d810ecd0.jpg",
   "static/media/whatsapp.svg": "./static/media/whatsapp.4709b06d.svg"
 }
