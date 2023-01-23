@@ -100,7 +100,6 @@ function ExchangePage() {
                   type="number"
                   ref={inputRef}
                   min={1.0}
-                  step={0.01}
                   required
                   onChange={() => setIsResShown(false)}
                 />

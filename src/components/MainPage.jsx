@@ -7,7 +7,7 @@ import ContactUs from "./ContactUs";
 import Carousel from "./Carousel";
 import Currency from "./Currency";
 
-import payPorter from "../images/payporter.svg";
+import payPorter from "../images/payporter.jpg";
 
 function MainPage() {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
 .exchange {
-  background: url("../images/ellipse.svg") round;
+  background: url("../images/bg.png") round;
   margin-top: 112px;
 }
 
@@ -133,5 +133,12 @@
 
   .form-exchange__input {
     width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .form-exchange__btn {
+    height: auto;
   }
 }

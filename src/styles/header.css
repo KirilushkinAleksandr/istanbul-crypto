@@ -81,6 +81,10 @@ ul[role="listbox"] {
   width: 20px;
 }
 
+.ReactFlagsSelect-module_selectOptionWithlabel__2GpmM {
+  padding: 4px 5px;
+}
+
 @media screen and (max-width: 768px) {
   .header__logo {
     height: fit-content;

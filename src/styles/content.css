@@ -312,7 +312,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12.1854px 18px;
+  padding: 12.1854px 9px;
   gap: 6.09px;
   margin: auto;
   
@@ -433,6 +433,10 @@
     font-size: 50px;
   }
 
+  .content__logo {
+    margin-right: 0;
+  }
+
   .content__subtitle {
     padding-left: 0;
     text-align: center;
@@ -487,5 +491,6 @@
 @media screen and (max-width: 425px) {
   .content__title {
     font-size: 42px;
+    padding: 32px 0;
   }
 }
