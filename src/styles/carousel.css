@@ -66,7 +66,7 @@
 
 @media screen and (max-width: 523px) {
   .carousel {
-    height: 900px;
+    height: 675px
   }
 
   .carousel__text {
@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 362px) {
   .carousel {
-    height: 1130px;
+    height: 650px;
   }
 
   .carousel__text {

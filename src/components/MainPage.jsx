@@ -143,7 +143,7 @@ function MainPage() {
       </section>
 
       <section
-        className="content__section content__section_anchored content__section-margin-bottom content__section_about"
+        className="content__section content__section_anchored content__section_about"
         id="about-us"
         ref={aboutRef}
       >
