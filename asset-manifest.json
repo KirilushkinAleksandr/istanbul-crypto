@@ -1,5 +1,5 @@
 {
-  "main.css": "./static/css/main.e6f6f67e.chunk.css",
+  "main.css": "./static/css/main.899e6ba8.chunk.css",
   "main.js": "./static/js/main.2c70e5c2.chunk.js",
   "main.js.map": "./static/js/main.2c70e5c2.chunk.js.map",
   "runtime~main.js": "./static/js/runtime~main.70f80954.js",
@@ -9,9 +9,9 @@
   "static/js/3.5aaf3fca.chunk.js": "./static/js/3.5aaf3fca.chunk.js",
   "static/js/3.5aaf3fca.chunk.js.map": "./static/js/3.5aaf3fca.chunk.js.map",
   "index.html": "./index.html",
-  "precache-manifest.da0b6b095417804abfa087303bd66741.js": "./precache-manifest.da0b6b095417804abfa087303bd66741.js",
+  "precache-manifest.d4fd289deaf42576ef1e157bd6de849f.js": "./precache-manifest.d4fd289deaf42576ef1e157bd6de849f.js",
   "service-worker.js": "./service-worker.js",
-  "static/css/main.e6f6f67e.chunk.css.map": "./static/css/main.e6f6f67e.chunk.css.map",
+  "static/css/main.899e6ba8.chunk.css.map": "./static/css/main.899e6ba8.chunk.css.map",
   "static/media/AUD.svg": "./static/media/AUD.0385cea8.svg",
   "static/media/CAD.svg": "./static/media/CAD.7370c94e.svg",
   "static/media/CHF.svg": "./static/media/CHF.e55b62da.svg",
