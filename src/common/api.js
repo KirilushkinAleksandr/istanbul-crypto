@@ -1,4 +1,5 @@
 const baseUrl = "https://exchange-turkey.com/";
+const corsUrl = "https://justcors.com/tl_b1115ee/";
 
 function getResponseData(res) {
   if (!res.ok) {
@@ -25,16 +26,12 @@ export function getCurrencies() {
   return fetch(`${baseUrl}/main/get_json/20/${year}-${month}-${day}`, {
     method: 'GET',
   })
-  .then(res => getResponseData(res));
+    .then(res => getResponseData(res));
 }
 
 export function getCurr() {
-  return fetch(`https://www.tcmb.gov.tr/kurlar/202212/27122022.xml?_=1672168208822`, {
+  fetch(`${corsUrl}https://www.tcmb.gov.tr/kurlar/today.xml`, {
     method: 'GET',
   })
-  .then(res => getResponseData(res));
+    .then(res => getResponseData(res));
 }
-
-
-
-

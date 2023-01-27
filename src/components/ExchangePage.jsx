@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-import rates from "../common/exchange-rates.json";
 import arrows from "../images/arrows.svg";
 import flagRUS from "../images/flags-exchange/RUB.svg";
 import flagUSA from "../images/flags-exchange/USD.svg";
@@ -15,10 +14,36 @@ function ExchangePage() {
   const [toAmount, setToAmount] = useState(0);
   const [toCurrency, setToCurrency] = useState("TRY");
   const [isResShown, setIsResShown] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const pageRef = useRef(null);
   const inputRef = useRef(null);
   const { t } = useTranslation();
   const hideResClass = 'form-exchange__result_hidden';
+  const [rates, setRates] = useState([]);
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    fetch("/exchange-rates.json")
+      .then((res) => res.json())
+      .then((res) => {
+        const customRates = [];
+        for (const key in res) {
+          if (key !== "TRY") {
+            customRates.push({
+              img: require(`../images/flags-exchange/${key}.svg`),
+              name: key,
+              ...res[key],
+            });
+          }
+        }
+        setRates(customRates);
+        setIsLoading(false);
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  }, []);
 
   useEffect(() => pageRef.current && pageRef.current.scrollIntoView());
 
@@ -53,17 +78,6 @@ function ExchangePage() {
       setToCurrency(e.target.value);
     }
   };
-
-  const customRates = [];
-  for (const key in rates) {
-    if (key !== "TRY") {
-      customRates.push({
-        img: require(`../images/flags-exchange/${key}.svg`),
-        name: key,
-        ...rates[key],
-      });
-    }
-  }
 
   const selectOptions = {
     USD: flagUSA,
@@ -109,9 +123,7 @@ function ExchangePage() {
                   {t("exchange.from")}
                 </label>
                 <div className="flex">
-                  <div
-                    className="form-exchange__select-img"
-                  >
+                  <div className="form-exchange__select-img">
                     <img
                       src={selectOptions[fromCurrency]}
                       width={24}
@@ -144,12 +156,9 @@ function ExchangePage() {
                   {t("exchange.to")}
                 </label>
                 <div className="flex">
-                  <div
-                    className="form-exchange__select-img"
-                  >
+                  <div className="form-exchange__select-img">
                     <img
                       src={selectOptions[toCurrency]}
-
                       width={24}
                       height={24}
                       alt=""
@@ -216,19 +225,23 @@ function ExchangePage() {
             {t("exchange.buy")}
           </div>
         </div>
-        {customRates.map((item, index) => (
-          <div
-            className="content__text_full-width flex flex-between"
-            key={index}
-          >
-            <div className="table__item">
-              <img src={item.img} className="table__item-flag" alt="" />
+        {isLoading ? (
+          <div>loading</div>
+        ) : 
+          rates.map((item, index) => (
+            <div
+              className="content__text_full-width flex flex-between"
+              key={index}
+            >
+              <div className="table__item">
+                <img src={item.img} className="table__item-flag" alt="" />
+              </div>
+              <div className="table__item">{item.name}</div>
+              <div className="table__item">{Number(item.sell).toFixed(2)}</div>
+              <div className="table__item">{Number(item.buy).toFixed(2)}</div>
             </div>
-            <div className="table__item">{item.name}</div>
-            <div className="table__item">{Number(item.sell).toFixed(2)}</div>
-            <div className="table__item">{Number(item.buy).toFixed(2)}</div>
-          </div>
-        ))}
+          ))
+        }
       </div>
     </section>
   );
