@@ -1,0 +1,17 @@
+{
+  "USD": { "sell": 19.00, "buy": 18.55 },
+  "EUR": { "sell": 25.30, "buy": 15.0 },
+  "RUB": { "sell": 1.00, "buy": 0.50 },
+  "GBP": { "sell": 11.0, "buy": 10.0 },
+  "CAD": { "sell": 11.0, "buy": 10.0 },
+  "NOK": { "sell": 11.0, "buy": 10.0 },
+  "UAH": { "sell": 11.0, "buy": 10.0 },
+  "SEK": { "sell": 11.0, "buy": 10.0 },
+  "DKK": { "sell": 11.0, "buy": 10.0 },
+  "AUD": { "sell": 11.0, "buy": 10.0 },
+  "CHF": { "sell": 11.0, "buy": 10.0 },
+  "JPI": { "sell": 11.0, "buy": 10.0 },
+  "SAR": { "sell": 11.0, "buy": 10.0 },
+  "KWD": { "sell": 11.0, "buy": 10.0 },
+  "TRY": { "sell": 1, "buy": 1 }
+}
