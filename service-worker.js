@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "kirilushkinaleksandr.github.io/istanbul-crypto/precache-manifest.ff9bc6422306947c75b32cc665fd3b79.js"
+  "/istanbul-crypto/precache-manifest.295a1b8aa6f53eb73320cef542cbc230.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("kirilushkinaleksandr.github.io/istanbul-crypto/index.html", {
+workbox.routing.registerNavigationRoute("/istanbul-crypto/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
