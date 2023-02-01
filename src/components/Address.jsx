@@ -22,8 +22,7 @@ function Address() {
         />
       </div>
       <div className="text__center content__block_address">
-        Gökalp Mah., Prof. Dr. Muammer Aksoy Cad. 39/B, 34020
-        Zeytinburnu/İstanbul
+        Gökalp, Prof. Dr. Muammer Aksoy Cad 39/B, 34020 Zeytinburnu/İstanbul
       </div>
     </section>
   );
