@@ -44,7 +44,7 @@
 }
 
 .content__section_crypto {
-  background: url('../images/crypto.png') round no-repeat;
+  background: url('../images/bitcoin.jpg') round no-repeat;
   padding: 88px 0;  
 }
 
@@ -103,6 +103,7 @@
 .crypto__title {
   max-width: 503px;
   font-weight: 700;
+  font-size: 70px;
 }
 
 .crypto__text {
@@ -184,6 +185,7 @@
   padding: 8px;
   margin: 8px;
   text-align: center;
+  border: 2px solid #1b1b1f;
 }
 
 .content__block_half {
