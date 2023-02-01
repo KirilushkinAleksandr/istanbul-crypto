@@ -8,13 +8,13 @@
       "2": "Tamamen şeffaf işlem: Şubelerimizdeki fiyat ekranlarımızdan döviz kurlarımızı görüntüleyebileceksiniz. Bu fiyatlar günlük olarak güncellenmektedir",
       "3": "Müşteri Hizmetlerinde Mükemmellik",
       "4": "İstanbul şubelerimiz geniş bir zaman dilimi içerisinde tüm yıl boyunca açıktır",
-      "5": "En iyi güvenliği sunmak için banknotlarınız video kameralarımız tarafından kaydedilir",
+      "5": "En iyi döviz kuru garantisi ve müşteri hizmetlerinde sizler için en iyi hizmeti sunuyoruz",
       "6": "İşleminizden memnun değilseniz, satın alma işleminizi iade etmek için vardır",
       "7": "İyi döviz kuru garantisi"
     },
     "currencies-link": "Diğer kurlar",
     "crypto-title": "KRİPTO PARA BİRİMLERİ",
-    "crypto": "Fisiksel kripto. Para salim-atim burosu. Aninda, hizli ve guvenli. Dusuk kommisyonlar. Yuksek Limitler. Yalnızca birkaç adımda, güvenle kripto para yatırımı yapabilir, dilediğiniz zaman kolayca satabilirsiniz.",
+    "crypto": "Fiziksel kripto. Para alım-satım bürosu. Anında, hizli ve güvenli. Düşük komisyonlar. Yüksek Limitler. Yalnızca birkaç adımda, güvenle kripto para yatırımı yapabilir ve dilediğiniz zaman kolayca satabilirsiniz.",
     "contacts": "İstanbul’da yer alan döviz büromuza ait iletişim ve ulaşım bilgilerine bu sayfadan ulaşabilirsiniz."
   },
   "crypto": {
@@ -32,12 +32,12 @@
     "a-3": "Geçerli bir pasaport, Avrupa Birliği vatandaşlık kimliği, TC nüfus cüzdanı veya yeni nesil Türk sürücü belgesi ile işlemlerinizi gerçekleştirebilirsiniz.",
     "q-4": "Neden geçerli bir kimlik ibraz etmek zorundayım?",
     "a-4": "Mart 2021 tarihinden itibaren Türk kanunları gereğince yapılan her türlü işlem için müşteri kimlik doğrulaması yapma yasal sorumluluğu altındayız. Bu doğrulamanın amacı, malî suçları ve yasadışı etkinlikleri önlemek.",
-    "q-5": "BJBi Exchange’de hangi kripto para birimlerini alabilir ya da satabilirim?",
+    "q-5": "BJBi’de hangi kripto para birimlerini alabilir ya da satabilirim?",
     "a-5": "Binance’de geçerli olan her türlü kripto parayı alabilir ya da satabilirsiniz. Lütfen işlem yapmak istediğiniz şube ile iletişime geçiniz."
   },
   "about-us": {
     "title": "Hakkımızda",
-    "text-1": "BJBi Exchange kurulduğu yıldan beri güven ve kaliteli hizmet anlayışına sahip çıkmış, işinin merkezine koymuştur<br/><br/>BJBi Exchange olarak sektörümüzde en önemli itibarın dürüstlük olduğunu düşünüyoruz<br/><br/>Döviz ve altın sektöründe derin piyasa bilgisine sahip uzman kadromuz ve teknolojik altyapımızla uzun zamandir emsalsiz bir hizmet sunmaktayız<br/><br/>",
+    "text-1": "BJBi kurulduğu yıldan beri güven ve kaliteli hizmet anlayışına sahip çıkmış, işinin merkezine koymuştur<br/><br/>BJBi olarak sektörümüzde en önemli itibarın dürüstlük olduğunu düşünüyoruz<br/><br/>Döviz ve altın sektöründe derin piyasa bilgisine sahip uzman kadromuz ve teknolojik altyapımızla uzun zamandır emsalsiz bir hizmet sunmaktayız<br/><br/>",
     "text-2": "Kuruluşumuzdan bu yana dürüstlük, güvenilirlik ve hizmet kalitesi konusunda bir itibar oluşturduk<br/><br/>Müşteri memnuniyeti bizim için önemlidir ve her bir müşteriyle özenli bir ilişki kurmaya çalışırız<br/><br/>Ödülümüz, müşterilerimizin bizimle tekrar iş yapması ve hizmetlerimizi başkalarına tavsiye etmesidir"
   },
   "contact-us": {
