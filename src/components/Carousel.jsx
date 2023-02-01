@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import about1 from "../images/about-1.jpg";
-import about2 from "../images/about-2.jpg";
-import about3 from "../images/aero-1.jpg";
+import office1 from "../images/center.jpeg";
+import office2 from "../images/office02.jpg";
+import office3 from "../images/office03.jpg";
+// import office4 from "../images/left.jpg";
+import office5 from "../images/right.jpeg";
 import prev from "../images/prev.png";
 import next from "../images/next.png";
 
@@ -14,7 +16,7 @@ const CarouselItem = ({ imgSRC }) => {
   )
 };
 
-const imgArray = [about1, about2, about3];
+const imgArray = [office1, office2, office3, office5];
 
 function Carousel() {
   const { t } = useTranslation();
