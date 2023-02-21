@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import MainPage from "./MainPage";
 import ExchangePage from "./ExchangePage";
 import CryptoInfoPage from "./CryptoInfoPage";
+import MonitorsPage from "./MonitorsPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/currency-rates" element={<ExchangePage />} />
           <Route path="/crypto-info" element={<CryptoInfoPage />} />
+          <Route path="/monitor" element={<MonitorsPage />} />
           <Route
             path="*"
             element={
