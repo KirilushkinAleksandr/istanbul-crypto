@@ -52,12 +52,12 @@ function ExchangePage() {
     const amount = Number(inputRef.current.value).toFixed(2);
     if (fromCurrency === "TRY") {
       setFromAmount(amount);
-      const sellRate = rates[toCurrency].sell || 0;
+      const sellRate = rates.find(item => item.name === toCurrency).sell || 0;
       setToAmount((amount / sellRate).toFixed(2));
       setIsResShown(true);
     } else if (toCurrency === "TRY") {
       setFromAmount(amount);
-      const buyRate = rates[fromCurrency].buy || 0;
+      const buyRate = rates.find(item => item.name === fromCurrency).buy || 0;
       setToAmount((amount * buyRate).toFixed(2));
       setIsResShown(true);
     }

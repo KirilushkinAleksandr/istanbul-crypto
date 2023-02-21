@@ -69,6 +69,7 @@ ul[role="listbox"] {
   color: rgb(234, 236, 239);
   border: 0;
   padding: 0;
+  width: 70px;
 }
 
 span.ReactFlagsSelect-module_label__27pw9 {
@@ -86,6 +87,10 @@ li.ReactFlagsSelect-module_selectOptionWithlabel__2GpmM {
 }
 
 ul.ReactFlagsSelect-module_selectOptions__3LNBJ {
+  padding: 0;
+}
+
+span.ReactFlagsSelect-module_selectValue__152eS {
   padding: 0;
 }
 
