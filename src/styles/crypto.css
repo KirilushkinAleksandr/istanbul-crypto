@@ -2,7 +2,7 @@
   font-size: 18px;
   line-height: 22px;
   padding: 24px 0;
-  width: 80% !important;
+  width: 80%;
 }
 
 .title {
@@ -28,5 +28,11 @@
 @media screen and (max-width: 768px) {
   .crypto__page {
     padding: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .crypto__page {
+    width: 95%;
   }
 }

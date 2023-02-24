@@ -25,6 +25,11 @@
   height: 150px;
 }
 
+.header__logo-img_xl {
+  width: 450px;
+  height: 450px;
+}
+
 .header__navigation {
   display: flex;
   justify-content: space-evenly;

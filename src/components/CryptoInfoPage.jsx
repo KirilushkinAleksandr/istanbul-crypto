@@ -5,7 +5,7 @@ function CryptoInfoPage() {
   const { t } = useTranslation();
 
   return (
-    <section className="content__section crypto__page">
+    <section className="crypto__page content__section">
       <div className="title">{t("stablecoin.title")}</div>
       <div>{t("stablecoin.text1")}</div>
       <div>{t("stablecoin.text2")}</div>

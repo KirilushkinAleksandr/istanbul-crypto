@@ -24,7 +24,7 @@ function ExchangePage() {
   useEffect(() => {
     setIsLoading(true);
 
-    fetch("/exchange-rates.json")
+    fetch("./exchange-rates.json")
       .then((res) => res.json())
       .then((res) => {
         const customRates = [];
