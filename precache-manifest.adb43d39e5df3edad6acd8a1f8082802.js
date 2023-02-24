@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7d7a04af66c3c91273a1",
-    "url": "./static/css/main.3115462a.chunk.css"
+    "revision": "a486bca6afde377c7f37",
+    "url": "./static/css/main.58f3cc08.chunk.css"
   },
   {
-    "revision": "7d7a04af66c3c91273a1",
-    "url": "./static/js/main.c2c8c1d8.chunk.js"
+    "revision": "a486bca6afde377c7f37",
+    "url": "./static/js/main.abc4f7d3.chunk.js"
   },
   {
     "revision": "1322e7506a501c4f4896",
@@ -148,6 +148,10 @@ self.__precacheManifest = [
     "url": "./static/media/SEK.206221e8.svg"
   },
   {
+    "revision": "d6cd444515f72d0508bf106dbe42bbae",
+    "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
+  },
+  {
     "revision": "8e9701d8efc7df15706b06712b1c6de1",
     "url": "./static/media/SF-Mono-Regular.8e9701d8.otf"
   },
@@ -156,24 +160,20 @@ self.__precacheManifest = [
     "url": "./static/media/SF-Mono-Bold.09604810.otf"
   },
   {
-    "revision": "86be70089450e9ba1d5b8d2b49f352a0",
-    "url": "./static/media/SF-Mono-Semibold.86be7008.otf"
-  },
-  {
-    "revision": "d6cd444515f72d0508bf106dbe42bbae",
-    "url": "./static/media/SF-Mono-Medium.d6cd4445.otf"
-  },
-  {
-    "revision": "e9f02ea277831a0ea955507ed7b86349",
-    "url": "./static/media/minus.e9f02ea2.svg"
-  },
-  {
     "revision": "0e9c24e2e9015ec4284addc27012a91d",
     "url": "./static/media/SF-Mono-Heavy.0e9c24e2.otf"
   },
   {
+    "revision": "86be70089450e9ba1d5b8d2b49f352a0",
+    "url": "./static/media/SF-Mono-Semibold.86be7008.otf"
+  },
+  {
     "revision": "e981e8dcf70e0413e00f8ad42e24bc9c",
     "url": "./static/media/plus.e981e8dc.svg"
+  },
+  {
+    "revision": "e9f02ea277831a0ea955507ed7b86349",
+    "url": "./static/media/minus.e9f02ea2.svg"
   },
   {
     "revision": "e6567f397c55dba8523a4f9b7bf7174e",
@@ -192,12 +192,12 @@ self.__precacheManifest = [
     "url": "./static/media/light-about.6607388b.png"
   },
   {
-    "revision": "5cbbe2e802d5214644c7652ee80b999d",
-    "url": "./static/media/light-contact.5cbbe2e8.png"
-  },
-  {
     "revision": "561766e87833546fb5e3966a250aecf7",
     "url": "./static/media/light-address.561766e8.png"
+  },
+  {
+    "revision": "5cbbe2e802d5214644c7652ee80b999d",
+    "url": "./static/media/light-contact.5cbbe2e8.png"
   },
   {
     "revision": "c25570c5f01f4e26781f11b07b84d371",
@@ -208,7 +208,7 @@ self.__precacheManifest = [
     "url": "./static/media/bitcoin.94ba7549.jpg"
   },
   {
-    "revision": "467775522a64f92e7e8f9815cba91fed",
+    "revision": "d1b852d95743f12203d9a33f3e955e12",
     "url": "./index.html"
   }
 ];
